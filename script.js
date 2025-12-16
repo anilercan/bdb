@@ -1,5 +1,6 @@
 let currentData = [];
 let currentCategory = 'games';
+let categorySortState = {}; // Track active sort for each category
 
 const categoryConfig = {
     games: {
@@ -69,8 +70,11 @@ async function loadCategory(category) {
         item.classList.toggle('active', item.dataset.category === category);
     });
 
+    // Get saved sort state for this category, or default to date-desc
+    const savedSort = categorySortState[category] || (config.hasDate ? 'date-desc' : 'rating-desc');
+
     // Update sort options based on category
-    updateSortOptions(config);
+    updateSortOptions(config, savedSort);
 
     try {
         const response = await fetch(config.file);
@@ -85,7 +89,8 @@ async function loadCategory(category) {
             mainContent.style.backgroundImage = 'none';
         }
 
-        sortAndRender('date-desc');
+        // Use saved sort state
+        sortAndRender(savedSort);
     } catch (error) {
         console.error(`Error loading ${category}:`, error);
         document.getElementById('items-container').innerHTML =
@@ -93,19 +98,24 @@ async function loadCategory(category) {
     }
 }
 
-function updateSortOptions(config) {
+function updateSortOptions(config, activeSort) {
     const dateButton = document.querySelector('.sort-btn[data-sort="date-desc"]');
 
+    // Show/hide date button based on category
     if (config.hasDate) {
         dateButton.style.display = 'inline-block';
     } else {
         dateButton.style.display = 'none';
-        // If date button was active, switch to rating-desc
-        if (dateButton.classList.contains('active')) {
-            dateButton.classList.remove('active');
-            document.querySelector('.sort-btn[data-sort="rating-desc"]').classList.add('active');
-            sortAndRender('rating-desc');
-        }
+    }
+
+    // Update active button state
+    document.querySelectorAll('.sort-btn').forEach(btn => {
+        btn.classList.remove('active');
+    });
+
+    const activeButton = document.querySelector(`.sort-btn[data-sort="${activeSort}"]`);
+    if (activeButton) {
+        activeButton.classList.add('active');
     }
 }
 
@@ -237,12 +247,17 @@ document.addEventListener('DOMContentLoaded', () => {
     // Sort buttons
     document.querySelectorAll('.sort-btn').forEach(btn => {
         btn.addEventListener('click', () => {
+            const sortType = btn.dataset.sort;
+
+            // Save sort state for current category
+            categorySortState[currentCategory] = sortType;
+
             // Remove active class from all buttons
             document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
             // Add active class to clicked button
             btn.classList.add('active');
             // Sort and render
-            sortAndRender(btn.dataset.sort);
+            sortAndRender(sortType);
         });
     });
 });
