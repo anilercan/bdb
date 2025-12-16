@@ -2,22 +2,6 @@
   "background": "",
   "items": [
     {
-      "title": "Dishonored",
-      "cover": "",
-      "rating": 71,
-      "details": "",
-      "dateCompleted": "",
-      "link": ""
-    },
-    {
-      "title": "Subnautica",
-      "cover": "",
-      "rating": 69,
-      "details": "",
-      "dateCompleted": "",
-      "link": ""
-    },
-    {
       "title": "What Remains of Edith Finch",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co1rbj.jpg",
       "rating": 81,
@@ -34,292 +18,308 @@
       "link": "https://backloggd.com/games/gris/"
     },
     {
+      "title": "Dishonored",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coabgu.jpg",
+      "rating": 71,
+      "details": "",
+      "dateCompleted": "",
+      "link": "https://backloggd.com/games/dishonored/"
+    },
+    {
+      "title": "Subnautica",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coa938.jpg",
+      "rating": 69,
+      "details": "",
+      "dateCompleted": "",
+      "link": "https://backloggd.com/games/subnautica/"
+    },
+    {
       "title": "Tales of the Neon Sea",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/w4uuihbcbwfjmmfb10na.jpg",
       "rating": 61,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/tales-of-the-neon-sea/"
     },
     {
       "title": "OneShot",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1u08.jpg",
       "rating": 79,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/oneshot/"
     },
     {
       "title": "Mass Effect 1",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1pee.jpg",
       "rating": 77,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/mass-effect-1/"
     },
     {
       "title": "Mass Effect 2",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co20ac.jpg",
       "rating": 91,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/mass-effect-2/"
     },
     {
       "title": "Mass Effect 3",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1x7q.jpg",
       "rating": 91,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/mass-effect-3/"
     },
     {
       "title": "To the Moon",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co25yv.jpg",
       "rating": 83,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/to-the-moon/"
     },
     {
       "title": "Finding Paradise",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co24h6.jpg",
       "rating": 83,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/finding-paradise/"
     },
     {
       "title": "Paradise Killer",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9910.jpg",
       "rating": 81,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/paradise-killer/"
     },
     {
       "title": "The Talos Principle",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1rb5.jpg",
       "rating": 81,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/the-talos-principle/"
     },
     {
       "title": "Katana ZERO",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1isp.jpg",
       "rating": 67,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/katana-zero/"
     },
     {
       "title": "NieR: Automata",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5pcj.jpg",
       "rating": 73,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/nier-automata/"
     },
     {
       "title": "When the Darkness Comes",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3wk8.jpg",
       "rating": 61,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/when-the-darkness-comes/"
     },
     {
       "title": "Supraland",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2yys.jpg",
       "rating": 67,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/supraland/"
     },
     {
       "title": "Flower",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1q8r.jpg",
       "rating": 63,
       "details": "",
       "dateCompleted": "2023-04-19",
-      "link": ""
+      "link": "https://backloggd.com/games/flower/"
     },
     {
       "title": "The Witness",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3hih.jpg",
       "rating": 57,
       "details": "",
       "dateCompleted": "2022-06-26",
-      "link": ""
+      "link": "https://backloggd.com/games/the-witness/"
     },
     {
       "title": "Antichamber",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coado3.jpg",
       "rating": 71,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/antichamber/"
     },
     {
       "title": "Portal",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coay61.jpg",
       "rating": 81,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/portal/"
     },
     {
       "title": "Portal 2",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1rs4.jpg",
       "rating": 83,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/portal-2/"
     },
     {
       "title": "Superliminal",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1uqz.jpg",
       "rating": 71,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/superliminal/"
     },
     {
       "title": "The Stanley Parable",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1rc9.jpg",
       "rating": 79,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/the-stanley-parable/"
     },
     {
       "title": "Return of the Obra Dinn",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co27j9.jpg",
       "rating": 91,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/return-of-the-obra-dinn/"
     },
     {
       "title": "The Beginner's Guide",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2rz1.jpg",
       "rating": 81,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/the-beginners-guide/"
     },
     {
       "title": "Life is Strange",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r8e.jpg",
       "rating": 69,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/life-is-strange/"
     },
     {
       "title": "Cloudpunk",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2jbz.jpg",
       "rating": 73,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/cloudpunk/"
     },
     {
       "title": "Cyberpunk 2077",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coaih8.jpg",
       "rating": 71,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/cyberpunk-2077/"
     },
     {
       "title": "The Cat Lady",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1rfw.jpg",
       "rating": 69,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/the-cat-lady/"
     },
     {
       "title": "Hellblade: Senua's Sacrifice",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2l7l.jpg",
       "rating": 71,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/hellblade-senuas-sacrifice/"
     },
     {
       "title": "Outer Wilds",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co65ac.jpg",
       "rating": 99,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/outer-wilds/"
     },
     {
       "title": "Disco Elysium",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1sfj.jpg",
       "rating": 97,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/disco-elysium/"
     },
     {
       "title": "Tomorrow won't come for those without",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2ce1.jpg",
       "rating": 55,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/tomorrow-wont-come-for-those-without/"
     },
     {
       "title": "Sayonara Wild Hearts",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2gx1.jpg",
       "rating": 71,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/sayonara-wild-hearts/"
     },
     {
       "title": "Spiritfarer",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2fe7.jpg",
       "rating": 69,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/spiritfarer/"
     },
     {
       "title": "OMORI",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1xlp.jpg",
       "rating": 75,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/omori/"
     },
     {
       "title": "Before Your Eyes",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2x7h.jpg",
       "rating": 79,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/before-your-eyes/"
     },
     {
       "title": "Celeste",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3byy.jpg",
       "rating": 77,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/celeste/"
     },
     {
       "title": "Persona 4 Golden",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1n1x.jpg",
       "rating": 63,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/persona-4-golden/"
     },
     {
       "title": "What Comes After",
@@ -327,195 +327,195 @@
       "rating": 61,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/what-comes-after/"
     },
     {
       "title": "Ib",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co7gy2.jpg",
       "rating": 73,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/ib/"
     },
     {
       "title": "The Witch's House",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co26bo.jpg",
       "rating": 63,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/the-witchs-house/"
     },
     {
       "title": "Rain World",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co24pm.jpg",
       "rating": 67,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/rain-world/"
     },
     {
       "title": "Florence",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co295l.jpg",
       "rating": 71,
       "details": "",
       "dateCompleted": "2022-07-03",
-      "link": ""
+      "link": "https://backloggd.com/games/florence/"
     },
     {
       "title": "Fran Bow",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co8lrn.jpg",
       "rating": 73,
       "details": "",
       "dateCompleted": "2022-07-06",
-      "link": ""
+      "link": "https://backloggd.com/games/fran-bow/"
     },
     {
       "title": "Night in the Woods",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4ovg.jpg",
       "rating": 73,
       "details": "",
       "dateCompleted": "2022-07-01",
-      "link": ""
+      "link": "https://backloggd.com/games/night-in-the-woods/"
     },
     {
       "title": "Genesis Noir",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2y2b.jpg",
       "rating": 63,
       "details": "",
       "dateCompleted": "2022-06-28",
-      "link": ""
+      "link": "https://backloggd.com/games/genesis-noir/"
     },
     {
       "title": "Firework",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co57nm.jpg",
       "rating": 71,
       "details": "",
       "dateCompleted": "2022-08-01",
-      "link": ""
+      "link": "https://backloggd.com/games/firework/"
     },
     {
       "title": "Call of the Sea",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2ir4.jpg",
       "rating": 63,
       "details": "",
       "dateCompleted": "2022-07-30",
-      "link": ""
+      "link": "https://backloggd.com/games/call-of-the-sea/"
     },
     {
       "title": "Fatum Betula",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2bvx.jpg",
       "rating": 71,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/fatum-betula/"
     },
     {
       "title": "LISA",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1pee.jpg",
       "rating": 67,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/lisa/"
     },
     {
       "title": "Contradiction",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/bjapn8jxnfp4yln98hn3.jpg",
       "rating": 71,
       "details": "",
       "dateCompleted": "2022-09-01",
-      "link": ""
+      "link": "https://backloggd.com/games/contradiction/"
     },
     {
       "title": "Strange Horticulture",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4bsb.jpg",
       "rating": 73,
       "details": "",
       "dateCompleted": "2022-07-29",
-      "link": ""
+      "link": "https://backloggd.com/games/strange-horticulture/"
     },
     {
       "title": "Stray",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4tt2.jpg",
       "rating": 71,
       "details": "",
       "dateCompleted": "2023-04-20",
-      "link": ""
+      "link": "https://backloggd.com/games/stray/"
     },
     {
       "title": "Half-Life",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coag8n.jpg",
       "rating": 77,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/half-life/"
     },
     {
       "title": "Half-Life 2",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1nmw.jpg",
       "rating": 73,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/half-life-2/"
     },
     {
       "title": "Gorogoa",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3kby.jpg",
       "rating": 63,
       "details": "",
       "dateCompleted": "2022-08-13",
-      "link": ""
+      "link": "https://backloggd.com/games/gorogoa/"
     },
     {
       "title": "Journey",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1q8q.jpg",
       "rating": 69,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/journey/"
     },
     {
       "title": "Cats Organized Neatly",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2ij8.jpg",
       "rating": 63,
       "details": "",
       "dateCompleted": "2023-01-29",
-      "link": ""
+      "link": "https://backloggd.com/games/cats-organized-neatly/"
     },
     {
       "title": "Haven",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co8lrj.jpg",
       "rating": 63,
       "details": "",
       "dateCompleted": "2023-02-03",
-      "link": ""
+      "link": "https://backloggd.com/games/haven/"
     },
     {
       "title": "Mutazione",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1uxn.jpg",
       "rating": 73,
       "details": "",
       "dateCompleted": "2023-03-08",
-      "link": ""
+      "link": "https://backloggd.com/games/mutazione/"
     },
     {
       "title": "NORCO",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3nu3.jpg",
       "rating": 71,
       "details": "",
       "dateCompleted": "2023-04-11",
-      "link": ""
+      "link": "https://backloggd.com/games/norco/"
     },
     {
       "title": "Rakuen",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1uyk.jpg",
       "rating": 83,
       "details": "",
       "dateCompleted": "2022-06-24",
-      "link": ""
+      "link": "https://backloggd.com/games/rakuen/"
     },
     {
       "title": "Chicory: A Colorful Tale",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coayhk.jpg",
       "rating": 71,
       "details": "",
       "dateCompleted": "2023-04-16",
@@ -523,755 +523,755 @@
     },
     {
       "title": "Lost in Play",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co52ks.jpg",
       "rating": 69,
       "details": "",
       "dateCompleted": "2023-07-25",
-      "link": ""
+      "link": "https://backloggd.com/games/lost-in-play/"
     },
     {
       "title": "Inscryption",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co401c.jpg",
       "rating": 71,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/inscryption/"
     },
     {
       "title": "Adios",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6kmu.jpg",
       "rating": 71,
       "details": "",
       "dateCompleted": "2023-04-28",
-      "link": ""
+      "link": "https://backloggd.com/games/adios/"
     },
     {
       "title": "The Case of the Golden Idol",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9tog.jpg",
       "rating": 83,
       "details": "",
       "dateCompleted": "2023-05-15",
-      "link": ""
+      "link": "https://backloggd.com/games/the-case-of-the-golden-idol/"
     },
     {
       "title": "Signalis",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co62ig.jpg",
       "rating": 73,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/signalis/"
     },
     {
       "title": "The Darkside Detective",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co23bz.jpg",
       "rating": 61,
       "details": "",
       "dateCompleted": "2023-06-01",
-      "link": ""
+      "link": "https://backloggd.com/games/the-darkside-detective/"
     },
     {
       "title": "Sea of Solitude",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1m4m.jpg",
       "rating": 57,
       "details": "",
       "dateCompleted": "2023-05-21",
-      "link": ""
+      "link": "https://backloggd.com/games/sea-of-solitude/"
     },
     {
       "title": "Firewatch",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1m35.jpg",
       "rating": 67,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/firewatch/"
     },
     {
       "title": "Alice: Madness Returns",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2n91.jpg",
       "rating": 83,
       "details": "",
       "dateCompleted": "2023-05-12",
-      "link": ""
+      "link": "https://backloggd.com/games/alice-madness-returns/"
     },
     {
       "title": "The Sexy Brutale",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co23dx.jpg",
       "rating": 73,
       "details": "",
       "dateCompleted": "2023-07-05",
-      "link": ""
+      "link": "https://backloggd.com/games/the-sexy-brutale/"
     },
     {
       "title": "Hypnospace Outlaw",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2f5i.jpg",
       "rating": 83,
       "details": "",
       "dateCompleted": "2023-07-08",
-      "link": ""
+      "link": "https://backloggd.com/games/hypnospace-outlaw/"
     },
     {
       "title": "The Count Lucanor",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co26z2.jpg",
       "rating": 63,
       "details": "",
       "dateCompleted": "2022-07-04",
-      "link": ""
+      "link": "https://backloggd.com/games/the-count-lucanor/"
     },
     {
       "title": "The Rewinder",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1xtj.jpg",
       "rating": 63,
       "details": "",
       "dateCompleted": "2023-08-06",
-      "link": ""
+      "link": "https://backloggd.com/games/the-rewinder/"
     },
     {
       "title": "VirtuaVerse",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1puy.jpg",
       "rating": 55,
       "details": "",
       "dateCompleted": "2023-08-10",
-      "link": ""
+      "link": "https://backloggd.com/games/virtuaverse/"
     },
     {
       "title": "Eastshade",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4b9w.jpg",
       "rating": 81,
       "details": "",
       "dateCompleted": "2023-08-21",
-      "link": ""
+      "link": "https://backloggd.com/games/eastshade/"
     },
     {
       "title": "The Last Campfire",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4g71.jpg",
       "rating": 63,
       "details": "",
       "dateCompleted": "2023-08-24",
-      "link": ""
+      "link": "https://backloggd.com/games/the-last-campfire/"
     },
     {
       "title": "At Dead of Night",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5p4w.jpg",
       "rating": 67,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/at-dead-of-night/"
     },
     {
       "title": "Little Misfortune",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1kw9.jpg",
       "rating": 63,
       "details": "",
       "dateCompleted": "2023-09-26",
-      "link": ""
+      "link": "https://backloggd.com/games/little-misfortune/"
     },
     {
       "title": "Persona 5 Royal",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coateg.jpg",
       "rating": 71,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/persona-5-royal/"
     },
     {
       "title": "Hi-Fi Rush",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6219.jpg",
       "rating": 73,
       "details": "",
       "dateCompleted": "2023-09-08",
-      "link": ""
+      "link": "https://backloggd.com/games/hi-fi-rush/"
     },
     {
       "title": "Venba",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6vn4.jpg",
       "rating": 65,
       "details": "",
       "dateCompleted": "2023-09-21",
-      "link": ""
+      "link": "https://backloggd.com/games/venba/"
     },
     {
       "title": "Unpacking",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1t45.jpg",
       "rating": 67,
       "details": "",
       "dateCompleted": "2023-09-01",
-      "link": ""
+      "link": "https://backloggd.com/games/unpacking/"
     },
     {
       "title": "It Takes Two",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2t97.jpg",
       "rating": 71,
       "details": "",
       "dateCompleted": "2023-09-07",
-      "link": ""
+      "link": "https://backloggd.com/games/it-takes-two/"
     },
     {
       "title": "Pentiment",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4v1e.jpg",
       "rating": 91,
       "details": "",
       "dateCompleted": "2023-09-18",
-      "link": ""
+      "link": "https://backloggd.com/games/pentiment/"
     },
     {
       "title": "A Short Hike",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6e83.jpg",
       "rating": 73,
       "details": "",
       "dateCompleted": "2023-09-15",
-      "link": ""
+      "link": "https://backloggd.com/games/a-short-hike/"
     },
     {
       "title": "Kentucky Route Zero",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9dwn.jpg",
       "rating": 85,
       "details": "",
       "dateCompleted": "2023-07-18",
-      "link": ""
+      "link": "https://backloggd.com/games/kentucky-route-zero/"
     },
     {
       "title": "Dordogne",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6mcw.jpg",
       "rating": 63,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/dordogne/"
     },
     {
       "title": "Return to Monkey Island",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co56kr.jpg",
       "rating": 71,
       "details": "",
       "dateCompleted": "2023-10-04",
-      "link": ""
+      "link": "https://backloggd.com/games/return-to-monkey-island/"
     },
     {
       "title": "Unheard",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co269j.jpg",
       "rating": 73,
       "details": "",
       "dateCompleted": "2023-10-12",
-      "link": ""
+      "link": "https://backloggd.com/games/unheard/"
     },
     {
       "title": "Sumire",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2hdx.jpg",
       "rating": 65,
       "details": "",
       "dateCompleted": "2023-10-06",
-      "link": ""
+      "link": "https://backloggd.com/games/sumire/"
     },
     {
       "title": "The Talos Principle 2",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1pee.jpg",
       "rating": 87,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/the-talos-principle-2/"
     },
     {
       "title": "Detective Grimoire",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5c1a.jpg",
       "rating": 63,
       "details": "",
       "dateCompleted": "2023-11-19",
-      "link": ""
+      "link": "https://backloggd.com/games/detective-grimoire/"
     },
     {
       "title": "Lost Words: Beyond the Page",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2x90.jpg",
       "rating": 61,
       "details": "",
       "dateCompleted": "2023-11-28",
-      "link": ""
+      "link": "https://backloggd.com/games/lost-words-beyond-the-page/"
     },
     {
       "title": "When the Past Was Around",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1ucc.jpg",
       "rating": 63,
       "details": "",
       "dateCompleted": "2023-08-16",
-      "link": ""
+      "link": "https://backloggd.com/games/when-the-past-was-around/"
     },
     {
       "title": "Behind the Frame: The Finest Scenery",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co36h5.jpg",
       "rating": 63,
       "details": "",
       "dateCompleted": "2023-11-21",
-      "link": ""
+      "link": "https://backloggd.com/games/behind-the-frame-the-finest-scenery/"
     },
     {
       "title": "ABZU",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co28sy.jpg",
       "rating": 63,
       "details": "",
       "dateCompleted": "2023-11-24",
-      "link": ""
+      "link": "https://backloggd.com/games/abzu/"
     },
     {
       "title": "The Room 4: Old Sins",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3bq0.jpg",
       "rating": 71,
       "details": "",
       "dateCompleted": "2024-01-09",
-      "link": ""
+      "link": "https://backloggd.com/games/the-room-4-old-sins/"
     },
     {
       "title": "Deadly Premonition",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2saz.jpg",
       "rating": 63,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/deadly-premonition/"
     },
     {
       "title": "SOMA",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2a20.jpg",
       "rating": 79,
       "details": "",
       "dateCompleted": "2024-02-15",
-      "link": ""
+      "link": "https://backloggd.com/games/soma/"
     },
     {
       "title": "Oxenfree",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2hlq.jpg",
       "rating": 63,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/oxenfree/"
     },
     {
       "title": "100 hidden cats",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co88zb.jpg",
       "rating": 61,
       "details": "",
       "dateCompleted": "2024-03-22",
-      "link": ""
+      "link": "https://backloggd.com/games/100-hidden-cats/"
     },
     {
       "title": "Impostor Factory",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1xu5.jpg",
       "rating": 83,
       "details": "",
       "dateCompleted": "2024-01-15",
-      "link": ""
+      "link": "https://backloggd.com/games/impostor-factory/"
     },
     {
       "title": "UNDERTALE",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob1t2.jpg",
       "rating": 83,
       "details": "",
       "dateCompleted": "2024-04-02",
-      "link": ""
+      "link": "https://backloggd.com/games/undertale/"
     },
     {
       "title": "The Forgotten City",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3muu.jpg",
       "rating": 81,
       "details": "",
       "dateCompleted": "2024-04-26",
-      "link": ""
+      "link": "https://backloggd.com/games/the-forgotten-city/"
     },
     {
       "title": "INDIKA",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co85mc.jpg",
       "rating": 71,
       "details": "",
       "dateCompleted": "2024-05-28",
-      "link": ""
+      "link": "https://backloggd.com/games/indika/"
     },
     {
       "title": "Vampire: The Masquerade - Bloodlines",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2n14.jpg",
       "rating": 73,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/vampire-the-masquerade-bloodlines/"
     },
     {
       "title": "Fahrenheit: Indigo Prophecy",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1pee.jpg",
       "rating": 49,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/fahrenheit-indigo-prophecy/"
     },
     {
       "title": "Heavy Rain",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coaajv.jpg",
       "rating": 43,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/heavy-rain/"
     },
     {
       "title": "Card Shark",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4a5i.jpg",
       "rating": 67,
       "details": "",
       "dateCompleted": "2024-06-27",
-      "link": ""
+      "link": "https://backloggd.com/games/card-shark/"
     },
     {
       "title": "The WereCleaner",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co878y.jpg",
       "rating": 71,
       "details": "",
       "dateCompleted": "2024-07-04",
-      "link": ""
+      "link": "https://backloggd.com/games/the-werecleaner/"
     },
     {
       "title": "Tunic",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/td1t8kb33gyo8mvhl2pc.jpg",
       "rating": 67,
       "details": "",
       "dateCompleted": "2024-07-20",
-      "link": ""
+      "link": "https://backloggd.com/games/tunic/"
     },
     {
       "title": "Broken Reality",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2h3b.jpg",
       "rating": 63,
       "details": "",
       "dateCompleted": "2024-04-11",
-      "link": ""
+      "link": "https://backloggd.com/games/broken-reality/"
     },
     {
       "title": "Lacuna",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2qj1.jpg",
       "rating": 63,
       "details": "",
       "dateCompleted": "2024-04-14",
-      "link": ""
+      "link": "https://backloggd.com/games/lacuna/"
     },
     {
       "title": "Little Inferno",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co253v.jpg",
       "rating": 61,
       "details": "",
       "dateCompleted": "2024-04-22",
-      "link": ""
+      "link": "https://backloggd.com/games/little-inferno/"
     },
     {
       "title": "Still Wakes the Deep",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co8dbd.jpg",
       "rating": 59,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/still-wakes-the-deep/"
     },
     {
       "title": "Twelve Minutes",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co77xc.jpg",
       "rating": 33,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/twelve-minutes/"
     },
     {
       "title": "Beyond: Two Souls",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co8r4w.jpg",
       "rating": 39,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/beyond-two-souls/"
     },
     {
       "title": "Detroit: Become Human",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1pee.jpg",
       "rating": 51,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/detroit-become-human/"
     },
     {
       "title": "Havsala: Into the Soul Palace",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5e4j.jpg",
       "rating": 67,
       "details": "",
       "dateCompleted": "2024-06-13",
-      "link": ""
+      "link": "https://backloggd.com/games/havsala-into-the-soul-palace/"
     },
     {
       "title": "Alba: A Wildlife Adventure",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3uyi.jpg",
       "rating": 71,
       "details": "",
       "dateCompleted": "2024-08-06",
-      "link": ""
+      "link": "https://backloggd.com/games/alba-a-wildlife-adventure/"
     },
     {
       "title": "Prey",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co55mn.jpg",
       "rating": 83,
       "details": "",
       "dateCompleted": "2024-09-01",
-      "link": ""
+      "link": "https://backloggd.com/games/prey/"
     },
     {
       "title": "The Painscreek Killings",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co23ds.jpg",
       "rating": 79,
       "details": "",
       "dateCompleted": "2024-09-12",
-      "link": ""
+      "link": "https://backloggd.com/games/the-painscreek-killings/"
     },
     {
       "title": "INFRA",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2qez.jpg",
       "rating": 81,
       "details": "",
       "dateCompleted": "2024-09-30",
-      "link": ""
+      "link": "https://backloggd.com/games/infra/"
     },
     {
       "title": "Secret Little Haven",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2a5x.jpg",
       "rating": 69,
       "details": "",
       "dateCompleted": "2024-09-16",
-      "link": ""
+      "link": "https://backloggd.com/games/secret-little-haven/"
     },
     {
       "title": "LumbearJack",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3jl8.jpg",
       "rating": 59,
       "details": "",
       "dateCompleted": "2024-08-11",
-      "link": ""
+      "link": "https://backloggd.com/games/lumbearjack/"
     },
     {
       "title": "Mouthwashing",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co70oi.jpg",
       "rating": 79,
       "details": "",
       "dateCompleted": "2024-10-08",
-      "link": ""
+      "link": "https://backloggd.com/games/mouthwashing/"
     },
     {
       "title": "Silent Hill 2",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2vyg.jpg",
       "rating": 63,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/silent-hill-2/"
     },
     {
       "title": "Wandersong",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1oey.jpg",
       "rating": 67,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/wandersong/"
     },
     {
       "title": "Planescape: Torment",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3ggb.jpg",
       "rating": 89,
       "details": "",
       "dateCompleted": "2024-05-14",
-      "link": ""
+      "link": "https://backloggd.com/games/planescape-torment/"
     },
     {
       "title": "Scribblenauts Unlimited",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1my3.jpg",
       "rating": 65,
       "details": "",
       "dateCompleted": "2024-07-28",
-      "link": ""
+      "link": "https://backloggd.com/games/scribblenauts-unlimited/"
     },
     {
       "title": "Toem",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co97ni.jpg",
       "rating": 67,
       "details": "",
       "dateCompleted": "2023-08-01",
-      "link": ""
+      "link": "https://backloggd.com/games/toem/"
     },
     {
       "title": "Smile For Me",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co41or.jpg",
       "rating": 71,
       "details": "",
       "dateCompleted": "2024-11-03",
-      "link": ""
+      "link": "https://backloggd.com/games/smile-for-me/"
     },
     {
       "title": "In Stars And Time",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5bsf.jpg",
       "rating": 79,
       "details": "",
       "dateCompleted": "2024-10-07",
-      "link": ""
+      "link": "https://backloggd.com/games/in-stars-and-time/"
     },
     {
       "title": "1000xRESIST",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co87zq.jpg",
       "rating": 91,
       "details": "",
       "dateCompleted": "2024-11-18",
-      "link": ""
+      "link": "https://backloggd.com/games/1000xresist/"
     },
     {
       "title": "The Hex",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/rbw9ltnum893cnarcg5g.jpg",
       "rating": 61,
       "details": "",
       "dateCompleted": "2024-11-24",
-      "link": ""
+      "link": "https://backloggd.com/games/the-hex/"
     },
     {
       "title": "Killer7",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1owa.jpg",
       "rating": 81,
       "details": "",
       "dateCompleted": "2024-11-11",
-      "link": ""
+      "link": "https://backloggd.com/games/killer7/"
     },
     {
       "title": "Citizen Sleeper",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4zl5.jpg",
       "rating": 73,
       "details": "",
       "dateCompleted": "2024-09-16",
-      "link": ""
+      "link": "https://backloggd.com/games/citizen-sleeper/"
     },
     {
       "title": "The Rise of the Golden Idol",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co7h9f.jpg",
       "rating": 73,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/the-rise-of-the-golden-idol/"
     },
     {
       "title": "Lorelei and the Laser Eyes",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4x7e.jpg",
       "rating": 93,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/lorelei-and-the-laser-eyes/"
     },
     {
       "title": "Unavowed",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1qv2.jpg",
       "rating": 79,
       "details": "",
       "dateCompleted": "2024-11-28",
-      "link": ""
+      "link": "https://backloggd.com/games/unavowed/"
     },
     {
       "title": "Tacoma",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2tge.jpg",
       "rating": 69,
       "details": "",
       "dateCompleted": "2024-12-11",
-      "link": ""
+      "link": "https://backloggd.com/games/tacoma/"
     },
     {
       "title": "Roadwarden",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co63e0.jpg",
       "rating": 73,
       "details": "",
       "dateCompleted": "2024-12-05",
-      "link": ""
+      "link": "https://backloggd.com/games/roadwarden/"
     },
     {
       "title": "Tangle Tower",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6i1n.jpg",
       "rating": 71,
       "details": "",
       "dateCompleted": "2024-12-08",
-      "link": ""
+      "link": "https://backloggd.com/games/tangle-tower/"
     },
     {
       "title": "Crime Scene Cleaner",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co8vyd.jpg",
       "rating": 67,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/crime-scene-cleaner/"
     },
     {
       "title": "Unreal Life",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2ot5.jpg",
       "rating": 69,
       "details": "",
       "dateCompleted": "2025-01-19",
-      "link": ""
+      "link": "https://backloggd.com/games/unreal-life/"
     },
     {
       "title": "The Roottrees Are Dead",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co8vwr.jpg",
       "rating": 81,
       "details": "",
       "dateCompleted": "2025-01-27",
-      "link": ""
+      "link": "https://backloggd.com/games/the-roottrees-are-dead/"
     },
     {
       "title": "Deus Ex",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co86dk.jpg",
       "rating": 77,
       "details": "",
       "dateCompleted": "2025-02-14",
-      "link": ""
+      "link": "https://backloggd.com/games/deus-ex/"
     },
     {
       "title": "Cuccchi",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3gxl.jpg",
       "rating": 69,
       "details": "",
       "dateCompleted": "2024-12-21",
-      "link": ""
+      "link": "https://backloggd.com/games/cuccchi/"
     },
     {
       "title": "Persona 3 Reload",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6z12.jpg",
       "rating": 63,
       "details": "",
       "dateCompleted": "2025-05-03",
-      "link": ""
+      "link": "https://backloggd.com/games/persona-3-reload/"
     },
     {
       "title": "Enigma of Fear",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co93ft.jpg",
       "rating": 73,
       "details": "",
       "dateCompleted": "2025-02-24",
-      "link": ""
+      "link": "https://backloggd.com/games/enigma-of-fear/"
     },
     {
       "title": "Chants of Sennaar",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9mjo.jpg",
       "rating": 69,
       "details": "",
       "dateCompleted": "2025-02-28",
-      "link": ""
+      "link": "https://backloggd.com/games/chants-of-sennaar/"
     },
     {
       "title": "Kid A Mnesia Exhibition",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co489x.jpg",
       "rating": 63,
       "details": "",
       "dateCompleted": "2025-03-01",
-      "link": ""
+      "link": "https://backloggd.com/games/kid-a-mnesia-exhibition/"
     },
     {
       "title": "Iron Lung",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5he3.jpg",
       "rating": 63,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/iron-lung/"
     },
     {
       "title": "Rental",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1pee.jpg",
       "rating": 53,
       "details": "",
       "dateCompleted": "2025-03-11",
-      "link": ""
+      "link": "https://backloggd.com/games/rental/"
     },
     {
       "title": "Lingo",
@@ -1279,391 +1279,391 @@
       "rating": 67,
       "details": "",
       "dateCompleted": "2025-03-14",
-      "link": ""
+      "link": "https://backloggd.com/games/lingo/"
     },
     {
       "title": "Returnal",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3wc1.jpg",
       "rating": 67,
       "details": "",
       "dateCompleted": "2025-05-21",
-      "link": ""
+      "link": "https://backloggd.com/games/returnal/"
     },
     {
       "title": "The Looker",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4w9f.jpg",
       "rating": 63,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/the-looker/"
     },
     {
       "title": "Overboard!",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1pee.jpg",
       "rating": 61,
       "details": "",
       "dateCompleted": "2025-03-16",
-      "link": ""
+      "link": "https://backloggd.com/games/overboard/"
     },
     {
       "title": "Wanderstop",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co8bil.jpg",
       "rating": 73,
       "details": "",
       "dateCompleted": "2025-03-26",
-      "link": ""
+      "link": "https://backloggd.com/games/wanderstop/"
     },
     {
       "title": "This Bed We Made",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co65u9.jpg",
       "rating": 67,
       "details": "",
       "dateCompleted": "2025-04-09",
-      "link": ""
+      "link": "https://backloggd.com/games/this-bed-we-made/"
     },
     {
       "title": "Stephen's Sausage Roll",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2dr4.jpg",
       "rating": 81,
       "details": "",
       "dateCompleted": "2025-04-10",
-      "link": ""
+      "link": "https://backloggd.com/games/stephens-sausage-roll/"
     },
     {
       "title": "Blue Prince",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9mzd.jpg",
       "rating": 77,
       "details": "",
       "dateCompleted": "2025-05-03",
-      "link": ""
+      "link": "https://backloggd.com/games/blue-prince/"
     },
     {
       "title": "The Talos Principle: Reawakened",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co94rr.jpg",
       "rating": 81,
       "details": "",
       "dateCompleted": "2025-05-08",
-      "link": ""
+      "link": "https://backloggd.com/games/the-talos-principle-reawakened/"
     },
     {
       "title": "Clair Obscur: Expedition 33",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9gam.jpg",
       "rating": 81,
       "details": "",
       "dateCompleted": "2025-05-28",
-      "link": ""
+      "link": "https://backloggd.com/games/clair-obscur-expedition-33/"
     },
     {
       "title": "Lil Gator Game",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4uz2.jpg",
       "rating": 69,
       "details": "",
       "dateCompleted": "2025-06-01",
-      "link": ""
+      "link": "https://backloggd.com/games/lil-gator-game/"
     },
     {
       "title": "Quadrilateral Cowboy",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6ill.jpg",
       "rating": 73,
       "details": "",
       "dateCompleted": "2025-06-04",
-      "link": ""
+      "link": "https://backloggd.com/games/quadrilateral-cowboy/"
     },
     {
       "title": "Jenny LeClue",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1pee.jpg",
       "rating": 63,
       "details": "",
       "dateCompleted": "2025-06-01",
-      "link": ""
+      "link": "https://backloggd.com/games/jenny-leclue/"
     },
     {
       "title": "Loddlenaut",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co398c.jpg",
       "rating": 73,
       "details": "",
       "dateCompleted": "2025-06-08",
-      "link": ""
+      "link": "https://backloggd.com/games/loddlenaut/"
     },
     {
       "title": "The New Flesh",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9tpu.jpg",
       "rating": 71,
       "details": "",
       "dateCompleted": "2025-07-15",
-      "link": ""
+      "link": "https://backloggd.com/games/the-new-flesh/"
     },
     {
       "title": "Dishonored 2",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9e29.jpg",
       "rating": 73,
       "details": "",
       "dateCompleted": "2025-07-23",
-      "link": ""
+      "link": "https://backloggd.com/games/dishonored-2/"
     },
     {
       "title": "Deus Ex: Human Revolution",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1rd2.jpg",
       "rating": 63,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/deus-ex-human-revolution/"
     },
     {
       "title": "Wheel World",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1pee.jpg",
       "rating": 61,
       "details": "",
       "dateCompleted": "2025-08-01",
-      "link": ""
+      "link": "https://backloggd.com/games/wheel-world/"
     },
     {
       "title": "ENA: Dream BBQ",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co62ei.jpg",
       "rating": 69,
       "details": "",
       "dateCompleted": "2025-03-29",
-      "link": ""
+      "link": "https://backloggd.com/games/ena-dream-bbq/"
     },
     {
       "title": "Little Kitty Big City",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6mbt.jpg",
       "rating": 59,
       "details": "",
       "dateCompleted": "2025-07-25",
-      "link": ""
+      "link": "https://backloggd.com/games/little-kitty-big-city/"
     },
     {
       "title": "Luto",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coa2av.jpg",
       "rating": 69,
       "details": "",
       "dateCompleted": "2025-07-27",
-      "link": ""
+      "link": "https://backloggd.com/games/luto/"
     },
     {
       "title": "Riven",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co8y7n.jpg",
       "rating": 79,
       "details": "",
       "dateCompleted": "2025-08-01",
-      "link": ""
+      "link": "https://backloggd.com/games/riven/"
     },
     {
       "title": "Crypt Custodian",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6lf7.jpg",
       "rating": 73,
       "details": "",
       "dateCompleted": "2025-08-05",
-      "link": ""
+      "link": "https://backloggd.com/games/crypt-custodian/"
     },
     {
       "title": "Proverbs",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co8wya.jpg",
       "rating": 71,
       "details": "",
       "dateCompleted": "2025-08-11",
-      "link": ""
+      "link": "https://backloggd.com/games/proverbs/"
     },
     {
       "title": "The Alters",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coaaju.jpg",
       "rating": 63,
       "details": "",
       "dateCompleted": "2025-08-12",
-      "link": ""
+      "link": "https://backloggd.com/games/the-alters/"
     },
     {
       "title": "Poco",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9u38.jpg",
       "rating": 71,
       "details": "",
       "dateCompleted": "2025-08-21",
-      "link": ""
+      "link": "https://backloggd.com/games/poco/"
     },
     {
       "title": "Strange Jigsaws",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9lgg.jpg",
       "rating": 77,
       "details": "",
       "dateCompleted": "2025-08-16",
-      "link": ""
+      "link": "https://backloggd.com/games/strange-jigsaws/"
     },
     {
       "title": "The Invincible",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co61ol.jpg",
       "rating": 63,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/the-invincible/"
     },
     {
       "title": "Misao",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6jmt.jpg",
       "rating": 51,
       "details": "",
       "dateCompleted": "2023-08-03",
-      "link": ""
+      "link": "https://backloggd.com/games/misao/"
     },
     {
       "title": "Sagebrush",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co24b6.jpg",
       "rating": 71,
       "details": "",
       "dateCompleted": "2025-08-24",
-      "link": ""
+      "link": "https://backloggd.com/games/sagebrush/"
     },
     {
       "title": "Little Goody Two Shoes",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co77dd.jpg",
       "rating": 73,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/little-goody-two-shoes/"
     },
     {
       "title": "Frog Detective 2: The Case of the Invisible Wizard",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1umw.jpg",
       "rating": 71,
       "details": "",
       "dateCompleted": "2025-09-04",
-      "link": ""
+      "link": "https://backloggd.com/games/frog-detective-2-the-case-of-the-invisible-wizard/"
     },
     {
       "title": "Can of Wormholes",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5chc.jpg",
       "rating": 81,
       "details": "",
       "dateCompleted": "2025-10-12",
-      "link": ""
+      "link": "https://backloggd.com/games/can-of-wormholes/"
     },
     {
       "title": "No I'm Not A Human",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coajvh.jpg",
       "rating": 63,
       "details": "",
       "dateCompleted": "2025-09-25",
-      "link": ""
+      "link": "https://backloggd.com/games/no-im-not-a-human/"
     },
     {
       "title": "Kabuto Park",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9ewb.jpg",
       "rating": 67,
       "details": "",
       "dateCompleted": "2025-08-18",
-      "link": ""
+      "link": "https://backloggd.com/games/kabuto-park/"
     },
     {
       "title": "Book of Hours",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1xuz.jpg",
       "rating": 83,
       "details": "",
       "dateCompleted": "2025-09-15",
-      "link": ""
+      "link": "https://backloggd.com/games/book-of-hours/"
     },
     {
       "title": "Öoo",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1pee.jpg",
       "rating": 73,
       "details": "",
       "dateCompleted": "2025-10-04",
-      "link": ""
+      "link": "https://backloggd.com/games/öoo/"
     },
     {
       "title": "Silent Hill f",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9wy4.jpg",
       "rating": 69,
       "details": "",
       "dateCompleted": "2025-09-30",
-      "link": ""
+      "link": "https://backloggd.com/games/silent-hill-f/"
     },
     {
       "title": "Consume Me",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coajxj.jpg",
       "rating": 67,
       "details": "",
       "dateCompleted": "2025-09-27",
-      "link": ""
+      "link": "https://backloggd.com/games/consume-me/"
     },
     {
       "title": "Children of the Sun",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co8glt.jpg",
       "rating": 63,
       "details": "",
       "dateCompleted": "2025-09-23",
-      "link": ""
+      "link": "https://backloggd.com/games/children-of-the-sun/"
     },
     {
       "title": "Dead Letter Dept.",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co45zn.jpg",
       "rating": 63,
       "details": "",
       "dateCompleted": "2025-09-21",
-      "link": ""
+      "link": "https://backloggd.com/games/dead-letter-dept/"
     },
     {
       "title": "Promise Mascot Agency",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co8u8y.jpg",
       "rating": 73,
       "details": "",
       "dateCompleted": "2025-09-11",
-      "link": ""
+      "link": "https://backloggd.com/games/promise-mascot-agency/"
     },
     {
       "title": "Frog Detective 3: Corruption at Cowboy County",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6p9m.jpg",
       "rating": 73,
       "details": "",
       "dateCompleted": "",
-      "link": ""
+      "link": "https://backloggd.com/games/frog-detective-3-corruption-at-cowboy-county/"
     },
     {
       "title": "Strange Antiquities",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co8dn6.jpg",
       "rating": 83,
       "details": "",
       "dateCompleted": "2025-09-20",
-      "link": ""
+      "link": "https://backloggd.com/games/strange-antiquities/"
     },
     {
       "title": "Rue Valley",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co8xsk.jpg",
       "rating": 63,
       "details": "",
       "dateCompleted": "2025-11-17",
-      "link": ""
+      "link": "https://backloggd.com/games/rue-valley/"
     },
     {
       "title": "Northern Journey",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3ltz.jpg",
       "rating": 71,
       "details": "",
       "dateCompleted": "2025-12-01",
-      "link": ""
+      "link": "https://backloggd.com/games/northern-journey/"
     },
     {
       "title": "The Seance of Blake Manor",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9jkt.jpg",
       "rating": 71,
       "details": "",
       "dateCompleted": "2025-11-25",
-      "link": ""
+      "link": "https://backloggd.com/games/the-seance-of-blake-manor/"
     },
     {
       "title": "Earth Defense Force 5",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4kwx.jpg",
       "rating": 73,
       "details": "",
       "dateCompleted": "2025-12-09",
-      "link": ""
+      "link": "https://backloggd.com/games/earth-defense-force-5/"
     },
     {
       "title": "Thief Gold",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co44le.jpg",
       "rating": 61,
       "details": "",
       "dateCompleted": "2025-10-09",
-      "link": ""
+      "link": "https://backloggd.com/games/thief-gold/"
     }
   ]
 }
