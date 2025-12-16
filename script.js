@@ -193,8 +193,12 @@ function renderItems(items) {
             extraInfo += `<div class="item-seasons">Seasons watched: ${item.seasonsWatched}</div>`;
         }
 
-        if (config.hasDate && item.dateCompleted) {
-            extraInfo += `<div class="item-date">Completed: ${formatDate(item.dateCompleted)}</div>`;
+        if (config.hasDate) {
+            if (item.dateCompleted) {
+                extraInfo += `<div class="item-date">Completed: ${formatDate(item.dateCompleted)}</div>`;
+            } else {
+                extraInfo += `<div class="item-date">Completed: unknown</div>`;
+            }
         }
 
         const cardContent = `
