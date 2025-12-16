@@ -7,46 +7,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="page-layout">
-        <aside class="sidebar">
-            <nav class="sidebar-nav">
-                <button class="nav-item active" data-category="games">Games</button>
-                <button class="nav-item" data-category="visualnovels">Visual Novels</button>
-                <!-- <button class="nav-item" data-category="movies">Movies</button> -->
-                <!-- <button class="nav-item" data-category="tvseries">TV Series</button> -->
-                <!-- <button class="nav-item" data-category="anime">Anime</button> -->
-                <!-- <button class="nav-item" data-category="manga">Manga</button> -->
-                <!-- <button class="nav-item" data-category="books">Books</button> -->
-                <button class="nav-item" data-category="about">About</button>
-            </nav>
-        </aside>
-
-        <div class="content-wrapper">
-            <div class="decoration-top">
-                <!-- Space for future decoration (images/gifs) -->
-            </div>
-
-            <main class="main-content">
-                <header>
-                    <h1 id="page-title">Games</h1>
-                </header>
-
-                <div class="controls">
-                    <button class="sort-btn active" data-sort="date-desc">Date</button>
-                    <button class="sort-btn" data-sort="rating-desc">Rating ↓</button>
-                    <button class="sort-btn" data-sort="rating-asc">Rating ↑</button>
-                    <button class="sort-btn" data-sort="alpha">A-Z</button>
-                </div>
-
-                <div id="items-container" class="items-grid">
-                    <!-- Items will be rendered here by JavaScript -->
-                </div>
-            </main>
-
-            <div class="decoration-bottom">
-                <!-- Space for future decoration (images/gifs) -->
-            </div>
+    <nav class="navbar">
+        <div class="nav-items">
+            <button class="nav-item active" data-category="games">Games</button>
+            <button class="nav-item" data-category="visualnovels">Visual Novels</button>
+            <!-- <button class="nav-item" data-category="movies">Movies</button> -->
+            <!-- <button class="nav-item" data-category="tvseries">TV Series</button> -->
+            <!-- <button class="nav-item" data-category="anime">Anime</button> -->
+            <!-- <button class="nav-item" data-category="manga">Manga</button> -->
+            <!-- <button class="nav-item" data-category="books">Books</button> -->
+            <button class="nav-item" data-category="about">About</button>
         </div>
+    </nav>
+
+    <div class="decoration-top">
+        <!-- Space for future decoration (images/gifs) -->
+    </div>
+
+    <main class="main-content">
+        <header>
+            <h1 id="page-title">Games</h1>
+        </header>
+
+        <div class="controls">
+            <button class="sort-btn active" data-sort="date-desc">Date</button>
+            <button class="sort-btn" data-sort="rating-desc">Rating ↓</button>
+            <button class="sort-btn" data-sort="rating-asc">Rating ↑</button>
+            <button class="sort-btn" data-sort="alpha">A-Z</button>
+        </div>
+
+        <div id="items-container" class="items-grid">
+            <!-- Items will be rendered here by JavaScript -->
+        </div>
+    </main>
+
+    <div class="decoration-bottom">
+        <!-- Space for future decoration (images/gifs) -->
     </div>
 
     <script src="script.js"></script>

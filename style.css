@@ -6,62 +6,33 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-    background-color: #fafafa;
+    background-color: #1a1a1a;
     color: #333;
     line-height: 1.6;
     min-height: 100vh;
 }
 
-/* Page Layout - Sidebar spans full height */
-.page-layout {
-    display: flex;
-    min-height: 100vh;
-}
-
-/* Content Wrapper - Contains decoration zones and main content */
-.content-wrapper {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-/* Decoration zones for future images/gifs */
-.decoration-top,
-.decoration-bottom {
-    width: 100%;
-    min-height: 60px;
-    background-color: #4f2351;
-    /* Add your decorative images/gifs here later */
-    /* Example: background-image: url('your-image.gif'); */
-}
-
-/* Sidebar */
-.sidebar {
-    width: 200px;
-    background-color: #4f2351;
-    border-right: 1px solid #fff;
-    padding: 20px 0;
-    flex-shrink: 0;
+/* Top Navigation Bar */
+.navbar {
     position: sticky;
     top: 0;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    z-index: 100;
+    width: 100%;
+    background-color: #4f2351;
+    border-bottom: 1px solid #fff;
+    padding: 0 20px;
 }
 
-.sidebar-nav {
+.nav-items {
     display: flex;
-    flex-direction: column;
-    gap: 4px;
-    padding: 0 10px;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 0;
 }
 
 .nav-item {
-    display: block;
-    width: 100%;
-    padding: 12px 20px;
-    text-align: left;
+    padding: 10px 24px;
+    text-align: center;
     background: none;
     border: 1px solid #fff;
     border-radius: 4px;
@@ -82,14 +53,24 @@ body {
     font-weight: 600;
 }
 
+/* Decoration zones for future images/gifs */
+.decoration-top,
+.decoration-bottom {
+    width: 100%;
+    min-height: 60px;
+    background-color: #4f2351;
+    /* Add your decorative images/gifs here later */
+    /* Example: background-image: url('your-image.gif'); */
+}
+
 /* Main Content */
 .main-content {
-    flex: 1;
     padding: 40px;
     background-color: #1a1a1a;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    min-height: calc(100vh - 200px);
 }
 
 header {
@@ -296,29 +277,20 @@ header h1 {
 
 /* Responsive */
 @media (max-width: 768px) {
-    .page-layout {
-        flex-direction: column;
-    }
-
-    .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-        border-right: none;
-        border-bottom: 1px solid #fff;
-        padding: 10px 0;
-    }
-
-    .sidebar-nav {
-        flex-direction: row;
-        overflow-x: auto;
-        gap: 8px;
+    .navbar {
         padding: 0 10px;
     }
 
+    .nav-items {
+        gap: 4px;
+        overflow-x: auto;
+        justify-content: flex-start;
+    }
+
     .nav-item {
-        padding: 10px 16px;
+        padding: 8px 16px;
         white-space: nowrap;
+        font-size: 0.85rem;
     }
 
     .main-content {

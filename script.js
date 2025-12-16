@@ -58,6 +58,33 @@ const categoryConfig = {
     }
 };
 
+// Helper functions
+function escapeHtml(text) {
+    if (!text) return '';
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+
+function getRatingClass(rating) {
+    if (rating >= 75) return 'rating-high';
+    if (rating >= 50) return 'rating-mid';
+    return 'rating-low';
+}
+
+function formatDate(dateString) {
+    if (!dateString) return '';
+    const date = new Date(dateString);
+    return date.toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric'
+    });
+}
+
+const placeholderImage = "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 133%22><rect fill=%22%23f0f0f0%22 width=%22100%22 height=%22133%22/><text x=%2250%22 y=%2270%22 text-anchor=%22middle%22 fill=%22%23ccc%22 font-size=%2212%22>No Image</text></svg>";
+
+// About page loader
 async function loadAboutPage() {
     currentCategory = 'about';
     document.getElementById('page-title').textContent = 'About';
@@ -97,6 +124,7 @@ async function loadAboutPage() {
     }
 }
 
+// Category loader
 async function loadCategory(category) {
     // Handle about page separately
     if (category === 'about') {
@@ -196,31 +224,6 @@ function sortItems(items, sortType) {
     return sorted;
 }
 
-function getRatingClass(rating) {
-    if (rating >= 75) return 'rating-high';
-    if (rating >= 50) return 'rating-mid';
-    return 'rating-low';
-}
-
-function formatDate(dateString) {
-    if (!dateString) return '';
-    const date = new Date(dateString);
-    return date.toLocaleDateString('en-US', {
-        year: 'numeric',
-        month: 'short',
-        day: 'numeric'
-    });
-}
-
-function escapeHtml(text) {
-    if (!text) return '';
-    const div = document.createElement('div');
-    div.textContent = text;
-    return div.innerHTML;
-}
-
-const placeholderImage = "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 133%22><rect fill=%22%23f0f0f0%22 width=%22100%22 height=%22133%22/><text x=%2250%22 y=%2270%22 text-anchor=%22middle%22 fill=%22%23ccc%22 font-size=%2212%22>No Image</text></svg>";
-
 function renderItems(items) {
     const container = document.getElementById('items-container');
     const config = categoryConfig[currentCategory];
@@ -288,7 +291,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Load default category
     loadCategory('games');
 
-    // Sidebar navigation
+    // Navigation
     document.querySelectorAll('.nav-item').forEach(item => {
         item.addEventListener('click', () => {
             loadCategory(item.dataset.category);
