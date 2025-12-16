@@ -17,7 +17,7 @@ body {
 .decoration-bottom {
     width: 100%;
     min-height: 60px;
-    background-color: #8b5cf6;
+    background-color: #ac53b0;
     /* Add your decorative images/gifs here later */
     /* Example: background-image: url('your-image.gif'); */
 }
@@ -31,8 +31,8 @@ body {
 /* Sidebar */
 .sidebar {
     width: 200px;
-    background-color: #8b5cf6;
-    border-right: 1px solid #7c3aed;
+    background-color: #ac53b0;
+    border-right: 1px solid #ac53b0;
     padding: 20px 0;
     flex-shrink: 0;
     position: sticky;
@@ -57,18 +57,18 @@ body {
     background: none;
     border: none;
     font-size: 0.95rem;
-    color: #e9d5ff;
+    color: #000;
     cursor: pointer;
     transition: background-color 0.15s ease, color 0.15s ease;
 }
 
 .nav-item:hover {
-    background-color: #7c3aed;
-    color: #fff;
+    background-color: #9a4a9e;
+    color: #000;
 }
 
 .nav-item.active {
-    background-color: #6d28d9;
+    background-color: #8b3f8f;
     color: #fff;
     font-weight: 600;
 }
@@ -115,13 +115,13 @@ header h1 {
 }
 
 .sort-btn:hover {
-    border-color: #8b5cf6;
-    color: #8b5cf6;
+    border-color: #ac53b0;
+    color: #ac53b0;
 }
 
 .sort-btn.active {
-    background-color: #8b5cf6;
-    border-color: #8b5cf6;
+    background-color: #ac53b0;
+    border-color: #ac53b0;
     color: #fff;
 }
 
@@ -142,8 +142,8 @@ header h1 {
 
 /* Item Card */
 .item-card {
-    background: #e5e5e5;
-    border: 2px solid #8b5cf6;
+    background: #c8c8c8;
+    border: 2px solid #ac53b0;
     border-radius: 8px;
     overflow: hidden;
     transition: box-shadow 0.2s ease, transform 0.2s ease;
@@ -154,7 +154,7 @@ header h1 {
 }
 
 .item-card:hover {
-    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.2);
+    box-shadow: 0 4px 12px rgba(172, 83, 176, 0.2);
     transform: scale(1.05);
 }
 
@@ -162,7 +162,7 @@ header h1 {
     display: flex;
     align-items: center;
     height: 2.8em;
-    border-bottom: 2px solid #8b5cf6;
+    border-bottom: 2px solid #ac53b0;
     margin-bottom: 0;
     flex-shrink: 0;
     padding: 6px 6px;
@@ -254,7 +254,7 @@ header h1 {
     .sidebar {
         width: 100%;
         border-right: none;
-        border-bottom: 1px solid #7c3aed;
+        border-bottom: 1px solid #ac53b0;
         padding: 10px 0;
     }
 
