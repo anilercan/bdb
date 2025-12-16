@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Game Ratings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="decoration-top">
+        <!-- Space for future decoration (images/gifs) -->
+    </div>
+
+    <main class="container">
+        <header>
+            <h1>My Game Ratings</h1>
+        </header>
+
+        <div class="controls">
+            <label for="sort-select">Sort by:</label>
+            <select id="sort-select">
+                <option value="date-desc">Date (Newest First)</option>
+                <option value="rating-desc">Rating (High to Low)</option>
+                <option value="rating-asc">Rating (Low to High)</option>
+                <option value="alpha">Alphabetical (A-Z)</option>
+            </select>
+        </div>
+
+        <div id="games-container" class="games-grid">
+            <!-- Games will be rendered here by JavaScript -->
+        </div>
+    </main>
+
+    <div class="decoration-bottom">
+        <!-- Space for future decoration (images/gifs) -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
