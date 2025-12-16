@@ -30,13 +30,10 @@
             </header>
 
             <div class="controls">
-                <label for="sort-select">Sort by:</label>
-                <select id="sort-select">
-                    <option value="date-desc">Date (Newest First)</option>
-                    <option value="rating-desc">Rating (High to Low)</option>
-                    <option value="rating-asc">Rating (Low to High)</option>
-                    <option value="alpha">Alphabetical (A-Z)</option>
-                </select>
+                <button class="sort-btn active" data-sort="date-desc">Date</button>
+                <button class="sort-btn" data-sort="rating-desc">Rating ↓</button>
+                <button class="sort-btn" data-sort="rating-asc">Rating ↑</button>
+                <button class="sort-btn" data-sort="alpha">A-Z</button>
             </div>
 
             <div id="items-container" class="items-grid">

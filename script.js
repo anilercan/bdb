@@ -94,27 +94,18 @@ async function loadCategory(category) {
 }
 
 function updateSortOptions(config) {
-    const select = document.getElementById('sort-select');
-    const currentValue = select.value;
+    const dateButton = document.querySelector('.sort-btn[data-sort="date-desc"]');
 
     if (config.hasDate) {
-        select.innerHTML = `
-            <option value="date-desc">Date (Newest First)</option>
-            <option value="rating-desc">Rating (High to Low)</option>
-            <option value="rating-asc">Rating (Low to High)</option>
-            <option value="alpha">Alphabetical (A-Z)</option>
-        `;
+        dateButton.style.display = 'inline-block';
     } else {
-        select.innerHTML = `
-            <option value="rating-desc">Rating (High to Low)</option>
-            <option value="rating-asc">Rating (Low to High)</option>
-            <option value="alpha">Alphabetical (A-Z)</option>
-        `;
-    }
-
-    // Try to keep the same sort option if it exists
-    if ([...select.options].some(opt => opt.value === currentValue)) {
-        select.value = currentValue;
+        dateButton.style.display = 'none';
+        // If date button was active, switch to rating-desc
+        if (dateButton.classList.contains('active')) {
+            dateButton.classList.remove('active');
+            document.querySelector('.sort-btn[data-sort="rating-desc"]').classList.add('active');
+            sortAndRender('rating-desc');
+        }
     }
 }
 
@@ -243,8 +234,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Sort dropdown
-    document.getElementById('sort-select').addEventListener('change', (e) => {
-        sortAndRender(e.target.value);
+    // Sort buttons
+    document.querySelectorAll('.sort-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Remove active class from all buttons
+            document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
+            // Add active class to clicked button
+            btn.classList.add('active');
+            // Sort and render
+            sortAndRender(btn.dataset.sort);
+        });
     });
 });

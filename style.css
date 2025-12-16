@@ -98,24 +98,30 @@ header h1 {
     align-items: center;
     gap: 10px;
     margin-bottom: 30px;
+    justify-content: flex-end;
 }
 
-.controls label {
-    font-size: 0.9rem;
-    color: #ccc;
-}
-
-.controls select {
-    padding: 8px 12px;
+.sort-btn {
+    padding: 8px 16px;
     font-size: 0.9rem;
     border: 1px solid #ddd;
     border-radius: 4px;
     background-color: #fff;
+    color: #555;
     cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 500;
 }
 
-.controls select:hover {
-    border-color: #999;
+.sort-btn:hover {
+    border-color: #8b5cf6;
+    color: #8b5cf6;
+}
+
+.sort-btn.active {
+    background-color: #8b5cf6;
+    border-color: #8b5cf6;
+    color: #fff;
 }
 
 /* Items Grid */
@@ -140,7 +146,7 @@ header h1 {
     border-radius: 8px;
     overflow: hidden;
     transition: box-shadow 0.2s ease, transform 0.2s ease;
-    padding: 6px;
+    padding: 0;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -158,7 +164,7 @@ header h1 {
     border-bottom: 2px solid #8b5cf6;
     margin-bottom: 0;
     flex-shrink: 0;
-    padding: 6px 0;
+    padding: 6px 6px;
 }
 
 .item-title {
@@ -178,14 +184,14 @@ header h1 {
 }
 
 .item-cover {
-    width: 100%;
+    width: calc(100% - 12px);
     aspect-ratio: 3 / 4;
     object-fit: cover;
     display: block;
     background-color: #f0f0f0;
     border-radius: 4px;
     flex-shrink: 0;
-    margin-top: 6px;
+    margin: 6px 6px 0 6px;
 }
 
 .item-info {
@@ -197,10 +203,10 @@ header h1 {
 }
 
 .item-rating {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     font-weight: 700;
     color: #111;
-    padding: 8px 12px;
+    padding: 4px 8px;
     border-radius: 4px;
     flex-shrink: 0;
     display: flex;
