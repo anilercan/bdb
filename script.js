@@ -7,14 +7,16 @@ const categoryConfig = {
         file: 'data/games.json',
         hasDate: true,
         hasDetails: true,
-        fields: ['title', 'cover', 'rating', 'details', 'dateCompleted']
+        hasLink: true,
+        fields: ['title', 'cover', 'rating', 'details', 'dateCompleted', 'link']
     },
     visualnovels: {
         title: 'Visual Novels',
         file: 'data/visualnovels.json',
         hasDate: true,
         hasDetails: true,
-        fields: ['title', 'cover', 'rating', 'details', 'dateCompleted']
+        hasLink: true,
+        fields: ['title', 'cover', 'rating', 'details', 'dateCompleted', 'link']
     },
     movies: {
         title: 'Movies',
@@ -195,7 +197,7 @@ function renderItems(items) {
             extraInfo += `<div class="item-date">Completed: ${formatDate(item.dateCompleted)}</div>`;
         }
 
-        return `
+        const cardContent = `
             <div class="item-card">
                 <div class="item-header">
                     <div class="item-title">${escapeHtml(item.title)}</div>
@@ -212,6 +214,11 @@ function renderItems(items) {
                 </div>
             </div>
         `;
+
+        if (config.hasLink && item.link) {
+            return `<a href="${escapeHtml(item.link)}" target="_blank" class="item-link">${cardContent}</a>`;
+        }
+        return cardContent;
     }).join('');
 }
 

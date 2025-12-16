@@ -3,16 +3,6 @@ büyücü's database
 
 a personal collection of media ratings across games, visual novels, movies, tv series, anime, manga, and books.
 
-## categories
-
-- **games**
-- **vns**
-- **movies**
-- **tv series**
-- **anime**
-- **manga**
-- **books**
-
 ## ratings
 
 ratings are on a **0-100** scale:
@@ -23,3 +13,7 @@ ratings are on a **0-100** scale:
 ## visit
 
 check out: [anilercan.github.io/bdb](https://anilercan.github.io/bdb)
+
+## structure
+
+data stored in manually written json files, displayed using javascript, structured using html
