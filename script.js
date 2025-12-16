@@ -74,6 +74,15 @@ async function loadCategory(category) {
         const response = await fetch(config.file);
         const data = await response.json();
         currentData = data.items || [];
+
+        // Apply background from JSON (default: black)
+        const mainContent = document.querySelector('.main-content');
+        if (data.background) {
+            mainContent.style.backgroundImage = `url('${data.background}')`;
+        } else {
+            mainContent.style.backgroundImage = 'none';
+        }
+
         sortAndRender(document.getElementById('sort-select').value);
     } catch (error) {
         console.error(`Error loading ${category}:`, error);

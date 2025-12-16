@@ -1,7 +1,7 @@
 # bdb
 büyücü's database
 
-A personal media ratings website hosted on GitHub Pages.
+A personalized media ratings website hosted on GitHub Pages.
 
 ## Structure
 
@@ -22,11 +22,23 @@ bdb/
 
 ## Adding Entries
 
-Edit the JSON files in the `data/` folder. Each category has its own structure:
+Edit the JSON files in the `data/` folder. Each category has its own structure.
+
+### Background Image (Optional)
+
+Each JSON file can have an optional `background` field at the root level to set a custom background image for that category. Default is solid black.
+
+```json
+{
+  "background": "https://example.com/your-background-image.jpg",
+  "items": [...]
+}
+```
 
 ### Games & Visual Novels
 ```json
 {
+  "background": "",
   "items": [
     {
       "title": "Game Title",
@@ -44,6 +56,7 @@ Edit the JSON files in the `data/` folder. Each category has its own structure:
 ### Movies, Anime, Manga
 ```json
 {
+  "background": "",
   "items": [
     {
       "title": "Title",
@@ -57,6 +70,7 @@ Edit the JSON files in the `data/` folder. Each category has its own structure:
 ### TV Series
 ```json
 {
+  "background": "",
   "items": [
     {
       "title": "Series Title",
@@ -71,6 +85,7 @@ Edit the JSON files in the `data/` folder. Each category has its own structure:
 ### Books
 ```json
 {
+  "background": "",
   "items": [
     {
       "title": "Book Title",
@@ -84,7 +99,7 @@ Edit the JSON files in the `data/` folder. Each category has its own structure:
 
 ## Rating Scale
 - **0-100**: Your personal rating
-- Colors: Green (66+), Yellow (33-65), Red (<32)
+- Colors: Green (75+), Yellow (50-74), Red (<50)
 
 ## Cover Images
 Add cover image URLs manually. For games/visual novels, you can get them from IGDB:
