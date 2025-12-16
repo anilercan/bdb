@@ -125,18 +125,19 @@ header h1 {
     border: 2px solid #8b5cf6;
     border-radius: 8px;
     overflow: hidden;
-    transition: box-shadow 0.2s ease;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
     padding: 6px;
 }
 
 .item-card:hover {
     box-shadow: 0 4px 12px rgba(139, 92, 246, 0.2);
+    transform: scale(1.05);
 }
 
 .item-title {
     font-size: 0.85rem;
     font-weight: 600;
-    padding: 8px 6px;
+    padding: 0 6px 6px;
     text-align: center;
     color: #111;
     line-height: 1.3;
@@ -144,6 +145,8 @@ header h1 {
     align-items: center;
     justify-content: center;
     min-height: 2.6em;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 6px;
 }
 
 .item-cover {
