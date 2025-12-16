@@ -85,7 +85,7 @@ async function loadCategory(category) {
             mainContent.style.backgroundImage = 'none';
         }
 
-        sortAndRender(document.getElementById('sort-select').value);
+        sortAndRender('date-desc');
     } catch (error) {
         console.error(`Error loading ${category}:`, error);
         document.getElementById('items-container').innerHTML =
