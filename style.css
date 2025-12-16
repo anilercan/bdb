@@ -70,7 +70,6 @@ body {
 .main-content {
     flex: 1;
     padding: 40px;
-    max-width: 1200px;
 }
 
 header {
@@ -112,8 +111,8 @@ header h1 {
 /* Items Grid */
 .items-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 12px;
 }
 
 /* Item Card */
@@ -130,11 +129,12 @@ header h1 {
 }
 
 .item-title {
-    font-size: 0.95rem;
+    font-size: 0.75rem;
     font-weight: 600;
-    padding: 12px 12px 8px;
+    padding: 6px 6px 4px;
     text-align: center;
     color: #111;
+    line-height: 1.3;
 }
 
 .item-cover {
@@ -146,26 +146,26 @@ header h1 {
 }
 
 .item-info {
-    padding: 12px;
+    padding: 6px;
 }
 
 .item-rating {
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     font-weight: 600;
     color: #111;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
 }
 
 .item-details,
 .item-author,
 .item-seasons {
-    font-size: 0.85rem;
+    font-size: 0.7rem;
     color: #666;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
 }
 
 .item-date {
-    font-size: 0.8rem;
+    font-size: 0.65rem;
     color: #999;
 }
 
@@ -216,11 +216,11 @@ header h1 {
     }
 
     .items-grid {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-        gap: 16px;
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+        gap: 8px;
     }
 
     .item-title {
-        font-size: 0.85rem;
+        font-size: 0.7rem;
     }
 }
