@@ -17,7 +17,7 @@ body {
 .decoration-bottom {
     width: 100%;
     min-height: 60px;
-    background-color: #ac53b0;
+    background-color: #4f2351;
     /* Add your decorative images/gifs here later */
     /* Example: background-image: url('your-image.gif'); */
 }
@@ -31,8 +31,8 @@ body {
 /* Sidebar */
 .sidebar {
     width: 200px;
-    background-color: #ac53b0;
-    border-right: 1px solid #ac53b0;
+    background-color: #4f2351;
+    border-right: 1px solid #4f2351;
     padding: 20px 0;
     flex-shrink: 0;
     position: sticky;
@@ -115,13 +115,13 @@ header h1 {
 }
 
 .sort-btn:hover {
-    border-color: #ac53b0;
-    color: #ac53b0;
+    border-color: #4f2351;
+    color: #4f2351;
 }
 
 .sort-btn.active {
-    background-color: #ac53b0;
-    border-color: #ac53b0;
+    background-color: #4f2351;
+    border-color: #4f2351;
     color: #fff;
 }
 
@@ -142,8 +142,8 @@ header h1 {
 
 /* Item Card */
 .item-card {
-    background: #c8c8c8;
-    border: 2px solid #ac53b0;
+    background: #2e2e2e;
+    border: 2px solid #4f2351;
     border-radius: 8px;
     overflow: hidden;
     transition: box-shadow 0.2s ease, transform 0.2s ease;
@@ -162,7 +162,7 @@ header h1 {
     display: flex;
     align-items: center;
     height: 2.8em;
-    border-bottom: 2px solid #ac53b0;
+    border-bottom: 2px solid #4f2351;
     margin-bottom: 0;
     flex-shrink: 0;
     padding: 6px 6px;
@@ -254,7 +254,7 @@ header h1 {
     .sidebar {
         width: 100%;
         border-right: none;
-        border-bottom: 1px solid #ac53b0;
+        border-bottom: 1px solid #4f2351;
         padding: 10px 0;
     }
 
