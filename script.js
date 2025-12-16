@@ -58,7 +58,52 @@ const categoryConfig = {
     }
 };
 
+async function loadAboutPage() {
+    currentCategory = 'about';
+    document.getElementById('page-title').textContent = 'About';
+
+    // Update active nav item
+    document.querySelectorAll('.nav-item').forEach(item => {
+        item.classList.toggle('active', item.dataset.category === 'about');
+    });
+
+    // Hide sort controls for about page
+    document.querySelector('.controls').style.display = 'none';
+
+    // Clear background
+    const mainContent = document.querySelector('.main-content');
+    mainContent.style.backgroundImage = 'none';
+
+    try {
+        const response = await fetch('data/about.json');
+        const data = await response.json();
+
+        const container = document.getElementById('items-container');
+        container.className = 'about-container';
+        container.innerHTML = `
+            <div class="about-links">
+                ${data.links.map(link => `
+                    <a href="${escapeHtml(link.link)}" target="_blank" class="about-link">
+                        <img src="${escapeHtml(link.icon)}" alt="${escapeHtml(link.name)}" class="about-link-icon">
+                        <span class="about-link-name">${escapeHtml(link.name)}</span>
+                    </a>
+                `).join('')}
+            </div>
+        `;
+    } catch (error) {
+        console.error('Error loading about page:', error);
+        document.getElementById('items-container').innerHTML =
+            '<p style="color: #999;">Could not load about data.</p>';
+    }
+}
+
 async function loadCategory(category) {
+    // Handle about page separately
+    if (category === 'about') {
+        loadAboutPage();
+        return;
+    }
+
     const config = categoryConfig[category];
     if (!config) return;
 
@@ -69,6 +114,12 @@ async function loadCategory(category) {
     document.querySelectorAll('.nav-item').forEach(item => {
         item.classList.toggle('active', item.dataset.category === category);
     });
+
+    // Show sort controls
+    document.querySelector('.controls').style.display = 'flex';
+
+    // Reset container class
+    document.getElementById('items-container').className = 'items-grid';
 
     // Get saved sort state for this category, or default to date-desc
     const savedSort = categorySortState[category] || (config.hasDate ? 'date-desc' : 'rating-desc');

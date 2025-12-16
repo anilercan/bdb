@@ -1,0 +1,29 @@
+{
+  "links": [
+    {
+      "icon": "https://cdn.simpleicons.org/backloggd/white",
+      "name": "Backloggd",
+      "link": "https://backloggd.com/u/buyucu/"
+    },
+    {
+      "icon": "https://cdn.simpleicons.org/steam/white",
+      "name": "Steam",
+      "link": "https://backloggd.com/u/buyucu/"
+    },
+    {
+      "icon": "https://cdn.simpleicons.org/spotify/white",
+      "name": "Spotify",
+      "link": "https://open.spotify.com/user/11133001475?si=cdcf68e2d28f4da5"
+    },
+    {
+      "icon": "https://cdn.simpleicons.org/github/white",
+      "name": "GitHub",
+      "link": "https://github.com/anilercan"
+    },
+    {
+      "icon": "https://cdn.simpleicons.org/twitter/white",
+      "name": "Twitter",
+      "link": "https://x.com/alonewiththeowl"
+    }
+  ]
+}

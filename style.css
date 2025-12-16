@@ -12,6 +12,19 @@ body {
     min-height: 100vh;
 }
 
+/* Page Layout - Sidebar spans full height */
+.page-layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Content Wrapper - Contains decoration zones and main content */
+.content-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
 /* Decoration zones for future images/gifs */
 .decoration-top,
 .decoration-bottom {
@@ -22,17 +35,11 @@ body {
     /* Example: background-image: url('your-image.gif'); */
 }
 
-/* App Layout with Sidebar */
-.app-layout {
-    display: flex;
-    min-height: calc(100vh - 120px);
-}
-
 /* Sidebar */
 .sidebar {
     width: 200px;
     background-color: #4f2351;
-    border-right: 1px solid #4f2351;
+    border-right: 1px solid #fff;
     padding: 20px 0;
     flex-shrink: 0;
     position: sticky;
@@ -47,6 +54,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 4px;
+    padding: 0 10px;
 }
 
 .nav-item {
@@ -55,7 +63,8 @@ body {
     padding: 12px 20px;
     text-align: left;
     background: none;
-    border: none;
+    border: 1px solid #fff;
+    border-radius: 4px;
     font-size: 0.95rem;
     color: #fff;
     cursor: pointer;
@@ -245,23 +254,65 @@ header h1 {
     color: #111;
 }
 
+/* About Page Styles */
+.about-container {
+    max-width: 600px;
+}
+
+.about-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.about-link {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 20px;
+    background: #2e2e2e;
+    border: 2px solid #4f2351;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.about-link:hover {
+    background-color: #3e3e3e;
+    transform: translateX(4px);
+}
+
+.about-link-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.about-link-name {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
-    .app-layout {
+    .page-layout {
         flex-direction: column;
     }
 
     .sidebar {
         width: 100%;
+        height: auto;
+        position: relative;
         border-right: none;
-        border-bottom: 1px solid #4f2351;
+        border-bottom: 1px solid #fff;
         padding: 10px 0;
     }
 
     .sidebar-nav {
         flex-direction: row;
         overflow-x: auto;
-        gap: 0;
+        gap: 8px;
         padding: 0 10px;
     }
 
