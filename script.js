@@ -197,7 +197,10 @@ function renderItems(items) {
 
         return `
             <div class="item-card">
-                <div class="item-title">${escapeHtml(item.title)}</div>
+                <div class="item-header">
+                    <div class="item-title">${escapeHtml(item.title)}</div>
+                    <div class="item-rating ${getRatingClass(item.rating)}">${item.rating}</div>
+                </div>
                 <img
                     class="item-cover"
                     src="${item.cover ? escapeHtml(item.cover) : placeholderImage}"
@@ -205,7 +208,6 @@ function renderItems(items) {
                     onerror="this.src='${placeholderImage}'"
                 >
                 <div class="item-info">
-                    <div class="item-rating ${getRatingClass(item.rating)}">${item.rating}/100</div>
                     ${extraInfo}
                 </div>
             </div>
