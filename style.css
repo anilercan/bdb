@@ -153,11 +153,12 @@ header h1 {
 
 .item-header {
     display: flex;
-    align-items: flex-start;
-    height: 2.6em;
+    align-items: center;
+    min-height: 2.8em;
     border-bottom: 1px solid #ddd;
     margin-bottom: 6px;
     flex-shrink: 0;
+    padding: 6px 0;
 }
 
 .item-title {
@@ -173,7 +174,7 @@ header h1 {
     -webkit-box-orient: vertical;
     overflow: hidden;
     word-break: break-word;
-    font-size: clamp(0.7rem, 0.9rem, 1rem);
+    font-size: clamp(0.75rem, 0.95rem, 1.05rem);
 }
 
 .item-cover {
@@ -198,12 +199,14 @@ header h1 {
     font-size: 0.75rem;
     font-weight: 700;
     color: #111;
-    padding: 0 6px;
+    padding: 6px;
     border-radius: 4px;
     flex-shrink: 0;
     display: flex;
     align-items: center;
-    height: 100%;
+    justify-content: center;
+    aspect-ratio: 1;
+    min-width: fit-content;
 }
 
 .item-details,
