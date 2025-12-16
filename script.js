@@ -1,24 +1,117 @@
-let gamesData = [];
+let currentData = [];
+let currentCategory = 'games';
 
-async function loadGames() {
+const categoryConfig = {
+    games: {
+        title: 'Games',
+        file: 'data/games.json',
+        hasDate: true,
+        hasDetails: true,
+        fields: ['title', 'cover', 'rating', 'details', 'dateCompleted']
+    },
+    visualnovels: {
+        title: 'Visual Novels',
+        file: 'data/visualnovels.json',
+        hasDate: true,
+        hasDetails: true,
+        fields: ['title', 'cover', 'rating', 'details', 'dateCompleted']
+    },
+    movies: {
+        title: 'Movies',
+        file: 'data/movies.json',
+        hasDate: false,
+        hasDetails: false,
+        fields: ['title', 'cover', 'rating']
+    },
+    tvseries: {
+        title: 'TV Series',
+        file: 'data/tvseries.json',
+        hasDate: false,
+        hasDetails: false,
+        hasSeasons: true,
+        fields: ['title', 'cover', 'rating', 'seasonsWatched']
+    },
+    anime: {
+        title: 'Anime',
+        file: 'data/anime.json',
+        hasDate: false,
+        hasDetails: false,
+        fields: ['title', 'cover', 'rating']
+    },
+    manga: {
+        title: 'Manga',
+        file: 'data/manga.json',
+        hasDate: false,
+        hasDetails: false,
+        fields: ['title', 'cover', 'rating']
+    },
+    books: {
+        title: 'Books',
+        file: 'data/books.json',
+        hasDate: false,
+        hasDetails: false,
+        hasAuthor: true,
+        fields: ['title', 'author', 'cover', 'rating']
+    }
+};
+
+async function loadCategory(category) {
+    const config = categoryConfig[category];
+    if (!config) return;
+
+    currentCategory = category;
+    document.getElementById('page-title').textContent = config.title;
+
+    // Update active nav item
+    document.querySelectorAll('.nav-item').forEach(item => {
+        item.classList.toggle('active', item.dataset.category === category);
+    });
+
+    // Update sort options based on category
+    updateSortOptions(config);
+
     try {
-        const response = await fetch('games.json');
+        const response = await fetch(config.file);
         const data = await response.json();
-        gamesData = data.games;
-        sortAndRender('date-desc');
+        currentData = data.items || [];
+        sortAndRender(document.getElementById('sort-select').value);
     } catch (error) {
-        console.error('Error loading games:', error);
-        document.getElementById('games-container').innerHTML =
-            '<p style="color: #999;">Could not load games data.</p>';
+        console.error(`Error loading ${category}:`, error);
+        document.getElementById('items-container').innerHTML =
+            `<p style="color: #999;">Could not load ${config.title.toLowerCase()} data.</p>`;
     }
 }
 
-function sortGames(games, sortType) {
-    const sorted = [...games];
+function updateSortOptions(config) {
+    const select = document.getElementById('sort-select');
+    const currentValue = select.value;
+
+    if (config.hasDate) {
+        select.innerHTML = `
+            <option value="date-desc">Date (Newest First)</option>
+            <option value="rating-desc">Rating (High to Low)</option>
+            <option value="rating-asc">Rating (Low to High)</option>
+            <option value="alpha">Alphabetical (A-Z)</option>
+        `;
+    } else {
+        select.innerHTML = `
+            <option value="rating-desc">Rating (High to Low)</option>
+            <option value="rating-asc">Rating (Low to High)</option>
+            <option value="alpha">Alphabetical (A-Z)</option>
+        `;
+    }
+
+    // Try to keep the same sort option if it exists
+    if ([...select.options].some(opt => opt.value === currentValue)) {
+        select.value = currentValue;
+    }
+}
+
+function sortItems(items, sortType) {
+    const sorted = [...items];
 
     switch (sortType) {
         case 'date-desc':
-            // Newest first, games without dates go to the bottom
             sorted.sort((a, b) => {
                 if (!a.dateCompleted && !b.dateCompleted) return 0;
                 if (!a.dateCompleted) return 1;
@@ -56,32 +149,6 @@ function formatDate(dateString) {
     });
 }
 
-function renderGames(games) {
-    const container = document.getElementById('games-container');
-
-    if (games.length === 0) {
-        container.innerHTML = '<p style="color: #999;">No games yet.</p>';
-        return;
-    }
-
-    container.innerHTML = games.map(game => `
-        <div class="game-card">
-            <div class="game-title">${escapeHtml(game.title)}</div>
-            <img
-                class="game-cover"
-                src="${escapeHtml(game.cover)}"
-                alt="${escapeHtml(game.title)} cover"
-                onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 133%22><rect fill=%22%23f0f0f0%22 width=%22100%22 height=%22133%22/><text x=%2250%22 y=%2270%22 text-anchor=%22middle%22 fill=%22%23ccc%22 font-size=%2212%22>No Image</text></svg>'"
-            >
-            <div class="game-info">
-                <div class="game-rating ${getRatingClass(game.rating)}">${game.rating}/100</div>
-                <div class="game-details">${game.details ? escapeHtml(game.details) : ''}</div>
-                <div class="game-date">${game.dateCompleted ? 'Completed: ' + formatDate(game.dateCompleted) : ''}</div>
-            </div>
-        </div>
-    `).join('');
-}
-
 function escapeHtml(text) {
     if (!text) return '';
     const div = document.createElement('div');
@@ -89,15 +156,72 @@ function escapeHtml(text) {
     return div.innerHTML;
 }
 
+const placeholderImage = "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 133%22><rect fill=%22%23f0f0f0%22 width=%22100%22 height=%22133%22/><text x=%2250%22 y=%2270%22 text-anchor=%22middle%22 fill=%22%23ccc%22 font-size=%2212%22>No Image</text></svg>";
+
+function renderItems(items) {
+    const container = document.getElementById('items-container');
+    const config = categoryConfig[currentCategory];
+
+    if (items.length === 0) {
+        container.innerHTML = `<p style="color: #999;">No ${config.title.toLowerCase()} yet.</p>`;
+        return;
+    }
+
+    container.innerHTML = items.map(item => {
+        let extraInfo = '';
+
+        if (config.hasDetails && item.details) {
+            extraInfo += `<div class="item-details">${escapeHtml(item.details)}</div>`;
+        }
+
+        if (config.hasAuthor && item.author) {
+            extraInfo += `<div class="item-author">by ${escapeHtml(item.author)}</div>`;
+        }
+
+        if (config.hasSeasons && item.seasonsWatched) {
+            extraInfo += `<div class="item-seasons">Seasons watched: ${item.seasonsWatched}</div>`;
+        }
+
+        if (config.hasDate && item.dateCompleted) {
+            extraInfo += `<div class="item-date">Completed: ${formatDate(item.dateCompleted)}</div>`;
+        }
+
+        return `
+            <div class="item-card">
+                <div class="item-title">${escapeHtml(item.title)}</div>
+                <img
+                    class="item-cover"
+                    src="${item.cover ? escapeHtml(item.cover) : placeholderImage}"
+                    alt="${escapeHtml(item.title)} cover"
+                    onerror="this.src='${placeholderImage}'"
+                >
+                <div class="item-info">
+                    <div class="item-rating ${getRatingClass(item.rating)}">${item.rating}/100</div>
+                    ${extraInfo}
+                </div>
+            </div>
+        `;
+    }).join('');
+}
+
 function sortAndRender(sortType) {
-    const sorted = sortGames(gamesData, sortType);
-    renderGames(sorted);
+    const sorted = sortItems(currentData, sortType);
+    renderItems(sorted);
 }
 
 // Event listeners
 document.addEventListener('DOMContentLoaded', () => {
-    loadGames();
+    // Load default category
+    loadCategory('games');
 
+    // Sidebar navigation
+    document.querySelectorAll('.nav-item').forEach(item => {
+        item.addEventListener('click', () => {
+            loadCategory(item.dataset.category);
+        });
+    });
+
+    // Sort dropdown
     document.getElementById('sort-select').addEventListener('change', (e) => {
         sortAndRender(e.target.value);
     });

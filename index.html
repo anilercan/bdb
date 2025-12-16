@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Game Ratings</title>
+    <title>My Ratings</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,25 +11,39 @@
         <!-- Space for future decoration (images/gifs) -->
     </div>
 
-    <main class="container">
-        <header>
-            <h1>My Game Ratings</h1>
-        </header>
+    <div class="app-layout">
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <button class="nav-item active" data-category="games">Games</button>
+                <button class="nav-item" data-category="visualnovels">Visual Novels</button>
+                <button class="nav-item" data-category="movies">Movies</button>
+                <button class="nav-item" data-category="tvseries">TV Series</button>
+                <button class="nav-item" data-category="anime">Anime</button>
+                <button class="nav-item" data-category="manga">Manga</button>
+                <button class="nav-item" data-category="books">Books</button>
+            </nav>
+        </aside>
 
-        <div class="controls">
-            <label for="sort-select">Sort by:</label>
-            <select id="sort-select">
-                <option value="date-desc">Date (Newest First)</option>
-                <option value="rating-desc">Rating (High to Low)</option>
-                <option value="rating-asc">Rating (Low to High)</option>
-                <option value="alpha">Alphabetical (A-Z)</option>
-            </select>
-        </div>
+        <main class="main-content">
+            <header>
+                <h1 id="page-title">Games</h1>
+            </header>
 
-        <div id="games-container" class="games-grid">
-            <!-- Games will be rendered here by JavaScript -->
-        </div>
-    </main>
+            <div class="controls">
+                <label for="sort-select">Sort by:</label>
+                <select id="sort-select">
+                    <option value="date-desc">Date (Newest First)</option>
+                    <option value="rating-desc">Rating (High to Low)</option>
+                    <option value="rating-asc">Rating (Low to High)</option>
+                    <option value="alpha">Alphabetical (A-Z)</option>
+                </select>
+            </div>
+
+            <div id="items-container" class="items-grid">
+                <!-- Items will be rendered here by JavaScript -->
+            </div>
+        </main>
+    </div>
 
     <div class="decoration-bottom">
         <!-- Space for future decoration (images/gifs) -->
