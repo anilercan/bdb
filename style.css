@@ -138,6 +138,7 @@ header h1 {
     text-decoration: none;
     color: inherit;
     display: block;
+    cursor: pointer;
 }
 
 /* Item Card */
