@@ -1122,17 +1122,17 @@
     },
     {
       "title": "PEAK",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/coat49.jpg",
       "rating": 73,
-      "link": "https://backloggd.com/games/peak/",
+      "link": "https://backloggd.com/games/peak--1/",
       "details": "",
       "status": ""
     },
     {
       "title": "Hades",
-      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4rs3.jpg",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co39vc.jpg",
       "rating": 73,
-      "link": "https://backloggd.com/games/hades/",
+      "link": "https://backloggd.com/games/hades--1/",
       "details": "",
       "status": ""
     },
@@ -1177,10 +1177,10 @@
       "status": ""
     },
     {
-      "title": "Pokemon Emerald",
-      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1pee.jpg",
+      "title": "Pokémon Emerald",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co1zhr.jpg",
       "rating": 75,
-      "link": "https://backloggd.com/games/pokemon-emerald/",
+      "link": "https://backloggd.com/games/pokemon-emerald-version/",
       "details": "",
       "status": ""
     },
@@ -1218,7 +1218,7 @@
     },
     {
       "title": "Age of Empires II",
-      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1pee.jpg",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co1xxx.jpg",
       "rating": 73,
       "link": "https://backloggd.com/games/age-of-empires-ii/",
       "details": "",
@@ -1258,7 +1258,7 @@
     },
     {
       "title": "MicroVolts",
-      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1pee.jpg",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co3wpn.jpg",
       "rating": 71,
       "link": "https://backloggd.com/games/microvolts/",
       "details": "",
