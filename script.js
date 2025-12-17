@@ -19,6 +19,15 @@ const categoryConfig = {
         hasLink: true,
         fields: ['title', 'cover', 'rating', 'details', 'dateCompleted', 'link']
     },
+    vibinggames: {
+        title: 'Vibing Games',
+        file: 'data/vibinggames.json',
+        hasDate: false,
+        hasDetails: true,
+        hasLink: true,
+        hasStatus: true,
+        fields: ['title', 'cover', 'rating', 'details', 'status', 'link']
+    },
     movies: {
         title: 'Movies',
         file: 'data/movies.json',
@@ -159,7 +168,9 @@ async function loadCategory(category) {
 
     // Get saved sort state for this category, or set default
     if (!categorySortState[category]) {
-        if (config.hasDate) {
+        if (config.hasStatus) {
+            categorySortState[category] = { sortType: 'status', state: 0 }; // Default: status (playing first)
+        } else if (config.hasDate) {
             categorySortState[category] = { sortType: 'date', state: 0 }; // Default: date descending
         } else {
             categorySortState[category] = { sortType: 'rating', state: 0 }; // Default: rating descending
@@ -196,9 +207,13 @@ function updateSortButtons(config, sortState) {
     const ratingButton = document.getElementById('rating-btn');
     const alphaButton = document.getElementById('alpha-btn');
 
-    // Show/hide date button based on category
-    if (config.hasDate) {
+    // Show/hide date button based on category, or replace with status button for vibing games
+    if (config.hasStatus) {
         dateButton.style.display = 'inline-block';
+        dateButton.dataset.sort = 'status';
+    } else if (config.hasDate) {
+        dateButton.style.display = 'inline-block';
+        dateButton.dataset.sort = 'date';
     } else {
         dateButton.style.display = 'none';
     }
@@ -209,7 +224,14 @@ function updateSortButtons(config, sortState) {
     alphaButton.classList.remove('active');
 
     // Update button text and active state based on current sort
-    if (sortState.sortType === 'date') {
+    if (sortState.sortType === 'status') {
+        dateButton.classList.add('active');
+        if (sortState.state === 0) {
+            dateButton.textContent = 'Status ↓';
+        } else if (sortState.state === 1) {
+            dateButton.textContent = 'Status ↑';
+        }
+    } else if (sortState.sortType === 'date') {
         dateButton.classList.add('active');
         if (sortState.state === 0) {
             dateButton.textContent = 'Date ↓';
@@ -217,7 +239,7 @@ function updateSortButtons(config, sortState) {
             dateButton.textContent = 'Date ↑';
         }
     } else {
-        dateButton.textContent = 'Date';
+        dateButton.textContent = config.hasStatus ? 'Status' : 'Date';
     }
 
     if (sortState.sortType === 'rating') {
@@ -247,7 +269,28 @@ function sortItems(items, sortState) {
     const sorted = [...items];
     const { sortType, state } = sortState;
 
-    if (sortType === 'date') {
+    if (sortType === 'status') {
+        if (state === 0) {
+            // Status: still playing first
+            sorted.sort((a, b) => {
+                const aPlaying = a.status && a.status.toLowerCase().includes('playing');
+                const bPlaying = b.status && b.status.toLowerCase().includes('playing');
+                if (aPlaying && !bPlaying) return -1;
+                if (!aPlaying && bPlaying) return 1;
+                return 0;
+            });
+        } else if (state === 1) {
+            // Status: not playing first
+            sorted.sort((a, b) => {
+                const aPlaying = a.status && a.status.toLowerCase().includes('playing');
+                const bPlaying = b.status && b.status.toLowerCase().includes('playing');
+                if (aPlaying && !bPlaying) return 1;
+                if (!aPlaying && bPlaying) return -1;
+                return 0;
+            });
+        }
+        // state === 2 means reset to default
+    } else if (sortType === 'date') {
         if (state === 0) {
             // Date descending (newest first)
             sorted.sort((a, b) => {
@@ -313,6 +356,10 @@ function renderItems(items) {
             extraInfo += `<div class="item-seasons">Seasons watched: ${item.seasonsWatched}</div>`;
         }
 
+        if (config.hasStatus && item.status) {
+            extraInfo += `<div class="item-status">Status: ${escapeHtml(item.status)}</div>`;
+        }
+
         if (config.hasDate) {
             if (item.dateCompleted) {
                 extraInfo += `<div class="item-date">Completed: ${formatDate(item.dateCompleted)}</div>`;
@@ -355,6 +402,18 @@ function applySortState(sortState) {
 document.addEventListener('DOMContentLoaded', () => {
     // Load default category
     loadCategory('home');
+
+    // Add scroll listener for controls drawer padding
+    window.addEventListener('scroll', () => {
+        const drawer = document.querySelector('.controls-drawer');
+        if (!drawer) return;
+
+        if (window.scrollY > 10) {
+            drawer.classList.add('scrolled');
+        } else {
+            drawer.classList.remove('scrolled');
+        }
+    });
 
     // Navigation
     document.querySelectorAll('.nav-item').forEach(item => {

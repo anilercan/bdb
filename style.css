@@ -98,6 +98,11 @@ header h1 {
     width: fit-content;
     margin-left: auto;
     pointer-events: none;
+    transition: padding 0.2s ease;
+}
+
+.controls-drawer.scrolled {
+    padding-top: 4px;
 }
 
 .controls {
@@ -130,9 +135,10 @@ header h1 {
 }
 
 .sort-btn.active {
-    background-color: #4f2351;
-    border-color: #4f2351;
+    background-color: #8b3f8f;
+    border: 1px solid #fff;
     color: #fff;
+    font-weight: 500;
 }
 
 /* Items Grid */
