@@ -246,6 +246,33 @@ header h1 {
     color: #999;
 }
 
+.item-status {
+    font-size: 0.8rem;
+    color: #999;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 4px;
+}
+
+.item-status.playing::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: #4ade80;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.item-status.sometimes::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: #fbbf24;
+    border-radius: 50%;
+    display: inline-block;
+}
+
 /* Rating color variations */
 .rating-high {
     background-color: #4ade80;
@@ -267,7 +294,7 @@ header h1 {
     display: flex;
     gap: 0;
     width: 100%;
-    min-height: 60vh;
+    min-height: calc(100vh - 200px);
 }
 
 .home-sidebar-left,

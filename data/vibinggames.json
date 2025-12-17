@@ -6,7 +6,7 @@
       "rating": 95,
       "link": "https://backloggd.com/games/risk-of-rain-2/",
       "details": "",
-      "status": ""
+      "status": "sometimes"
     },
     {
       "title": "Noita",
@@ -14,7 +14,7 @@
       "rating": 73,
       "link": "https://backloggd.com/games/noita/",
       "details": "",
-      "status": ""
+      "status": "sometimes"
     },
     {
       "title": "Spelunky 2",
@@ -22,7 +22,7 @@
       "rating": 69,
       "link": "https://backloggd.com/games/spelunky-2/",
       "details": "",
-      "status": ""
+      "status": "sometimes"
     },
     {
       "title": "Spelunky",
@@ -34,11 +34,11 @@
     },
     {
       "title": "Minecraft",
-      "cover": "",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/coa77e.jpg",
       "rating": 91,
-      "link": "https://backloggd.com/games/minecraft/",
+      "link": "https://backloggd.com/games/minecraft-java-edition/",
       "details": "",
-      "status": ""
+      "status": "sometimes"
     },
     {
       "title": "Shadows of Doubt",
@@ -46,21 +46,21 @@
       "rating": 89,
       "link": "https://backloggd.com/games/shadows-of-doubt/",
       "details": "",
-      "status": ""
+      "status": "sometimes"
     },
     {
       "title": "UFO50",
-      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1pee.jpg",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co24v0.jpg",
       "rating": 91,
-      "link": "https://backloggd.com/games/ufo50/",
+      "link": "https://backloggd.com/games/ufo-50/",
       "details": "",
-      "status": ""
+      "status": "sometimes"
     },
     {
       "title": "Shotgun King",
-      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1pee.jpg",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co8w6y.jpg",
       "rating": 67,
-      "link": "https://backloggd.com/games/shotgun-king/",
+      "link": "https://backloggd.com/games/shotgun-king-the-final-checkmate/",
       "details": "",
       "status": ""
     },
@@ -73,7 +73,7 @@
       "status": ""
     },
     {
-      "title": "Rimworld",
+      "title": "RimWorld",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coaaqj.jpg",
       "rating": 81,
       "link": "https://backloggd.com/games/rimworld/",
@@ -86,7 +86,7 @@
       "rating": 79,
       "link": "https://backloggd.com/games/the-elder-scrolls-online/",
       "details": "",
-      "status": ""
+      "status": "sometimes"
     },
     {
       "title": "Squeakross: Home Squeak Home",
@@ -94,7 +94,7 @@
       "rating": 91,
       "link": "https://backloggd.com/games/squeakross-home-squeak-home/",
       "details": "",
-      "status": ""
+      "status": "playing"
     },
     {
       "title": "Vampire Survivors",
@@ -113,7 +113,7 @@
       "status": ""
     },
     {
-      "title": "Risk of Rain ",
+      "title": "Risk of Rain",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2k2z.jpg",
       "rating": 77,
       "link": "https://backloggd.com/games/risk-of-rain/",
@@ -126,7 +126,7 @@
       "rating": 83,
       "link": "https://backloggd.com/games/tiny-rogues/",
       "details": "",
-      "status": ""
+      "status": "sometimes"
     },
     {
       "title": "Kind Words",
@@ -134,7 +134,7 @@
       "rating": 81,
       "link": "https://backloggd.com/games/kind-words/",
       "details": "",
-      "status": ""
+      "status": "sometimes"
     },
     {
       "title": "Stardew Valley",
@@ -142,7 +142,7 @@
       "rating": 91,
       "link": "https://backloggd.com/games/stardew-valley/",
       "details": "",
-      "status": ""
+      "status": "sometimes"
     },
     {
       "title": "Balatro",
@@ -166,7 +166,7 @@
       "rating": 93,
       "link": "https://backloggd.com/games/deep-rock-galactic/",
       "details": "",
-      "status": ""
+      "status": "sometimes"
     },
     {
       "title": "Emberward",
@@ -174,7 +174,7 @@
       "rating": 91,
       "link": "https://backloggd.com/games/emberward/",
       "details": "",
-      "status": ""
+      "status": "sometimes"
     },
     {
       "title": "Lethal Company",
@@ -190,7 +190,7 @@
       "rating": 95,
       "link": "https://backloggd.com/games/slay-the-spire/",
       "details": "",
-      "status": ""
+      "status": "sometimes"
     },
     {
       "title": "WEBFISHING",
@@ -210,19 +210,19 @@
     },
     {
       "title": "Rusty’s Retirement",
-      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1pee.jpg",
+      "cover": "hhttps://images.igdb.com/igdb/image/upload/t_cover_big_2x/co7jna.jpg",
       "rating": 67,
-      "link": "https://backloggd.com/games/rusty’s-retirement/",
+      "link": "https://backloggd.com/games/rustys-retirement/",
       "details": "",
       "status": ""
     },
     {
       "title": "Space Engine",
-      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1pee.jpg",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co1uo2.jpg",
       "rating": 87,
-      "link": "https://backloggd.com/games/space-engine/",
+      "link": "https://backloggd.com/games/spaceengine/",
       "details": "",
-      "status": ""
+      "status": "sometimes"
     },
     {
       "title": "Superflight",
@@ -258,7 +258,7 @@
     },
     {
       "title": "Tales of Maj’Eyal",
-      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1pee.jpg",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2iqa.jpg",
       "rating": 69,
       "link": "https://backloggd.com/games/tales-of-maj’eyal/",
       "details": "",
@@ -266,9 +266,9 @@
     },
     {
       "title": "N++",
-      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1pee.jpg",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2535.jpg",
       "rating": 77,
-      "link": "https://backloggd.com/games/n++/",
+      "link": "https://backloggd.com/games/n-plus-plus/",
       "details": "",
       "status": ""
     },
@@ -286,13 +286,13 @@
       "rating": 83,
       "link": "https://backloggd.com/games/cultist-simulator/",
       "details": "",
-      "status": ""
+      "status": "sometimes"
     },
     {
       "title": "Deadlock",
-      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3o8e.jpg",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co8q3t.jpg",
       "rating": 79,
-      "link": "https://backloggd.com/games/deadlock/",
+      "link": "https://backloggd.com/games/deadlock--2/",
       "details": "",
       "status": ""
     },
@@ -402,9 +402,9 @@
     },
     {
       "title": "Garry’s Mod",
-      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1pee.jpg",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co8pgw.jpg",
       "rating": 77,
-      "link": "https://backloggd.com/games/garry’s-mod/",
+      "link": "https://backloggd.com/games/garry-s-mod/",
       "details": "",
       "status": ""
     },
@@ -450,9 +450,9 @@
     },
     {
       "title": "Don’t Starve Together",
-      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1pee.jpg",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/coaaqp.jpg",
       "rating": 73,
-      "link": "https://backloggd.com/games/don’t-starve-together/",
+      "link": "https://backloggd.com/games/dont-starve-together/",
       "details": "",
       "status": ""
     },
@@ -561,7 +561,7 @@
       "status": ""
     },
     {
-      "title": "TheHunter Call of the Wild",
+      "title": "theHunter: Call of the Wild",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1u14.jpg",
       "rating": 79,
       "link": "https://backloggd.com/games/thehunter-call-of-the-wild/",
@@ -586,17 +586,17 @@
     },
     {
       "title": "Tom Clancy’s Rainbow Six: Siege",
-      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1pee.jpg",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co9yqs.jpg",
       "rating": 69,
-      "link": "https://backloggd.com/games/tom-clancy’s-rainbow-six-siege/",
+      "link": "https://backloggd.com/games/tom-clancys-rainbow-six-siege-x--1/",
       "details": "",
       "status": ""
     },
     {
       "title": "Omega Strikers",
-      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1pee.jpg",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co5382.jpg",
       "rating": 61,
-      "link": "https://backloggd.com/games/omega-strikers/",
+      "link": "https://backloggd.com/games/omega-strikers--1/",
       "details": "",
       "status": ""
     },
@@ -614,7 +614,7 @@
       "rating": 85,
       "link": "https://backloggd.com/games/elite-dangerous/",
       "details": "",
-      "status": ""
+      "status": "sometimes"
     },
     {
       "title": "20 Minutes Till Dawn",
@@ -666,9 +666,9 @@
     },
     {
       "title": "Command & Conquer 3: Kane’s Wrath",
-      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1pee.jpg",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co1zv1.jpg",
       "rating": 71,
-      "link": "https://backloggd.com/games/command-and-conquer-3-kane’s-wrath/",
+      "link": "https://backloggd.com/games/command-conquer-3-kane-s-wrath/",
       "details": "",
       "status": ""
     },
@@ -702,7 +702,7 @@
       "rating": 81,
       "link": "https://backloggd.com/games/powerwash-simulator/",
       "details": "",
-      "status": ""
+      "status": "sometimes"
     },
     {
       "title": "Deceive Inc.",
@@ -729,7 +729,7 @@
       "status": ""
     },
     {
-      "title": "Placid plastic Duck Simulator",
+      "title": "Placid Plastic Duck Simulator",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4yq5.jpg",
       "rating": 61,
       "link": "https://backloggd.com/games/placid-plastic-duck-simulator/",
@@ -866,17 +866,17 @@
     },
     {
       "title": "No Man’s Sky",
-      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1pee.jpg",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/coacrk.jpg",
       "rating": 67,
-      "link": "https://backloggd.com/games/no-man’s-sky/",
+      "link": "https://backloggd.com/games/no-man-s-sky/",
       "details": "",
       "status": ""
     },
     {
       "title": "Nubby’s Number Factory",
-      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1pee.jpg",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co946o.jpg",
       "rating": 73,
-      "link": "https://backloggd.com/games/nubby’s-number-factory/",
+      "link": "https://backloggd.com/games/nubbys-number-factory/",
       "details": "",
       "status": ""
     },
@@ -966,7 +966,7 @@
       "rating": 83,
       "link": "https://backloggd.com/games/straftat/",
       "details": "",
-      "status": ""
+      "status": "sometimes"
     },
     {
       "title": "THE FINALS",
@@ -993,10 +993,10 @@
       "status": ""
     },
     {
-      "title": "The Planet Crafter",
-      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1pee.jpg",
+      "title": "Planet Crafter",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/coaaw4.jpg",
       "rating": 61,
-      "link": "https://backloggd.com/games/the-planet-crafter/",
+      "link": "https://backloggd.com/games/planet-crafter/",
       "details": "",
       "status": ""
     },
@@ -1066,9 +1066,9 @@
     },
     {
       "title": "Voices of the Void",
-      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1pee.jpg",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co8uks.jpg",
       "rating": 89,
-      "link": "https://backloggd.com/games/voices-of-the-void/",
+      "link": "https://backloggd.com/games/voices-of-the-void--1/",
       "details": "",
       "status": ""
     },
@@ -1093,16 +1093,16 @@
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coa9dy.jpg",
       "rating": 79,
       "link": "https://backloggd.com/games/genshin-impact/",
-      "details": "",
-      "status": ""
+      "details": "UID: 702485611",
+      "status": "playing"
     },
     {
       "title": "Arknights",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4uni.jpg",
       "rating": 83,
       "link": "https://backloggd.com/games/arknights/",
-      "details": "",
-      "status": ""
+      "details": "EN Server",
+      "status": "playing"
     },
     {
       "title": "Infinity Nikki",
@@ -1110,7 +1110,7 @@
       "rating": 77,
       "link": "https://backloggd.com/games/infinity-nikki/",
       "details": "",
-      "status": ""
+      "status": "playing"
     },
     {
       "title": "Zenless Zone Zero",
@@ -1118,7 +1118,7 @@
       "rating": 73,
       "link": "https://backloggd.com/games/zenless-zone-zero/",
       "details": "",
-      "status": ""
+      "status": "playing"
     },
     {
       "title": "PEAK",

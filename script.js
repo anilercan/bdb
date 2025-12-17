@@ -121,7 +121,7 @@ async function loadHomePage() {
             <div class="home-sidebar-left"></div>
             <div class="home-center">
                 <div class="home-introduction">
-                    <p>${escapeHtml(data.introduction)}</p>
+                    <p>${escapeHtml(data.introduction).replace(/\n/g, '<br>')}</p>
                 </div>
                 <div class="home-links">
                     ${data.links.map(link => `
@@ -271,22 +271,28 @@ function sortItems(items, sortState) {
 
     if (sortType === 'status') {
         if (state === 0) {
-            // Status: still playing first
+            // Status: actively playing > sometimes playing > no status
             sorted.sort((a, b) => {
-                const aPlaying = a.status && a.status.toLowerCase().includes('playing');
-                const bPlaying = b.status && b.status.toLowerCase().includes('playing');
-                if (aPlaying && !bPlaying) return -1;
-                if (!aPlaying && bPlaying) return 1;
-                return 0;
+                const getStatusPriority = (status) => {
+                    if (!status) return 3;
+                    const statusLower = status.toLowerCase();
+                    if (statusLower === 'playing') return 1;
+                    if (statusLower === 'sometimes') return 2;
+                    return 3;
+                };
+                return getStatusPriority(a.status) - getStatusPriority(b.status);
             });
         } else if (state === 1) {
-            // Status: not playing first
+            // Status: no status > sometimes playing > actively playing (reverse)
             sorted.sort((a, b) => {
-                const aPlaying = a.status && a.status.toLowerCase().includes('playing');
-                const bPlaying = b.status && b.status.toLowerCase().includes('playing');
-                if (aPlaying && !bPlaying) return 1;
-                if (!aPlaying && bPlaying) return -1;
-                return 0;
+                const getStatusPriority = (status) => {
+                    if (!status) return 3;
+                    const statusLower = status.toLowerCase();
+                    if (statusLower === 'playing') return 1;
+                    if (statusLower === 'sometimes') return 2;
+                    return 3;
+                };
+                return getStatusPriority(b.status) - getStatusPriority(a.status);
             });
         }
         // state === 2 means reset to default
@@ -344,6 +350,22 @@ function renderItems(items) {
     container.innerHTML = items.map(item => {
         let extraInfo = '';
 
+        if (config.hasStatus && item.status) {
+            const statusLower = item.status.toLowerCase();
+            let statusClass = 'item-status';
+            let statusText = item.status;
+
+            if (statusLower === 'playing') {
+                statusClass = 'item-status playing';
+                statusText = 'Actively Play';
+            } else if (statusLower === 'sometimes') {
+                statusClass = 'item-status sometimes';
+                statusText = 'Sometimes Play';
+            }
+
+            extraInfo += `<div class="${statusClass}">Status: ${escapeHtml(statusText)}</div>`;
+        }
+
         if (config.hasDetails && item.details) {
             extraInfo += `<div class="item-details">${escapeHtml(item.details)}</div>`;
         }
@@ -354,10 +376,6 @@ function renderItems(items) {
 
         if (config.hasSeasons && item.seasonsWatched) {
             extraInfo += `<div class="item-seasons">Seasons watched: ${item.seasonsWatched}</div>`;
-        }
-
-        if (config.hasStatus && item.status) {
-            extraInfo += `<div class="item-status">Status: ${escapeHtml(item.status)}</div>`;
         }
 
         if (config.hasDate) {
@@ -425,21 +443,28 @@ document.addEventListener('DOMContentLoaded', () => {
     // Sort buttons - Three-state toggle behavior
     document.getElementById('date-btn').addEventListener('click', () => {
         const config = categoryConfig[currentCategory];
-        if (!config.hasDate) return;
+        if (!config.hasDate && !config.hasStatus) return;
 
         const currentState = categorySortState[currentCategory];
+        const sortType = config.hasStatus ? 'status' : 'date';
 
-        if (currentState.sortType === 'date') {
-            // Already on date sort, cycle through states
-            currentState.state = (currentState.state + 1) % 3;
+        if (currentState.sortType === sortType) {
+            // Already on this sort, cycle through states
+            if (config.hasStatus) {
+                // Status button only has 2 states
+                currentState.state = currentState.state === 0 ? 1 : 0;
+            } else {
+                // Date button has 3 states
+                currentState.state = (currentState.state + 1) % 3;
 
-            if (currentState.state === 2) {
-                // Third click: reset to default (date descending)
-                currentState.state = 0;
+                if (currentState.state === 2) {
+                    // Third click: reset to default (date descending)
+                    currentState.state = 0;
+                }
             }
         } else {
-            // Switch to date sort (state 0: descending)
-            currentState.sortType = 'date';
+            // Switch to this sort type (state 0)
+            currentState.sortType = sortType;
             currentState.state = 0;
         }
 
@@ -457,7 +482,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (currentState.state === 2) {
                 // Third click: reset to default
-                if (config.hasDate) {
+                if (config.hasStatus) {
+                    // Reset to status
+                    currentState.sortType = 'status';
+                    currentState.state = 0;
+                } else if (config.hasDate) {
                     // Reset to date descending
                     currentState.sortType = 'date';
                     currentState.state = 0;
@@ -486,7 +515,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (currentState.state === 2) {
                 // Third click: reset to default
-                if (config.hasDate) {
+                if (config.hasStatus) {
+                    // Reset to status
+                    currentState.sortType = 'status';
+                    currentState.state = 0;
+                } else if (config.hasDate) {
                     // Reset to date descending
                     currentState.sortType = 'date';
                     currentState.state = 0;
