@@ -11,11 +11,5 @@ check out: [anilercan.github.io/bdb](https://anilercan.github.io/bdb)
 
 data stored in json files, structured and parsed using javascript, displayed using html
 
-## ratings
-
-ratings are on a **0-100** scale:
-- **75-100** - good?
-- **50-74** - alright
-- **0-49** - no
 
 
