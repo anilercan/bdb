@@ -1,5 +1,5 @@
 let currentData = [];
-let currentCategory = 'games';
+let currentCategory = 'home';
 let categorySortState = {}; // Track active sort for each category: { sortType: 'date'/'rating', state: 0/1/2 }
 
 const categoryConfig = {
@@ -24,7 +24,8 @@ const categoryConfig = {
         file: 'data/movies.json',
         hasDate: false,
         hasDetails: false,
-        fields: ['title', 'cover', 'rating']
+        hasLink: true,
+        fields: ['title', 'cover', 'rating', 'link']
     },
     tvseries: {
         title: 'TV Series',
