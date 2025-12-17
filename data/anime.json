@@ -1,9 +1,1108 @@
 {
   "items": [
     {
+      "title": "Death Note",
+      "cover": "https://cdn.myanimelist.net/images/anime/1079/138100.jpg",
+      "rating": 77,
+      "link": "https://myanimelist.net/anime/1535/Death_Note"
+    },
+    {
+      "title": "Code Geass",
+      "cover": "https://cdn.myanimelist.net/images/anime/1032/135088l.jpg",
+      "rating": 81,
+      "link": "https://myanimelist.net/anime/1575/Code_Geass__Hangyaku_no_Lelouch"
+    },
+    {
+      "title": "Full Metal Alchemist",
+      "cover": "https://cdn.myanimelist.net/images/anime/10/75815l.jpg",
+      "rating": 79,
+      "link": "https://myanimelist.net/anime/121/Fullmetal_Alchemist"
+    },
+    {
+      "title": "Your Lie in April",
+      "cover": "https://cdn.myanimelist.net/images/anime/1405/143284l.jpg",
+      "rating": 83,
+      "link": "https://myanimelist.net/anime/23273/Shigatsu_wa_Kimi_no_Uso"
+    },
+    {
+      "title": "Cowboy Bebop",
+      "cover": "https://cdn.myanimelist.net/images/anime/4/19644l.jpg",
+      "rating": 77,
+      "link": "https://myanimelist.net/anime/1/Cowboy_Bebop"
+    },
+    {
+      "title": "Seven Deadly Sins",
+      "cover": "https://cdn.myanimelist.net/images/anime/8/65409.jpg",
+      "rating": 55,
+      "link": "https://myanimelist.net/anime/23755/Nanatsu_no_Taizai"
+    },
+    {
       "title": "Attack on Titan",
-      "cover": "",
-      "rating": 92
+      "cover": "https://cdn.myanimelist.net/images/anime/10/47347l.jpg",
+      "rating": 81,
+      "link": "https://myanimelist.net/anime/16498/Shingeki_no_Kyojin"
+    },
+    {
+      "title": "Neon Genesis Evangelion",
+      "cover": "https://cdn.myanimelist.net/images/anime/1314/108941l.jpg",
+      "rating": 77,
+      "link": "https://myanimelist.net/anime/30/Shinseiki_Evangelion"
+    },
+    {
+      "title": "The End of Evangelion",
+      "cover": "https://cdn.myanimelist.net/images/anime/1404/98182l.jpg",
+      "rating": 81,
+      "link": "https://myanimelist.net/anime/32/Shinseiki_Evangelion_Movie__Air_Magokoro_wo_Kimi_ni"
+    },
+    {
+      "title": "Your Name",
+      "cover": "https://cdn.myanimelist.net/images/anime/5/87048l.jpg",
+      "rating": 79,
+      "link": "https://myanimelist.net/anime/32281/Kimi_no_Na_wa"
+    },
+    {
+      "title": "A Silent Voice",
+      "cover": "https://cdn.myanimelist.net/images/anime/1122/96435l.jpg",
+      "rating": 81,
+      "link": "https://myanimelist.net/anime/28851/Koe_no_Katachi"
+    },
+    {
+      "title": "Violet Evergarden",
+      "cover": "https://cdn.myanimelist.net/images/anime/1795/95088l.jpg",
+      "rating": 87,
+      "link": "https://myanimelist.net/anime/33352/Violet_Evergarden"
+    },
+    {
+      "title": "Weathering With You",
+      "cover": "https://cdn.myanimelist.net/images/anime/1880/101146l.jpg",
+      "rating": 79,
+      "link": "https://myanimelist.net/anime/38826/Tenki_no_Ko"
+    },
+    {
+      "title": "Howl's Moving Castle",
+      "cover": "https://cdn.myanimelist.net/images/anime/1470/138723l.jpg",
+      "rating": 79,
+      "link": "https://myanimelist.net/anime/431/Howl_no_Ugoku_Shiro"
+    },
+    {
+      "title": "Spirited Away",
+      "cover": "https://cdn.myanimelist.net/images/anime/6/79597l.jpg",
+      "rating": 83,
+      "link": "https://myanimelist.net/anime/199/Sen_to_Chihiro_no_Kamikakushi"
+    },
+    {
+      "title": "My Neighbor Totoro",
+      "cover": "https://cdn.myanimelist.net/images/anime/1110/147278l.jpg",
+      "rating": 81,
+      "link": "https://myanimelist.net/anime/523/Tonari_no_Totoro"
+    },
+    {
+      "title": "Princess Mononoke",
+      "cover": "https://cdn.myanimelist.net/images/anime/1355/147277l.jpg",
+      "rating": 83,
+      "link": "https://myanimelist.net/anime/164/Mononoke_Hime"
+    },
+    {
+      "title": "Castle in the Sky",
+      "cover": "https://cdn.myanimelist.net/images/anime/5/37799l.jpg",
+      "rating": 77,
+      "link": "https://myanimelist.net/anime/513/Tenkuu_no_Shiro_Laputa"
+    },
+    {
+      "title": "Kiki's Delivery Service",
+      "cover": "https://cdn.myanimelist.net/images/anime/1579/140483l.jpg",
+      "rating": 83,
+      "link": "https://myanimelist.net/anime/512/Majo_no_Takkyuubin"
+    },
+    {
+      "title": "Sing \"Yesterday\" for Me",
+      "cover": "https://cdn.myanimelist.net/images/anime/1553/107721l.jpg",
+      "rating": 63,
+      "link": "https://myanimelist.net/anime/39710/Yesterday_wo_Utatte"
+    },
+    {
+      "title": "Anohana",
+      "cover": "https://cdn.myanimelist.net/images/anime/5/79697l.jpg",
+      "rating": 81,
+      "link": "https://myanimelist.net/anime/9989/Ano_Hi_Mita_Hana_no_Namae_wo_Bokutachi_wa_Mada_Shiranai"
+    },
+    {
+      "title": "Elfen Lied",
+      "cover": "https://cdn.myanimelist.net/images/anime/1780/121555l.jpg",
+      "rating": 81,
+      "link": "https://myanimelist.net/anime/226/Elfen_Lied"
+    },
+    {
+      "title": "Plastic Memories",
+      "cover": "https://cdn.myanimelist.net/images/anime/4/72750l.jpg",
+      "rating": 83,
+      "link": "https://myanimelist.net/anime/27775/Plastic_Memories"
+    },
+    {
+      "title": "Erased",
+      "cover": "https://cdn.myanimelist.net/images/anime/10/77957l.jpg",
+      "rating": 75,
+      "link": "https://myanimelist.net/anime/31043/Boku_dake_ga_Inai_Machi"
+    },
+    {
+      "title": "Toradora!",
+      "cover": "https://cdn.myanimelist.net/images/anime/13/22128l.jpg",
+      "rating": 81,
+      "link": "https://myanimelist.net/anime/4224/Toradora"
+    },
+    {
+      "title": "I Want to Eat Your Pancreas",
+      "cover": "https://cdn.myanimelist.net/images/anime/1768/93291l.jpg",
+      "rating": 85,
+      "link": "https://myanimelist.net/anime/36098/Kimi_no_Suizou_wo_Tabetai"
+    },
+    {
+      "title": "Rascal Does Not Dream of Bunny Girl Senpai",
+      "cover": "https://cdn.myanimelist.net/images/anime/1301/93586l.jpg",
+      "rating": 77,
+      "link": "https://myanimelist.net/anime/37450/Seishun_Buta_Yarou_wa_Bunny_Girl_Senpai_no_Yume_wo_Minai"
+    },
+    {
+      "title": "Oregairu",
+      "cover": "https://cdn.myanimelist.net/images/anime/1786/120117l.jpg",
+      "rating": 83,
+      "link": "https://myanimelist.net/anime/14813/Yahari_Ore_no_Seishun_Love_Comedy_wa_Machigatteiru"
+    },
+    {
+      "title": "Steins;Gate",
+      "cover": "https://cdn.myanimelist.net/images/anime/1935/127974l.jpg",
+      "rating": 87,
+      "link": "https://myanimelist.net/anime/9253/Steins_Gate"
+    },
+    {
+      "title": "Steins;Gate 0",
+      "cover": "https://cdn.myanimelist.net/images/anime/1375/93521l.jpg",
+      "rating": 83,
+      "link": "https://myanimelist.net/anime/30484/Steins_Gate_0"
+    },
+    {
+      "title": "5 Centimeters Per Second",
+      "cover": "https://cdn.myanimelist.net/images/anime/1410/112994l.jpg",
+      "rating": 75,
+      "link": "https://myanimelist.net/anime/1689/Byousoku_5_Centimeter"
+    },
+    {
+      "title": "Kaguya-sama: Love is War",
+      "cover": "https://cdn.myanimelist.net/images/anime/1295/106551l.jpg",
+      "rating": 83,
+      "link": "https://myanimelist.net/anime/37999/Kaguya-sama_wa_Kokurasetai__Tensai-tachi_no_Renai_Zunousen"
+    },
+    {
+      "title": "Clannad",
+      "cover": "https://cdn.myanimelist.net/images/anime/1804/95033l.jpg",
+      "rating": 71,
+      "link": "https://myanimelist.net/anime/2167/Clannad"
+    },
+    {
+      "title": "Clannad: After Story",
+      "cover": "https://cdn.myanimelist.net/images/anime/1299/110774l.jpg",
+      "rating": 81,
+      "link": "https://myanimelist.net/anime/4181/Clannad__After_Story"
+    },
+    {
+      "title": "Angel Beats!",
+      "cover": "https://cdn.myanimelist.net/images/anime/1244/111115l.jpg",
+      "rating": 79,
+      "link": "https://myanimelist.net/anime/6547/Angel_Beats"
+    },
+    {
+      "title": "Sound! Euphonium",
+      "cover": "https://cdn.myanimelist.net/images/anime/1517/142072l.jpg",
+      "rating": 75,
+      "link": "https://myanimelist.net/anime/27989/Hibike_Euphonium"
+    },
+    {
+      "title": "Liz and the Blue Bird",
+      "cover": "https://cdn.myanimelist.net/images/anime/1638/93032l.jpg",
+      "rating": 77,
+      "link": "https://myanimelist.net/anime/35677/Liz_to_Aoi_Tori"
+    },
+    {
+      "title": "The Garden of Words",
+      "cover": "https://cdn.myanimelist.net/images/anime/1597/112995l.jpg",
+      "rating": 81,
+      "link": "https://myanimelist.net/anime/16782/Kotonoha_no_Niwa"
+    },
+    {
+      "title": "Bakemonogatari",
+      "cover": "https://cdn.myanimelist.net/images/anime/11/75274l.jpg",
+      "rating": 83,
+      "link": "https://myanimelist.net/anime/5081/Bakemonogatari"
+    },
+    {
+      "title": "Nisemonogatari",
+      "cover": "https://cdn.myanimelist.net/images/anime/1044/103654l.jpg",
+      "rating": 81,
+      "link": "https://myanimelist.net/anime/11597/Nisemonogatari"
+    },
+    {
+      "title": "Nekomonogatari Black",
+      "cover": "https://cdn.myanimelist.net/images/anime/1170/121597l.jpg",
+      "rating": 81,
+      "link": "https://myanimelist.net/anime/15689/Nekomonogatari__Kuro"
+    },
+    {
+      "title": "Monogatari Second Season",
+      "cover": "https://cdn.myanimelist.net/images/anime/1807/121534l.jpg",
+      "rating": 87,
+      "link": "https://myanimelist.net/anime/17074/Monogatari_Series__Second_Season"
+    },
+    {
+      "title": "Hanamonogatari",
+      "cover": "https://cdn.myanimelist.net/images/anime/13/65755l.jpg",
+      "rating": 73,
+      "link": "https://myanimelist.net/anime/21855/Hanamonogatari"
+    },
+    {
+      "title": "Tsukimonogatari",
+      "cover": "https://cdn.myanimelist.net/images/anime/6/68259l.jpg",
+      "rating": 79,
+      "link": "https://myanimelist.net/anime/28025/Tsukimonogatari"
+    },
+    {
+      "title": "Owarimonogatari",
+      "cover": "https://cdn.myanimelist.net/images/anime/8/76479l.jpg",
+      "rating": 83,
+      "link": "https://myanimelist.net/anime/31181/Owarimonogatari"
+    },
+    {
+      "title": "Koyomimonogatari",
+      "cover": "https://cdn.myanimelist.net/images/anime/2/77744l.jpg",
+      "rating": 71,
+      "link": "https://myanimelist.net/anime/32268/Koyomimonogatari"
+    },
+    {
+      "title": "Kizumonogatari I",
+      "cover": "https://cdn.myanimelist.net/images/anime/1783/112810l.jpg",
+      "rating": 81,
+      "link": "https://myanimelist.net/anime/9260/Kizumonogatari_I__Tekketsu-hen"
+    },
+    {
+      "title": "Kizumonogatari II",
+      "cover": "https://cdn.myanimelist.net/images/anime/1981/112812l.jpg",
+      "rating": 83,
+      "link": "https://myanimelist.net/anime/31757/Kizumonogatari_II__Nekketsu-hen"
+    },
+    {
+      "title": "Kizumonogatari III",
+      "cover": "https://cdn.myanimelist.net/images/anime/1084/112813l.jpg",
+      "rating": 85,
+      "link": "https://myanimelist.net/anime/31758/Kizumonogatari_III__Reiketsu-hen"
+    },
+    {
+      "title": "Owarimonogatari Second Season",
+      "cover": "https://cdn.myanimelist.net/images/anime/6/87322l.jpg",
+      "rating": 87,
+      "link": "https://myanimelist.net/anime/35247/Owarimonogatari_2nd_Season"
+    },
+    {
+      "title": "Zoku Owarimonogatari",
+      "cover": "https://cdn.myanimelist.net/images/anime/1022/96168l.jpg",
+      "rating": 83,
+      "link": "https://myanimelist.net/anime/36999/Zoku_Owarimonogatari"
+    },
+    {
+      "title": "A Place Further Than the Universe",
+      "cover": "https://cdn.myanimelist.net/images/anime/6/89879l.jpg",
+      "rating": 81,
+      "link": "https://myanimelist.net/anime/35839/Sora_yori_mo_Tooi_Basho"
+    },
+    {
+      "title": "Re:Zero",
+      "cover": "https://cdn.myanimelist.net/images/anime/1040/153636l.jpg",
+      "rating": 83,
+      "link": "https://myanimelist.net/anime/61316/Re_Zero_kara_Hajimeru_Isekai_Seikatsu_4th_Season"
+    },
+    {
+      "title": "Death Parade",
+      "cover": "https://cdn.myanimelist.net/images/anime/5/71553l.jpg",
+      "rating": 81,
+      "link": "https://myanimelist.net/anime/28223/Death_Parade"
+    },
+    {
+      "title": "Konosuba",
+      "cover": "https://cdn.myanimelist.net/images/anime/1895/142748l.jpg",
+      "rating": 81,
+      "link": "https://myanimelist.net/anime/30831/Kono_Subarashii_Sekai_ni_Shukufuku_wo"
+    },
+    {
+      "title": "Danganronpa 3",
+      "cover": "https://cdn.myanimelist.net/images/anime/10/80931l.jpg",
+      "rating": 75,
+      "link": "https://myanimelist.net/anime/32189/Danganronpa_3__The_End_of_Kibougamine_Gakuen_-_Mirai-hen"
+    },
+    {
+      "title": "Golden Time",
+      "cover": "https://cdn.myanimelist.net/images/anime/12/52091l.jpg",
+      "rating": 79,
+      "link": "https://myanimelist.net/anime/17895/Golden_Time"
+    },
+    {
+      "title": "The Pet Girl of Sakurasou",
+      "cover": "https://cdn.myanimelist.net/images/anime/4/43643l.jpg",
+      "rating": 75,
+      "link": "https://myanimelist.net/anime/13759/Sakura-sou_no_Pet_na_Kanojo"
+    },
+    {
+      "title": "ReLIFE",
+      "cover": "https://cdn.myanimelist.net/images/anime/3/82149l.jpg",
+      "rating": 81,
+      "link": "https://myanimelist.net/anime/30015/ReLIFE"
+    },
+    {
+      "title": "Tsuki ga Kirei",
+      "cover": "https://cdn.myanimelist.net/images/anime/2/85592l.jpg",
+      "rating": 83,
+      "link": "https://myanimelist.net/anime/34822/Tsuki_ga_Kirei"
+    },
+    {
+      "title": "Kimi ni Todoke",
+      "cover": "https://cdn.myanimelist.net/images/anime/1502/124384l.jpg",
+      "rating": 75,
+      "link": "https://myanimelist.net/anime/6045/Kimi_ni_Todoke"
+    },
+    {
+      "title": "Love, Chunibyo & Other Delusion",
+      "cover": "https://cdn.myanimelist.net/images/anime/1905/142840l.jpg",
+      "rating": 77,
+      "link": "https://myanimelist.net/anime/14741/Chuunibyou_demo_Koi_ga_Shitai"
+    },
+    {
+      "title": "Hyouka",
+      "cover": "https://cdn.myanimelist.net/images/anime/13/50521l.jpg",
+      "rating": 77,
+      "link": "https://myanimelist.net/anime/12189/Hyouka"
+    },
+    {
+      "title": "Welcome to the N.H.K",
+      "cover": "https://cdn.myanimelist.net/images/anime/3/52675.jpg",
+      "rating": 75,
+      "link": "https://myanimelist.net/anime/1210/NHK_ni_Youkoso"
+    },
+    {
+      "title": "The Promised Neverland",
+      "cover": "https://cdn.myanimelist.net/images/anime/1830/118780l.jpg",
+      "rating": 77,
+      "link": "https://myanimelist.net/anime/37779/Yakusoku_no_Neverland"
+    },
+    {
+      "title": "Charlotte",
+      "cover": "https://cdn.myanimelist.net/images/anime/1826/147276l.jpg",
+      "rating": 75,
+      "link": "https://myanimelist.net/anime/28999/Charlotte"
+    },
+    {
+      "title": "The Tatami Galaxy",
+      "cover": "https://cdn.myanimelist.net/images/anime/1633/123689l.jpg",
+      "rating": 85,
+      "link": "https://myanimelist.net/anime/7785/Yojouhan_Shinwa_Taikei"
+    },
+    {
+      "title": "Fruits Basket",
+      "cover": "https://cdn.myanimelist.net/images/anime/4/75204l.jpg",
+      "rating": 75,
+      "link": "https://myanimelist.net/anime/120/Fruits_Basket"
+    },
+    {
+      "title": "Darling in the FranXX",
+      "cover": "https://cdn.myanimelist.net/images/anime/1614/90408l.jpg",
+      "rating": 75,
+      "link": "https://myanimelist.net/anime/35849/Darling_in_the_FranXX"
+    },
+    {
+      "title": "From the New World",
+      "cover": "https://cdn.myanimelist.net/images/anime/1549/136389l.jpg",
+      "rating": 81,
+      "link": "https://myanimelist.net/anime/13125/Shinsekai_yori"
+    },
+    {
+      "title": "Say \"I Love You\"",
+      "cover": "https://cdn.myanimelist.net/images/anime/11/39777l.jpg",
+      "rating": 73,
+      "link": "https://myanimelist.net/anime/14289/Suki_tte_Ii_na_yo"
+    },
+    {
+      "title": "Kaichou wa Maid-sama!",
+      "cover": "https://cdn.myanimelist.net/images/anime/6/25254l.jpg",
+      "rating": 77,
+      "link": "https://myanimelist.net/anime/7054/Kaichou_wa_Maid-sama"
+    },
+    {
+      "title": "Kokoro Connect",
+      "cover": "https://cdn.myanimelist.net/images/anime/2/39665l.jpg",
+      "rating": 77,
+      "link": "https://myanimelist.net/anime/11887/Kokoro_Connect"
+    },
+    {
+      "title": "Ao Haru Ride",
+      "cover": "https://cdn.myanimelist.net/images/anime/8/64813.jpg",
+      "rating": 65,
+      "link": "https://myanimelist.net/anime/21995/Ao_Haru_Ride"
+    },
+    {
+      "title": "Nana",
+      "cover": "https://cdn.myanimelist.net/images/anime/2/11232l.jpg",
+      "rating": 81,
+      "link": "https://myanimelist.net/anime/877/Nana"
+    },
+    {
+      "title": "Ouran High School Host Club",
+      "cover": "https://cdn.myanimelist.net/images/anime/2/71992l.jpg",
+      "rating": 83,
+      "link": "https://myanimelist.net/anime/853/Ouran_Koukou_Host_Club"
+    },
+    {
+      "title": "Miss Kobayashi's Dragon Maid",
+      "cover": "https://cdn.myanimelist.net/images/anime/5/85434l.jpg",
+      "rating": 79,
+      "link": "https://myanimelist.net/anime/33206/Kobayashi-san_Chi_no_Maid_Dragon"
+    },
+    {
+      "title": "Orange",
+      "cover": "https://cdn.myanimelist.net/images/anime/1415/102477l.jpg",
+      "rating": 75,
+      "link": "https://myanimelist.net/anime/32729/Orange"
+    },
+    {
+      "title": "Spice and Wolf",
+      "cover": "https://cdn.myanimelist.net/images/anime/1059/142414l.jpg",
+      "rating": 81,
+      "link": "https://myanimelist.net/anime/51122/Ookami_to_Koushinryou__Merchant_Meets_the_Wise_Wolf"
+    },
+    {
+      "title": "FLCL",
+      "cover": "https://cdn.myanimelist.net/images/anime/7/77356l.jpg",
+      "rating": 79,
+      "link": "https://myanimelist.net/anime/227/FLCL"
+    },
+    {
+      "title": "Mysterious Girlfriend X",
+      "cover": "https://cdn.myanimelist.net/images/anime/3/75205l.jpg",
+      "rating": 65,
+      "link": "https://myanimelist.net/anime/12467/Nazo_no_Kanojo_X"
+    },
+    {
+      "title": "Lovely Complex",
+      "cover": "https://cdn.myanimelist.net/images/anime/11/75563l.jpg",
+      "rating": 65,
+      "link": "https://myanimelist.net/anime/2034/Lovely★Complex"
+    },
+    {
+      "title": "Ore Monogatari",
+      "cover": "https://cdn.myanimelist.net/images/anime/13/69455l.jpg",
+      "rating": 75,
+      "link": "https://myanimelist.net/anime/28297/Ore_Monogatari"
+    },
+    {
+      "title": "Tsurezure Children",
+      "cover": "https://cdn.myanimelist.net/images/anime/12/86676l.jpg",
+      "rating": 75,
+      "link": "https://myanimelist.net/anime/34902/Tsurezure_Children"
+    },
+    {
+      "title": "Rec",
+      "cover": "https://cdn.myanimelist.net/images/anime/1940/124243l.jpg",
+      "rating": 73,
+      "link": "https://myanimelist.net/anime/710/Rec"
+    },
+    {
+      "title": "You and Me",
+      "cover": "https://cdn.myanimelist.net/images/anime/4/34949l.jpg",
+      "rating": 73,
+      "link": "https://myanimelist.net/anime/10460/Kimi_to_Boku"
+    },
+    {
+      "title": "I Can't Understand What My Husband is Saying",
+      "cover": "https://cdn.myanimelist.net/images/anime/7/75287l.jpg",
+      "rating": 73,
+      "link": "https://myanimelist.net/anime/26349/Danna_ga_Nani_wo_Itteiru_ka_Wakaranai_Ken"
+    },
+    {
+      "title": "My Little Monster",
+      "cover": "https://cdn.myanimelist.net/images/anime/4/39779l.jpg",
+      "rating": 61,
+      "link": "https://myanimelist.net/anime/14227/Tonari_no_Kaibutsu-kun"
+    },
+    {
+      "title": "Noragami",
+      "cover": "https://cdn.myanimelist.net/images/anime/1886/128266l.jpg",
+      "rating": 73,
+      "link": "https://myanimelist.net/anime/20507/Noragami"
+    },
+    {
+      "title": "Haruhi Suzumiya",
+      "cover": "https://cdn.myanimelist.net/images/anime/1470/137929l.jpg",
+      "rating": 77,
+      "link": "https://myanimelist.net/anime/849/Suzumiya_Haruhi_no_Yuuutsu"
+    },
+    {
+      "title": "Bokura wa Minna Kawai-sou",
+      "cover": "https://cdn.myanimelist.net/images/anime/1257/145479l.jpg",
+      "rating": 77,
+      "link": "https://myanimelist.net/anime/21405/Bokura_wa_Minna_Kawai-sou"
+    },
+    {
+      "title": "Wotakoi",
+      "cover": "https://cdn.myanimelist.net/images/anime/1892/111383l.jpg",
+      "rating": 77,
+      "link": "https://myanimelist.net/anime/38349/Wotaku_ni_Koi_wa_Muzukashii_OVA"
+    },
+    {
+      "title": "Bloom Into You",
+      "cover": "https://cdn.myanimelist.net/images/anime/1783/96153l.jpg",
+      "rating": 81,
+      "link": "https://myanimelist.net/anime/37786/Yagate_Kimi_ni_Naru"
+    },
+    {
+      "title": "Monthly Girls' Nozaki-kun",
+      "cover": "https://cdn.myanimelist.net/images/anime/5/66083l.jpg",
+      "rating": 77,
+      "link": "https://myanimelist.net/anime/23289/Gekkan_Shoujo_Nozaki-kun"
+    },
+    {
+      "title": "Just Because",
+      "cover": "https://cdn.myanimelist.net/images/anime/10/88234l.jpg",
+      "rating": 71,
+      "link": "https://myanimelist.net/anime/35639/Just_Because"
+    },
+    {
+      "title": "Wandering Son",
+      "cover": "https://cdn.myanimelist.net/images/anime/13/53945l.jpg",
+      "rating": 73,
+      "link": "https://myanimelist.net/anime/8426/Hourou_Musuko"
+    },
+    {
+      "title": "Tada Never Falls in Love",
+      "cover": "https://cdn.myanimelist.net/images/anime/1446/91841l.jpg",
+      "rating": 75,
+      "link": "https://myanimelist.net/anime/36470/Tada-kun_wa_Koi_wo_Shinai"
+    },
+    {
+      "title": "Beyond the Boundary",
+      "cover": "https://cdn.myanimelist.net/images/anime/3/85468l.jpg",
+      "rating": 75,
+      "link": "https://myanimelist.net/anime/18153/Kyoukai_no_Kanata"
+    },
+    {
+      "title": "White Album 2",
+      "cover": "https://cdn.myanimelist.net/images/anime/1674/142746l.jpg",
+      "rating": 77,
+      "link": "https://myanimelist.net/anime/18245/White_Album_2"
+    },
+    {
+      "title": "Nichijou",
+      "cover": "https://cdn.myanimelist.net/images/anime/3/75617l.jpg",
+      "rating": 87,
+      "link": "https://myanimelist.net/anime/10165/Nichijou"
+    },
+    {
+      "title": "Terror in Resonance",
+      "cover": "https://cdn.myanimelist.net/images/anime/1417/117422l.jpg",
+      "rating": 77,
+      "link": "https://myanimelist.net/anime/23283/Zankyou_no_Terror"
+    },
+    {
+      "title": "Classroom of the Elite",
+      "cover": "https://cdn.myanimelist.net/images/anime/5/86830l.jpg",
+      "rating": 77,
+      "link": "https://myanimelist.net/anime/35507/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e"
+    },
+    {
+      "title": "Oresuki",
+      "cover": "https://cdn.myanimelist.net/images/anime/1348/102797l.jpg",
+      "rating": 71,
+      "link": "https://myanimelist.net/anime/38483/Ore_wo_Suki_nano_wa_Omae_dake_ka_yo"
+    },
+    {
+      "title": "Higurashi: When They Cry",
+      "cover": "https://cdn.myanimelist.net/images/anime/12/19634l.jpg",
+      "rating": 79,
+      "link": "https://myanimelist.net/anime/934/Higurashi_no_Naku_Koro_ni"
+    },
+    {
+      "title": "Rent-a-Girlfriend",
+      "cover": "https://cdn.myanimelist.net/images/anime/1902/128382l.jpg",
+      "rating": 71,
+      "link": "https://myanimelist.net/anime/40839/Kanojo_Okarishimasu"
+    },
+    {
+      "title": "Baccano",
+      "cover": "https://cdn.myanimelist.net/images/anime/3/14547l.jpg",
+      "rating": 87,
+      "link": "https://myanimelist.net/anime/2251/Baccano"
+    },
+    {
+      "title": "Amagami SS",
+      "cover": "https://cdn.myanimelist.net/images/anime/10/78699l.jpg",
+      "rating": 75,
+      "link": "https://myanimelist.net/anime/8676/Amagami_SS"
+    },
+    {
+      "title": "Our love has always been 10 cm apart",
+      "cover": "https://cdn.myanimelist.net/images/anime/1015/123541l.jpg",
+      "rating": 73,
+      "link": "https://myanimelist.net/anime/36220/Itsudatte_Bokura_no_Koi_wa_10_cm_Datta"
+    },
+    {
+      "title": "The God of High School",
+      "cover": "https://cdn.myanimelist.net/images/anime/1722/107269l.jpg",
+      "rating": 65,
+      "link": "https://myanimelist.net/anime/41353/The_God_of_High_School"
+    },
+    {
+      "title": "Serial Experiments Lain",
+      "cover": "https://cdn.myanimelist.net/images/anime/1718/91550l.jpg",
+      "rating": 75,
+      "link": "https://myanimelist.net/anime/339/Serial_Experiments_Lain"
+    },
+    {
+      "title": "Boarding School Juliet",
+      "cover": "https://cdn.myanimelist.net/images/anime/1908/93416l.jpg",
+      "rating": 75,
+      "link": "https://myanimelist.net/anime/37475/Kishuku_Gakkou_no_Juliet"
+    },
+    {
+      "title": "Daily Lives of High School Boys",
+      "cover": "https://cdn.myanimelist.net/images/anime/3/33257l.jpg",
+      "rating": 75,
+      "link": "https://myanimelist.net/anime/11843/Danshi_Koukousei_no_Nichijou"
+    },
+    {
+      "title": "K-On!",
+      "cover": "https://cdn.myanimelist.net/images/anime/10/76120l.jpg",
+      "rating": 81,
+      "link": "https://myanimelist.net/anime/5680/K-On"
+    },
+    {
+      "title": "After the Rain",
+      "cover": "https://cdn.myanimelist.net/images/anime/1271/90136l.jpg",
+      "rating": 77,
+      "link": "https://myanimelist.net/anime/34984/Koi_wa_Ameagari_no_You_ni"
+    },
+    {
+      "title": "Love Lab",
+      "cover": "https://cdn.myanimelist.net/images/anime/1900/147887l.jpg",
+      "rating": 75,
+      "link": "https://myanimelist.net/anime/16353/Love_Lab"
+    },
+    {
+      "title": "The World Only God Knows",
+      "cover": "https://cdn.myanimelist.net/images/anime/2/43361l.jpg",
+      "rating": 77,
+      "link": "https://myanimelist.net/anime/8525/Kami_nomi_zo_Shiru_Sekai"
+    },
+    {
+      "title": "March Comes In Like A Lion",
+      "cover": "https://cdn.myanimelist.net/images/anime/3/82899l.jpg",
+      "rating": 85,
+      "link": "https://myanimelist.net/anime/31646/3-gatsu_no_Lion"
+    },
+    {
+      "title": "Arakawa Under the Bridge",
+      "cover": "https://cdn.myanimelist.net/images/anime/1019/98620l.jpg",
+      "rating": 81,
+      "link": "https://myanimelist.net/anime/7647/Arakawa_Under_the_Bridge"
+    },
+    {
+      "title": "The Quintessential Quintuplets",
+      "cover": "https://cdn.myanimelist.net/images/anime/1819/97947l.jpg",
+      "rating": 73,
+      "link": "https://myanimelist.net/anime/38101/5-toubun_no_Hanayome"
+    },
+    {
+      "title": "Aho Girl",
+      "cover": "https://cdn.myanimelist.net/images/anime/7/86665l.jpg",
+      "rating": 69,
+      "link": "https://myanimelist.net/anime/34881/Aho_Girl"
+    },
+    {
+      "title": "The Devil is a Part-Timer!",
+      "cover": "https://cdn.myanimelist.net/images/anime/3/50177l.jpg",
+      "rating": 73,
+      "link": "https://myanimelist.net/anime/15809/Hataraku_Maou-sama"
+    },
+    {
+      "title": "3D Kanojo: Real Girl",
+      "cover": "https://cdn.myanimelist.net/images/anime/1327/93616l.jpg",
+      "rating": 75,
+      "link": "https://myanimelist.net/anime/36793/3D_Kanojo__Real_Girl"
+    },
+    {
+      "title": "Love, Election and Chocolate",
+      "cover": "https://cdn.myanimelist.net/images/anime/4/42015l.jpg",
+      "rating": 71,
+      "link": "https://myanimelist.net/anime/12175/Koi_to_Senkyo_to_Chocolate"
+    },
+    {
+      "title": "Kids on the Slope",
+      "cover": "https://cdn.myanimelist.net/images/anime/1604/98654l.jpg",
+      "rating": 75,
+      "link": "https://myanimelist.net/anime/12531/Sakamichi_no_Apollon"
+    },
+    {
+      "title": "Skip Beat!",
+      "cover": "https://cdn.myanimelist.net/images/anime/11/84022l.jpg",
+      "rating": 73,
+      "link": "https://myanimelist.net/anime/4722/Skip_Beat"
+    },
+    {
+      "title": "Non Non Biyori",
+      "cover": "https://cdn.myanimelist.net/images/anime/9/75105l.jpg",
+      "rating": 81,
+      "link": "https://myanimelist.net/anime/23623/Non_Non_Biyori_Repeat"
+    },
+    {
+      "title": "Gosick",
+      "cover": "https://cdn.myanimelist.net/images/anime/11/27906l.jpg",
+      "rating": 79,
+      "link": "https://myanimelist.net/anime/8425/Gosick"
+    },
+    {
+      "title": "Akame ga Kill",
+      "cover": "https://cdn.myanimelist.net/images/anime/1429/95946l.jpg",
+      "rating": 79,
+      "link": "https://myanimelist.net/anime/22199/Akame_ga_Kill"
+    },
+    {
+      "title": "Momokuri",
+      "cover": "https://cdn.myanimelist.net/images/anime/8/76056l.jpg",
+      "rating": 73,
+      "link": "https://myanimelist.net/anime/30014/Momokuri"
+    },
+    {
+      "title": "Barakamon",
+      "cover": "https://cdn.myanimelist.net/images/anime/1426/111248l.jpg",
+      "rating": 83,
+      "link": "https://myanimelist.net/anime/22789/Barakamon"
+    },
+    {
+      "title": "Tonikaku Kawaii",
+      "cover": "https://cdn.myanimelist.net/images/anime/1613/108722l.jpg",
+      "rating": 79,
+      "link": "https://myanimelist.net/anime/41389/Tonikaku_Kawaii"
+    },
+    {
+      "title": "Hanasaku Iroha",
+      "cover": "https://cdn.myanimelist.net/images/anime/1491/117229l.jpg",
+      "rating": 77,
+      "link": "https://myanimelist.net/anime/9289/Hanasaku_Iroha"
+    },
+    {
+      "title": "Adachi and Shimamura",
+      "cover": "https://cdn.myanimelist.net/images/anime/1649/109056l.jpg",
+      "rating": 73,
+      "link": "https://myanimelist.net/anime/39790/Adachi_to_Shimamura"
+    },
+    {
+      "title": "Akudama Drive",
+      "cover": "https://cdn.myanimelist.net/images/anime/1468/109172l.jpg",
+      "rating": 77,
+      "link": "https://myanimelist.net/anime/41433/Akudama_Drive"
+    },
+    {
+      "title": "Another",
+      "cover": "https://cdn.myanimelist.net/images/anime/4/75509l.jpg",
+      "rating": 67,
+      "link": "https://myanimelist.net/anime/11111/Another"
+    },
+    {
+      "title": "Girls' Last Tour",
+      "cover": "https://cdn.myanimelist.net/images/anime/12/88321l.jpg",
+      "rating": 81,
+      "link": "https://myanimelist.net/anime/35838/Shoujo_Shuumatsu_Ryokou"
+    },
+    {
+      "title": "Princess Jellyfish",
+      "cover": "https://cdn.myanimelist.net/images/anime/1764/133575l.jpg",
+      "rating": 79,
+      "link": "https://myanimelist.net/anime/8129/Kuragehime"
+    },
+    {
+      "title": "Citrus",
+      "cover": "https://cdn.myanimelist.net/images/anime/11/89985.jpg",
+      "rating": 55,
+      "link": "https://myanimelist.net/anime/34382/Citrus"
+    },
+    {
+      "title": "Kase-san and Morning Glories",
+      "cover": "https://cdn.myanimelist.net/images/anime/1578/94205l.jpg",
+      "rating": 79,
+      "link": "https://myanimelist.net/anime/36214/Asagao_to_Kase-san"
+    },
+    {
+      "title": "Sweet Blue Flowers",
+      "cover": "https://cdn.myanimelist.net/images/anime/3/80255l.jpg",
+      "rating": 71,
+      "link": "https://myanimelist.net/anime/6164/Aoi_Hana"
+    },
+    {
+      "title": "Whispered Words",
+      "cover": "https://cdn.myanimelist.net/images/anime/9/75225l.jpg",
+      "rating": 69,
+      "link": "https://myanimelist.net/anime/6203/Sasameki_Koto"
+    },
+    {
+      "title": "Sakura Trick",
+      "cover": "https://cdn.myanimelist.net/images/anime/2/56189l.jpg",
+      "rating": 55,
+      "link": "https://myanimelist.net/anime/20047/Sakura_Trick"
+    },
+    {
+      "title": "Recovery of an MMO Junkie",
+      "cover": "https://cdn.myanimelist.net/images/anime/3/87463l.jpg",
+      "rating": 71,
+      "link": "https://myanimelist.net/anime/36038/Net-juu_no_Susume"
+    },
+    {
+      "title": "A Whisker Away",
+      "cover": "https://cdn.myanimelist.net/images/anime/1045/106389l.jpg",
+      "rating": 69,
+      "link": "https://myanimelist.net/anime/41168/Nakitai_Watashi_wa_Neko_wo_Kaburu"
+    },
+    {
+      "title": "A Town Where You Live",
+      "cover": "https://cdn.myanimelist.net/images/anime/1829/144852l.jpg",
+      "rating": 67,
+      "link": "https://myanimelist.net/anime/17741/Kimi_no_Iru_Machi"
+    },
+    {
+      "title": "Domestic Girlfriend",
+      "cover": "https://cdn.myanimelist.net/images/anime/1021/95670l.jpg",
+      "rating": 55,
+      "link": "https://myanimelist.net/anime/37982/Domestic_na_Kanojo"
+    },
+    {
+      "title": "Horimiya",
+      "cover": "https://cdn.myanimelist.net/images/anime/1695/111486l.jpg",
+      "rating": 77,
+      "link": "https://myanimelist.net/anime/42897/Horimiya"
+    },
+    {
+      "title": "Tanaka-kun is Always Listless",
+      "cover": "https://cdn.myanimelist.net/images/anime/1189/111994l.jpg",
+      "rating": 79,
+      "link": "https://myanimelist.net/anime/32093/Tanaka-kun_wa_Itsumo_Kedaruge"
+    },
+    {
+      "title": "Wonder Egg Priority",
+      "cover": "https://cdn.myanimelist.net/images/anime/1079/110751l.jpg",
+      "rating": 81,
+      "link": "https://myanimelist.net/anime/43299/Wonder_Egg_Priority"
+    },
+    {
+      "title": "Parasyte -the maxim-",
+      "cover": "https://cdn.myanimelist.net/images/anime/3/73178l.jpg",
+      "rating": 81,
+      "link": "https://myanimelist.net/anime/22535/Kiseijuu__Sei_no_Kakuritsu"
+    },
+    {
+      "title": "Hotarubi no Mori e",
+      "cover": "https://cdn.myanimelist.net/images/anime/1599/112267l.jpg",
+      "rating": 77,
+      "link": "https://myanimelist.net/anime/10408/Hotarubi_no_Mori_e"
+    },
+    {
+      "title": "Kakushigoto",
+      "cover": "https://cdn.myanimelist.net/images/anime/1048/128385l.jpg",
+      "rating": 77,
+      "link": "https://myanimelist.net/anime/40716/Kakushigoto"
+    },
+    {
+      "title": "Rainbow Days",
+      "cover": "https://cdn.myanimelist.net/images/anime/8/76691l.jpg",
+      "rating": 73,
+      "link": "https://myanimelist.net/anime/31414/Nijiiro_Days"
+    },
+    {
+      "title": "Future Diary",
+      "cover": "https://cdn.myanimelist.net/images/anime/13/33465l.jpg",
+      "rating": 73,
+      "link": "https://myanimelist.net/anime/10620/Mirai_Nikki_TV"
+    },
+    {
+      "title": "Josee, the Tiger and the Fish",
+      "cover": "https://cdn.myanimelist.net/images/anime/1714/108892l.jpg",
+      "rating": 83,
+      "link": "https://myanimelist.net/anime/40787/Josee_to_Tora_to_Sakana-tachi"
+    },
+    {
+      "title": "Ghost in the Shell",
+      "cover": "https://cdn.myanimelist.net/images/anime/10/82594l.jpg",
+      "rating": 75,
+      "link": "https://myanimelist.net/anime/43/Koukaku_Kidoutai"
+    },
+    {
+      "title": "Maquia",
+      "cover": "https://cdn.myanimelist.net/images/anime/11/89556l.jpg",
+      "rating": 81,
+      "link": "https://myanimelist.net/anime/35851/Sayonara_no_Asa_ni_Yakusoku_no_Hana_wo_Kazarou"
+    },
+    {
+      "title": "Zombieland Saga",
+      "cover": "https://cdn.myanimelist.net/images/anime/1084/128208l.jpg",
+      "rating": 77,
+      "link": "https://myanimelist.net/anime/37976/Zombieland_Saga"
+    },
+    {
+      "title": "Summer Wars",
+      "cover": "https://cdn.myanimelist.net/images/anime/1593/116751l.jpg",
+      "rating": 73,
+      "link": "https://myanimelist.net/anime/5681/Summer_Wars"
+    },
+    {
+      "title": "Higehiro",
+      "cover": "https://cdn.myanimelist.net/images/anime/1146/113477l.jpg",
+      "rating": 75,
+      "link": "https://myanimelist.net/anime/40938/Hige_wo_Soru_Soshite_Joshikousei_wo_Hirou"
+    },
+    {
+      "title": "Koikimo",
+      "cover": "https://cdn.myanimelist.net/images/anime/1519/110527l.jpg",
+      "rating": 71,
+      "link": "https://myanimelist.net/anime/41103/Koi_to_Yobu_ni_wa_Kimochi_Warui"
+    },
+    {
+      "title": "Odd Taxi",
+      "cover": "https://cdn.myanimelist.net/images/anime/1981/113348l.jpg",
+      "rating": 87,
+      "link": "https://myanimelist.net/anime/46102/Odd_Taxi"
+    },
+    {
+      "title": "Strawberry Panic",
+      "cover": "https://cdn.myanimelist.net/images/anime/1699/110686l.jpg",
+      "rating": 73,
+      "link": "https://myanimelist.net/anime/855/Strawberry_Panic"
+    },
+    {
+      "title": "True Tears",
+      "cover": "https://cdn.myanimelist.net/images/anime/1733/134118l.jpg",
+      "rating": 65,
+      "link": "https://myanimelist.net/anime/2129/True_Tears"
+    },
+    {
+      "title": "Demon Slayer",
+      "cover": "https://cdn.myanimelist.net/images/anime/1286/99889l.jpg",
+      "rating": 77,
+      "link": "https://myanimelist.net/anime/38000/Kimetsu_no_Yaiba"
+    },
+    {
+      "title": "Link Click",
+      "cover": "https://cdn.myanimelist.net/images/anime/1135/114867l.jpg",
+      "rating": 85,
+      "link": "https://myanimelist.net/anime/44074/Shiguang_Dailiren"
+    },
+    {
+      "title": "Shiki",
+      "cover": "https://cdn.myanimelist.net/images/anime/1531/119165l.jpg",
+      "rating": 77,
+      "link": "https://myanimelist.net/anime/7724/Shiki"
+    },
+    {
+      "title": "Land of the Lustrous",
+      "cover": "https://cdn.myanimelist.net/images/anime/3/88293l.jpg",
+      "rating": 81,
+      "link": "https://myanimelist.net/anime/35557/Houseki_no_Kuni"
+    },
+    {
+      "title": "Monster",
+      "cover": "https://cdn.myanimelist.net/images/anime/10/18793.jpg",
+      "rating": 89,
+      "link": "https://myanimelist.net/anime/19/Monster"
+    },
+    {
+      "title": "Sonny Boy",
+      "cover": "https://cdn.myanimelist.net/images/anime/1509/117149l.jpg",
+      "rating": 87,
+      "link": "https://myanimelist.net/anime/48849/Sonny_Boy"
+    },
+    {
+      "title": "Haibane Renmei",
+      "cover": "https://cdn.myanimelist.net/images/anime/9/13134l.jpg",
+      "rating": 81,
+      "link": "https://myanimelist.net/anime/387/Haibane_Renmei"
+    },
+    {
+      "title": "Psycho-Pass",
+      "cover": "https://cdn.myanimelist.net/images/anime/1314/142015l.jpg",
+      "rating": 81,
+      "link": "https://myanimelist.net/anime/13601/Psycho-Pass"
+    },
+    {
+      "title": "My Roommate is a Cat",
+      "cover": "https://cdn.myanimelist.net/images/anime/1251/99191l.jpg",
+      "rating": 81,
+      "link": "https://myanimelist.net/anime/38145/Doukyonin_wa_Hiza_Tokidoki_Atama_no_Ue"
+    },
+    {
+      "title": "Brother, Dear Brother",
+      "cover": "https://cdn.myanimelist.net/images/anime/12/18531l.jpg",
+      "rating": 85,
+      "link": "https://myanimelist.net/anime/795/Oniisama_e"
+    },
+    {
+      "title": "The Ancient Magus' Bride",
+      "cover": "https://cdn.myanimelist.net/images/anime/3/88476l.jpg",
+      "rating": 81,
+      "link": "https://myanimelist.net/anime/35062/Mahoutsukai_no_Yome"
+    },
+    {
+      "title": "Ousama Ranking",
+      "cover": "https://cdn.myanimelist.net/images/anime/1347/117616l.jpg",
+      "rating": 83,
+      "link": "https://myanimelist.net/anime/40834/Ousama_Ranking"
+    },
+    {
+      "title": "The Disastrous Life of Saiki K.",
+      "cover": "https://cdn.myanimelist.net/images/anime/1973/142750l.jpg",
+      "rating": 81,
+      "link": "https://myanimelist.net/anime/33255/Saiki_Kusuo_no_Ψ-nan"
+    },
+    {
+      "title": "Usagi Drop",
+      "cover": "https://cdn.myanimelist.net/images/anime/1460/98853l.jpg",
+      "rating": 81,
+      "link": "https://myanimelist.net/anime/10162/Usagi_Drop"
+    },
+    {
+      "title": "Perfect Blue",
+      "cover": "https://cdn.myanimelist.net/images/anime/1254/134212l.jpg",
+      "rating": 81,
+      "link": "https://myanimelist.net/anime/437/Perfect_Blue"
+    },
+    {
+      "title": "Asobi Asobase",
+      "cover": "https://cdn.myanimelist.net/images/anime/1139/95077l.jpg",
+      "rating": 81,
+      "link": "https://myanimelist.net/anime/37171/Asobi_Asobase"
+    },
+    {
+      "title": "Little Witch Academia",
+      "cover": "https://cdn.myanimelist.net/images/anime/1890/147903l.jpg",
+      "rating": 81,
+      "link": "https://myanimelist.net/anime/14349/Little_Witch_Academia"
+    },
+    {
+      "title": "91 Days",
+      "cover": "https://cdn.myanimelist.net/images/anime/13/80515l.jpg",
+      "rating": 83,
+      "link": "https://myanimelist.net/anime/32998/91_Days"
+    },
+    {
+      "title": "Ping Pong the Animation",
+      "cover": "https://cdn.myanimelist.net/images/anime/1586/146565l.jpg",
+      "rating": 85,
+      "link": "https://myanimelist.net/anime/22135/Ping_Pong_the_Animation"
+    },
+    {
+      "title": "Pop Team Epic",
+      "cover": "https://cdn.myanimelist.net/images/anime/3/88816l.jpg",
+      "rating": 87,
+      "link": "https://myanimelist.net/anime/35330/Poputepipikku"
     }
   ]
 }

@@ -49,7 +49,9 @@ const categoryConfig = {
         file: 'data/anime.json',
         hasDate: false,
         hasDetails: false,
-        fields: ['title', 'cover', 'rating']
+        hasLink: true,
+        hasTwoStateRating: true,
+        fields: ['title', 'cover', 'rating', 'link']
     },
     manga: {
         title: 'Manga',
@@ -478,21 +480,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (currentState.sortType === 'rating') {
             // Already on rating sort, cycle through states
-            currentState.state = (currentState.state + 1) % 3;
+            if (config.hasTwoStateRating) {
+                // Two-state rating button (anime): descending <-> ascending
+                currentState.state = currentState.state === 0 ? 1 : 0;
+            } else {
+                // Three-state rating button (other categories)
+                currentState.state = (currentState.state + 1) % 3;
 
-            if (currentState.state === 2) {
-                // Third click: reset to default
-                if (config.hasStatus) {
-                    // Reset to status
-                    currentState.sortType = 'status';
-                    currentState.state = 0;
-                } else if (config.hasDate) {
-                    // Reset to date descending
-                    currentState.sortType = 'date';
-                    currentState.state = 0;
-                } else {
-                    // Reset to rating descending
-                    currentState.state = 0;
+                if (currentState.state === 2) {
+                    // Third click: reset to default
+                    if (config.hasStatus) {
+                        // Reset to status
+                        currentState.sortType = 'status';
+                        currentState.state = 0;
+                    } else if (config.hasDate) {
+                        // Reset to date descending
+                        currentState.sortType = 'date';
+                        currentState.state = 0;
+                    } else {
+                        // Reset to rating descending
+                        currentState.state = 0;
+                    }
                 }
             }
         } else {

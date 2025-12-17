@@ -1,9 +1,6 @@
--add movies, tv series, anime, manga, books
--add a homepage
--fix sorting buttons, make them sticky
+-add tv series, anime, manga, books
 -decorate
 -add 'dropped' games
--add vibing games
 -add backlog? or todo?
 -find backgrounds
 -
