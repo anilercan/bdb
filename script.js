@@ -162,6 +162,12 @@ async function loadCategory(category) {
         item.classList.toggle('active', item.dataset.category === category);
     });
 
+    // Show/hide status legend for vibing games
+    const legend = document.getElementById('status-legend');
+    if (legend) {
+        legend.style.display = config.hasStatus ? 'flex' : 'none';
+    }
+
     // Show sort controls
     document.querySelector('.controls-drawer').style.display = 'block';
 
@@ -351,21 +357,23 @@ function renderItems(items) {
 
     container.innerHTML = items.map(item => {
         let extraInfo = '';
+        let statusCircle = '';
 
-        if (config.hasStatus && item.status) {
-            const statusLower = item.status.toLowerCase();
-            let statusClass = 'item-status';
-            let statusText = item.status;
+        // Handle status for vibing games
+        if (config.hasStatus) {
+            const statusLower = item.status ? item.status.toLowerCase() : '';
+            let circleClass = '';
 
             if (statusLower === 'playing') {
-                statusClass = 'item-status playing';
-                statusText = 'Actively Play';
+                circleClass = 'status-circle-green';
             } else if (statusLower === 'sometimes') {
-                statusClass = 'item-status sometimes';
-                statusText = 'Sometimes Play';
+                circleClass = 'status-circle-yellow';
+            } else {
+                // Empty or no status = red circle
+                circleClass = 'status-circle-red';
             }
 
-            extraInfo += `<div class="${statusClass}">Status: ${escapeHtml(statusText)}</div>`;
+            statusCircle = `<div class="status-circle ${circleClass}"></div>`;
         }
 
         if (config.hasDetails && item.details) {
@@ -401,7 +409,10 @@ function renderItems(items) {
                     onerror="this.src='${placeholderImage}'"
                 >
                 <div class="item-info">
-                    ${extraInfo}
+                    <div class="item-info-content">
+                        ${extraInfo}
+                    </div>
+                    ${statusCircle}
                 </div>
             </div>
         `;
