@@ -109,6 +109,12 @@ async function loadHomePage() {
     // Hide sort controls for home page
     document.querySelector('.controls-drawer').style.display = 'none';
 
+    // Hide status legend
+    const legend = document.getElementById('status-legend');
+    if (legend) {
+        legend.style.display = 'none';
+    }
+
     // Clear background
     const mainContent = document.querySelector('.main-content');
     mainContent.style.backgroundImage = 'none';
