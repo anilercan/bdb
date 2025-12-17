@@ -84,18 +84,28 @@ header h1 {
     color: #fff;
 }
 
-/* Controls */
-.controls {
+/* Controls Drawer */
+.controls-drawer {
     position: sticky;
     top: 54px;
     z-index: 90;
+    background-color: #4f2351;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    border-radius: 0 0 8px 8px;
+    margin: 0 40px -44px 0;
+    width: fit-content;
+    margin-left: auto;
+    pointer-events: none;
+}
+
+.controls {
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 12px 40px 12px 0;
+    padding: 12px 16px;
     justify-content: flex-end;
-    pointer-events: none;
-    margin-bottom: -44px;
 }
 
 .controls .sort-btn {

@@ -96,7 +96,7 @@ async function loadHomePage() {
     });
 
     // Hide sort controls for home page
-    document.querySelector('.controls').style.display = 'none';
+    document.querySelector('.controls-drawer').style.display = 'none';
 
     // Clear background
     const mainContent = document.querySelector('.main-content');
@@ -152,7 +152,7 @@ async function loadCategory(category) {
     });
 
     // Show sort controls
-    document.querySelector('.controls').style.display = 'flex';
+    document.querySelector('.controls-drawer').style.display = 'block';
 
     // Reset container class
     document.getElementById('items-container').className = 'items-grid';
