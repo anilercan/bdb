@@ -70,10 +70,10 @@ def fetch_backloggd_data(game_title):
         return None
 
 def update_games_json():
-    """Update games.json with Backloggd links and cover images"""
+    """Update storygames.json with Backloggd links and cover images"""
 
     # Read the JSON file
-    with open('data/games.json', 'r', encoding='utf-8') as f:
+    with open('data/storygames.json', 'r', encoding='utf-8') as f:
         data = json.load(f)
 
     items = data['items']
@@ -112,7 +112,7 @@ def update_games_json():
         time.sleep(1.5)
 
     # Write back to JSON file
-    with open('data/games.json', 'w', encoding='utf-8') as f:
+    with open('data/storygames.json', 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
 
     print(f"\n✅ Done! Updated {updated} games, skipped {skipped} games")

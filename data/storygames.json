@@ -1672,6 +1672,70 @@
       "details": "",
       "dateCompleted": "2025-12-16",
       "link": "https://backloggd.com/games/deus-ex-mankind-divided/"
+    },
+    {
+      "title": "The Elder Scrolls IV: Oblivion",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co8fpz.jpg",
+      "rating": 69,
+      "details": "",
+      "dateCompleted": "",
+      "link": "https://backloggd.com/games/the-elder-scrolls-iv-oblivion/"
+    },
+    {
+      "title": "The Elder Scrolls V: Skyrim",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co1tnw.jpg",
+      "rating": 69,
+      "details": "",
+      "dateCompleted": "",
+      "link": "https://backloggd.com/games/the-elder-scrolls-v-skyrim/"
+    },
+    {
+      "title": "POSTAL 2",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co8fqo.jpg",
+      "rating": 61,
+      "details": "",
+      "dateCompleted": "2016-08-14",
+      "link": "https://backloggd.com/games/postal-2/"
+    },
+    {
+      "title": "Pipistrello and the Cursed Yoyo",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co91ue.jpg",
+      "rating": 61,
+      "details": "",
+      "dateCompleted": "2025-09-03",
+      "link": "https://backloggd.com/games/pipistrello-and-the-cursed-yoyo/"
+    },
+    {
+      "title": "Baba is You",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2hqt.jpg",
+      "rating": 73,
+      "details": "",
+      "dateCompleted": "2019-06-14",
+      "link": "https://backloggd.com/games/baba-is-you/"
+    },
+    {
+      "title": "DLC Quest",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2105.jpg",
+      "rating": 53,
+      "details": "",
+      "dateCompleted": "2017-06-26",
+      "link": "https://backloggd.com/games/dlc-quest/"
+    },
+    {
+      "title": "Amnesia: The Dark Descent",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co1qq5.jpg",
+      "rating": 73,
+      "details": "",
+      "dateCompleted": "2018-08-30",
+      "link": "https://backloggd.com/games/amnesia-the-dark-descent/"
+    },
+    {
+      "title": "Papers, Please",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co1vep.jpg",
+      "rating": 73,
+      "details": "",
+      "dateCompleted": "2018-08-30",
+      "link": "https://backloggd.com/games/papers-please/"
     }
   ]
 }

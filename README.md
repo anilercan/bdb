@@ -3,13 +3,13 @@ büyücü's database
 
 a personal collection of media ratings across games, visual novels, movies, tv series, anime, manga, and books.
 
-## structure
-
-data stored in manually written json files, displayed using javascript, structured using html
-
 ## visit
 
 check out: [anilercan.github.io/bdb](https://anilercan.github.io/bdb)
+
+## structure
+
+data stored in manually written json files, displayed using javascript, structured using html
 
 ## ratings
 

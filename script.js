@@ -5,7 +5,7 @@ let categorySortState = {}; // Track active sort for each category
 const categoryConfig = {
     games: {
         title: 'Games',
-        file: 'data/games.json',
+        file: 'data/storygames.json',
         hasDate: true,
         hasDetails: true,
         hasLink: true,

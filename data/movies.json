@@ -1,9 +1,1114 @@
 {
   "items": [
     {
+      "title": "Bruce Almighty",
+      "cover": "",
+      "rating": 65,
+      "link": ""
+    },
+    {
+      "title": "Jumper",
+      "cover": "",
+      "rating": 65,
+      "link": ""
+    },
+    {
+      "title": "Fight Club",
+      "cover": "",
+      "rating": 89,
+      "link": ""
+    },
+    {
+      "title": "Pulp Fiction",
+      "cover": "",
+      "rating": 91,
+      "link": ""
+    },
+    {
+      "title": "The Bucket List",
+      "cover": "",
+      "rating": 65,
+      "link": ""
+    },
+    {
+      "title": "The Shawshank Redemption",
+      "cover": "",
+      "rating": 89,
+      "link": ""
+    },
+    {
+      "title": "Mr. Church",
+      "cover": "",
+      "rating": 63,
+      "link": ""
+    },
+    {
+      "title": "Leon: The Professional",
+      "cover": "",
+      "rating": 87,
+      "link": ""
+    },
+    {
+      "title": "Who Am I",
+      "cover": "",
+      "rating": 71,
+      "link": ""
+    },
+    {
+      "title": "Forrest Gump",
+      "cover": "",
+      "rating": 79,
+      "link": ""
+    },
+    {
+      "title": "Enders Game",
+      "cover": "",
+      "rating": 65,
+      "link": ""
+    },
+    {
+      "title": "Catch Me If You Can",
+      "cover": "",
+      "rating": 83,
+      "link": ""
+    },
+    {
+      "title": "Escape Plan",
+      "cover": "",
+      "rating": 49,
+      "link": ""
+    },
+    {
+      "title": "Lucy",
+      "cover": "",
+      "rating": 61,
+      "link": ""
+    },
+    {
+      "title": "Interstellar",
+      "cover": "",
+      "rating": 83,
+      "link": ""
+    },
+    {
+      "title": "Life of Pi",
+      "cover": "",
+      "rating": 55,
+      "link": ""
+    },
+    {
+      "title": "Schindler's List",
+      "cover": "",
+      "rating": 83,
+      "link": ""
+    },
+    {
+      "title": "No Escape",
+      "cover": "",
+      "rating": 49,
+      "link": ""
+    },
+    {
+      "title": "Lion",
+      "cover": "",
+      "rating": 55,
+      "link": ""
+    },
+    {
+      "title": "The Cube",
+      "cover": "",
+      "rating": 75,
+      "link": ""
+    },
+    {
+      "title": "The Prestige",
+      "cover": "",
+      "rating": 81,
+      "link": ""
+    },
+    {
+      "title": "Sucker Punch",
+      "cover": "",
+      "rating": 79,
+      "link": ""
+    },
+    {
+      "title": "Mr. Nobody",
+      "cover": "",
+      "rating": 79,
+      "link": ""
+    },
+    {
       "title": "Inception",
       "cover": "",
-      "rating": 90
+      "rating": 79,
+      "link": ""
+    },
+    {
+      "title": "The Godfather",
+      "cover": "",
+      "rating": 77,
+      "link": ""
+    },
+    {
+      "title": "Donnie Darko",
+      "cover": "",
+      "rating": 83,
+      "link": ""
+    },
+    {
+      "title": "District 9",
+      "cover": "",
+      "rating": 73,
+      "link": ""
+    },
+    {
+      "title": "Suicide Squad",
+      "cover": "",
+      "rating": 43,
+      "link": ""
+    },
+    {
+      "title": "Truman Show",
+      "cover": "",
+      "rating": 77,
+      "link": ""
+    },
+    {
+      "title": "Eternal Sunshine of the Spotless Minds",
+      "cover": "",
+      "rating": 75,
+      "link": ""
+    },
+    {
+      "title": "The Wolf of the Wall Street",
+      "cover": "",
+      "rating": 65,
+      "link": ""
+    },
+    {
+      "title": "Now You See Me",
+      "cover": "",
+      "rating": 69,
+      "link": ""
+    },
+    {
+      "title": "Now You See Me 2",
+      "cover": "",
+      "rating": 69,
+      "link": ""
+    },
+    {
+      "title": "Hardcore Henry",
+      "cover": "",
+      "rating": 73,
+      "link": ""
+    },
+    {
+      "title": "Django Unchained",
+      "cover": "",
+      "rating": 87,
+      "link": ""
+    },
+    {
+      "title": "Inglorious Basterds",
+      "cover": "",
+      "rating": 85,
+      "link": ""
+    },
+    {
+      "title": "Reservoir Dogs",
+      "cover": "",
+      "rating": 83,
+      "link": ""
+    },
+    {
+      "title": "The Hateful Eight",
+      "cover": "",
+      "rating": 91,
+      "link": ""
+    },
+    {
+      "title": "The Big Lebowski",
+      "cover": "",
+      "rating": 81,
+      "link": ""
+    },
+    {
+      "title": "Sin City",
+      "cover": "",
+      "rating": 81,
+      "link": ""
+    },
+    {
+      "title": "The Sorcerer's Apprentice",
+      "cover": "",
+      "rating": 69,
+      "link": ""
+    },
+    {
+      "title": "The Good, the Bad, the Ugly",
+      "cover": "",
+      "rating": 73,
+      "link": ""
+    },
+    {
+      "title": "The Shining",
+      "cover": "",
+      "rating": 73,
+      "link": ""
+    },
+    {
+      "title": "Doctor Strange",
+      "cover": "",
+      "rating": 71,
+      "link": ""
+    },
+    {
+      "title": "Sully",
+      "cover": "",
+      "rating": 63,
+      "link": ""
+    },
+    {
+      "title": "Her",
+      "cover": "",
+      "rating": 77,
+      "link": ""
+    },
+    {
+      "title": "The Magnificent Seven",
+      "cover": "",
+      "rating": 73,
+      "link": ""
+    },
+    {
+      "title": "The Fisher King",
+      "cover": "",
+      "rating": 79,
+      "link": ""
+    },
+    {
+      "title": "The Imitation Game",
+      "cover": "",
+      "rating": 71,
+      "link": ""
+    },
+    {
+      "title": "Hacksaw Ridge",
+      "cover": "",
+      "rating": 71,
+      "link": ""
+    },
+    {
+      "title": "Grapes of Wrath",
+      "cover": "",
+      "rating": 61,
+      "link": ""
+    },
+    {
+      "title": "The Usual Suspects",
+      "cover": "",
+      "rating": 91,
+      "link": ""
+    },
+    {
+      "title": 21,
+      "cover": "",
+      "rating": 63,
+      "link": ""
+    },
+    {
+      "title": "Assassin's Creed",
+      "cover": "",
+      "rating": 63,
+      "link": ""
+    },
+    {
+      "title": "Back to the Future",
+      "cover": "",
+      "rating": 81,
+      "link": ""
+    },
+    {
+      "title": "Back to the Future 2",
+      "cover": "",
+      "rating": 83,
+      "link": ""
+    },
+    {
+      "title": "Back to the Future 3",
+      "cover": "",
+      "rating": 81,
+      "link": ""
+    },
+    {
+      "title": "Kingsman",
+      "cover": "",
+      "rating": 67,
+      "link": ""
+    },
+    {
+      "title": "The Interview",
+      "cover": "",
+      "rating": 67,
+      "link": ""
+    },
+    {
+      "title": "Constantine",
+      "cover": "",
+      "rating": 79,
+      "link": ""
+    },
+    {
+      "title": "Blade Runner 2049 (2017)",
+      "cover": "",
+      "rating": 81,
+      "link": ""
+    },
+    {
+      "title": "Artificial Intelligence",
+      "cover": "",
+      "rating": 73,
+      "link": ""
+    },
+    {
+      "title": "No Country for Old Men",
+      "cover": "",
+      "rating": 73,
+      "link": ""
+    },
+    {
+      "title": "The Da Vinci Code",
+      "cover": "",
+      "rating": 71,
+      "link": ""
+    },
+    {
+      "title": "Million Ways to Die in the West",
+      "cover": "",
+      "rating": 73,
+      "link": ""
+    },
+    {
+      "title": "Bridge of Spies",
+      "cover": "",
+      "rating": 55,
+      "link": ""
+    },
+    {
+      "title": "A Street Cat Named Bob",
+      "cover": "",
+      "rating": 61,
+      "link": ""
+    },
+    {
+      "title": "Warcraft",
+      "cover": "",
+      "rating": 63,
+      "link": ""
+    },
+    {
+      "title": "Saving Private Ryan",
+      "cover": "",
+      "rating": 73,
+      "link": ""
+    },
+    {
+      "title": "Watchmen",
+      "cover": "",
+      "rating": 79,
+      "link": ""
+    },
+    {
+      "title": "The Green Mile",
+      "cover": "",
+      "rating": 81,
+      "link": ""
+    },
+    {
+      "title": "The Silence of the Lambs",
+      "cover": "",
+      "rating": 77,
+      "link": ""
+    },
+    {
+      "title": "Next",
+      "cover": "",
+      "rating": 73,
+      "link": ""
+    },
+    {
+      "title": "Sixth Sense",
+      "cover": "",
+      "rating": 73,
+      "link": ""
+    },
+    {
+      "title": "Requiem for a Dream",
+      "cover": "",
+      "rating": 77,
+      "link": ""
+    },
+    {
+      "title": "Logan",
+      "cover": "",
+      "rating": 73,
+      "link": ""
+    },
+    {
+      "title": "Se7en",
+      "cover": "",
+      "rating": 83,
+      "link": ""
+    },
+    {
+      "title": "Braveheart",
+      "cover": "",
+      "rating": 73,
+      "link": ""
+    },
+    {
+      "title": "V for Vendetta",
+      "cover": "",
+      "rating": 75,
+      "link": ""
+    },
+    {
+      "title": "Gone Girl",
+      "cover": "",
+      "rating": 75,
+      "link": ""
+    },
+    {
+      "title": "John Wick",
+      "cover": "",
+      "rating": 61,
+      "link": ""
+    },
+    {
+      "title": "Shutter Island",
+      "cover": "",
+      "rating": 91,
+      "link": ""
+    },
+    {
+      "title": "12 Angry Men",
+      "cover": "",
+      "rating": 85,
+      "link": ""
+    },
+    {
+      "title": "Birdman",
+      "cover": "",
+      "rating": 77,
+      "link": ""
+    },
+    {
+      "title": "From Dusk Till Dawn",
+      "cover": "",
+      "rating": 69,
+      "link": ""
+    },
+    {
+      "title": "The Arrival",
+      "cover": "",
+      "rating": 63,
+      "link": ""
+    },
+    {
+      "title": "Predestination",
+      "cover": "",
+      "rating": 73,
+      "link": ""
+    },
+    {
+      "title": "Batman Begins",
+      "cover": "",
+      "rating": 81,
+      "link": ""
+    },
+    {
+      "title": "The Dark Knight",
+      "cover": "",
+      "rating": 83,
+      "link": ""
+    },
+    {
+      "title": "The Dark Knight Rises",
+      "cover": "",
+      "rating": 81,
+      "link": ""
+    },
+    {
+      "title": "Rain Man",
+      "cover": "",
+      "rating": 81,
+      "link": ""
+    },
+    {
+      "title": "Bird Box",
+      "cover": "",
+      "rating": 45,
+      "link": ""
+    },
+    {
+      "title": "A Beautiful Mind",
+      "cover": "",
+      "rating": 65,
+      "link": ""
+    },
+    {
+      "title": "Upgrade",
+      "cover": "",
+      "rating": 81,
+      "link": ""
+    },
+    {
+      "title": "Hellboy",
+      "cover": "",
+      "rating": 63,
+      "link": ""
+    },
+    {
+      "title": "Searching",
+      "cover": "",
+      "rating": 63,
+      "link": ""
+    },
+    {
+      "title": "Exam",
+      "cover": "",
+      "rating": 71,
+      "link": ""
+    },
+    {
+      "title": "Split",
+      "cover": "",
+      "rating": 75,
+      "link": ""
+    },
+    {
+      "title": "Don't Breathe",
+      "cover": "",
+      "rating": 53,
+      "link": ""
+    },
+    {
+      "title": "Iron Man 3",
+      "cover": "",
+      "rating": 59,
+      "link": ""
+    },
+    {
+      "title": "Oblivion",
+      "cover": "",
+      "rating": 73,
+      "link": ""
+    },
+    {
+      "title": "Shooter",
+      "cover": "",
+      "rating": 61,
+      "link": ""
+    },
+    {
+      "title": "Kış Uykusu",
+      "cover": "",
+      "rating": 79,
+      "link": ""
+    },
+    {
+      "title": "In Bruges",
+      "cover": "",
+      "rating": 83,
+      "link": ""
+    },
+    {
+      "title": "Memento",
+      "cover": "",
+      "rating": 91,
+      "link": ""
+    },
+    {
+      "title": "Whiplash",
+      "cover": "",
+      "rating": 71,
+      "link": ""
+    },
+    {
+      "title": "Edge of Tomorrow",
+      "cover": "",
+      "rating": 71,
+      "link": ""
+    },
+    {
+      "title": "Shoot 'Em Up",
+      "cover": "",
+      "rating": 67,
+      "link": ""
+    },
+    {
+      "title": "K-Pax",
+      "cover": "",
+      "rating": 73,
+      "link": ""
+    },
+    {
+      "title": "Bad Times at the El Royale",
+      "cover": "",
+      "rating": 81,
+      "link": ""
+    },
+    {
+      "title": "Ready Player One",
+      "cover": "",
+      "rating": 67,
+      "link": ""
+    },
+    {
+      "title": "Coherence",
+      "cover": "",
+      "rating": 77,
+      "link": ""
+    },
+    {
+      "title": "Alita Battle Angel",
+      "cover": "",
+      "rating": 73,
+      "link": ""
+    },
+    {
+      "title": "Focus",
+      "cover": "",
+      "rating": 71,
+      "link": ""
+    },
+    {
+      "title": "Kill Bill: Vol. 1",
+      "cover": "",
+      "rating": 77,
+      "link": ""
+    },
+    {
+      "title": "Kill Bill: Vol. 2",
+      "cover": "",
+      "rating": 81,
+      "link": ""
+    },
+    {
+      "title": "Good Will Hunting",
+      "cover": "",
+      "rating": 69,
+      "link": ""
+    },
+    {
+      "title": "Prisoners",
+      "cover": "",
+      "rating": 77,
+      "link": ""
+    },
+    {
+      "title": "Vanilla Sky",
+      "cover": "",
+      "rating": 79,
+      "link": ""
+    },
+    {
+      "title": "Source Code",
+      "cover": "",
+      "rating": 77,
+      "link": ""
+    },
+    {
+      "title": "Sherlock Holmes",
+      "cover": "",
+      "rating": 79,
+      "link": ""
+    },
+    {
+      "title": "Sherlock Holmes: A Game of Shadows",
+      "cover": "",
+      "rating": 77,
+      "link": ""
+    },
+    {
+      "title": "Bandersnatch",
+      "cover": "",
+      "rating": 73,
+      "link": ""
+    },
+    {
+      "title": "Identity",
+      "cover": "",
+      "rating": 71,
+      "link": ""
+    },
+    {
+      "title": "One Flew Over the Cuckoo's Nest",
+      "cover": "",
+      "rating": 83,
+      "link": ""
+    },
+    {
+      "title": "Mystic River",
+      "cover": "",
+      "rating": 75,
+      "link": ""
+    },
+    {
+      "title": "Twelve Monkeys",
+      "cover": "",
+      "rating": 81,
+      "link": ""
+    },
+    {
+      "title": "Minority Report",
+      "cover": "",
+      "rating": 73,
+      "link": ""
+    },
+    {
+      "title": "The Pianist",
+      "cover": "",
+      "rating": 81,
+      "link": ""
+    },
+    {
+      "title": "Unbreakable",
+      "cover": "",
+      "rating": 45,
+      "link": ""
+    },
+    {
+      "title": "Goodfellas",
+      "cover": "",
+      "rating": 81,
+      "link": ""
+    },
+    {
+      "title": "Dead Poets Society",
+      "cover": "",
+      "rating": 71,
+      "link": ""
+    },
+    {
+      "title": "Enter the Void",
+      "cover": "",
+      "rating": 71,
+      "link": ""
+    },
+    {
+      "title": "Zodiac",
+      "cover": "",
+      "rating": 55,
+      "link": ""
+    },
+    {
+      "title": "The Game",
+      "cover": "",
+      "rating": 67,
+      "link": ""
+    },
+    {
+      "title": "Frequency",
+      "cover": "",
+      "rating": 77,
+      "link": ""
+    },
+    {
+      "title": "Locke",
+      "cover": "",
+      "rating": 71,
+      "link": ""
+    },
+    {
+      "title": "The Lighthouse",
+      "cover": "",
+      "rating": 81,
+      "link": ""
+    },
+    {
+      "title": "2001: A Space Odyssey",
+      "cover": "",
+      "rating": 81,
+      "link": ""
+    },
+    {
+      "title": "The Highwaymen",
+      "cover": "",
+      "rating": 67,
+      "link": ""
+    },
+    {
+      "title": "Nightcrawler",
+      "cover": "",
+      "rating": 69,
+      "link": ""
+    },
+    {
+      "title": "Collateral",
+      "cover": "",
+      "rating": 77,
+      "link": ""
+    },
+    {
+      "title": "Vertigo",
+      "cover": "",
+      "rating": 79,
+      "link": ""
+    },
+    {
+      "title": "Eraserhead",
+      "cover": "",
+      "rating": 81,
+      "link": ""
+    },
+    {
+      "title": "Insomnia",
+      "cover": "",
+      "rating": 73,
+      "link": ""
+    },
+    {
+      "title": "Contratiempo",
+      "cover": "",
+      "rating": 71,
+      "link": ""
+    },
+    {
+      "title": "The Departed",
+      "cover": "",
+      "rating": 83,
+      "link": ""
+    },
+    {
+      "title": "Strangers on a Train",
+      "cover": "",
+      "rating": 77,
+      "link": ""
+    },
+    {
+      "title": "American History X",
+      "cover": "",
+      "rating": 65,
+      "link": ""
+    },
+    {
+      "title": "Snatch",
+      "cover": "",
+      "rating": 81,
+      "link": ""
+    },
+    {
+      "title": "Lost Highway",
+      "cover": "",
+      "rating": 77,
+      "link": ""
+    },
+    {
+      "title": "Music of the Heart",
+      "cover": "",
+      "rating": 63,
+      "link": ""
+    },
+    {
+      "title": "Taxi Driver",
+      "cover": "",
+      "rating": 83,
+      "link": ""
+    },
+    {
+      "title": "Fractured",
+      "cover": "",
+      "rating": 43,
+      "link": ""
+    },
+    {
+      "title": "Dr. Strangelove",
+      "cover": "",
+      "rating": 81,
+      "link": ""
+    },
+    {
+      "title": "Ocean's Eleven",
+      "cover": "",
+      "rating": 79,
+      "link": ""
+    },
+    {
+      "title": "The Irishman",
+      "cover": "",
+      "rating": 81,
+      "link": ""
+    },
+    {
+      "title": "Joker",
+      "cover": "",
+      "rating": 77,
+      "link": ""
+    },
+    {
+      "title": "A Quiet Place",
+      "cover": "",
+      "rating": 55,
+      "link": ""
+    },
+    {
+      "title": "Molly's Game",
+      "cover": "",
+      "rating": 63,
+      "link": ""
+    },
+    {
+      "title": "North by Northwest",
+      "cover": "",
+      "rating": 81,
+      "link": ""
+    },
+    {
+      "title": "Rear Window",
+      "cover": "",
+      "rating": 81,
+      "link": ""
+    },
+    {
+      "title": "The Big Short",
+      "cover": "",
+      "rating": 77,
+      "link": ""
+    },
+    {
+      "title": "Uncut Gems",
+      "cover": "",
+      "rating": 77,
+      "link": ""
+    },
+    {
+      "title": "Lost in Translation",
+      "cover": "",
+      "rating": 81,
+      "link": ""
+    },
+    {
+      "title": "There Will Be Blood",
+      "cover": "",
+      "rating": 79,
+      "link": ""
+    },
+    {
+      "title": "Parasite",
+      "cover": "",
+      "rating": 77,
+      "link": ""
+    },
+    {
+      "title": "Drive",
+      "cover": "",
+      "rating": 75,
+      "link": ""
+    },
+    {
+      "title": "Knives Out",
+      "cover": "",
+      "rating": 75,
+      "link": ""
+    },
+    {
+      "title": "Clue",
+      "cover": "",
+      "rating": 81,
+      "link": ""
+    },
+    {
+      "title": "Looper",
+      "cover": "",
+      "rating": 71,
+      "link": ""
+    },
+    {
+      "title": "The Illusionist",
+      "cover": "",
+      "rating": 67,
+      "link": ""
+    },
+    {
+      "title": "The Handmaiden",
+      "cover": "",
+      "rating": 81,
+      "link": ""
+    },
+    {
+      "title": "The Grand Budapest Hotel",
+      "cover": "",
+      "rating": 81,
+      "link": ""
+    },
+    {
+      "title": "Mulholland Drive",
+      "cover": "",
+      "rating": 81,
+      "link": ""
+    },
+    {
+      "title": "Get Out",
+      "cover": "",
+      "rating": 37,
+      "link": ""
+    },
+    {
+      "title": "Murder by Death",
+      "cover": "",
+      "rating": 73,
+      "link": ""
+    },
+    {
+      "title": "Everything Everywhere All at Once",
+      "cover": "",
+      "rating": 71,
+      "link": ""
+    },
+    {
+      "title": "Oldboy",
+      "cover": "",
+      "rating": 73,
+      "link": ""
+    },
+    {
+      "title": "Barbie",
+      "cover": "",
+      "rating": 71,
+      "link": ""
+    },
+    {
+      "title": "A Nightmare on Elm Street",
+      "cover": "",
+      "rating": 65,
+      "link": ""
+    },
+    {
+      "title": "The Nightmare Before Christmas",
+      "cover": "",
+      "rating": 85,
+      "link": ""
+    },
+    {
+      "title": "Memoir of a Murderer",
+      "cover": "",
+      "rating": 75,
+      "link": ""
+    },
+    {
+      "title": "Five Nights at Freddy's",
+      "cover": "",
+      "rating": 61,
+      "link": ""
+    },
+    {
+      "title": "Hellraiser",
+      "cover": "",
+      "rating": 61,
+      "link": ""
     }
   ]
 }
