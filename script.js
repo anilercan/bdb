@@ -1,6 +1,6 @@
 let currentData = [];
 let currentCategory = 'games';
-let categorySortState = {}; // Track active sort for each category
+let categorySortState = {}; // Track active sort for each category: { sortType: 'date'/'rating', state: 0/1/2 }
 
 const categoryConfig = {
     games: {
@@ -149,11 +149,17 @@ async function loadCategory(category) {
     // Reset container class
     document.getElementById('items-container').className = 'items-grid';
 
-    // Get saved sort state for this category, or default to date-desc
-    const savedSort = categorySortState[category] || (config.hasDate ? 'date-desc' : 'rating-desc');
+    // Get saved sort state for this category, or set default
+    if (!categorySortState[category]) {
+        if (config.hasDate) {
+            categorySortState[category] = { sortType: 'date', state: 0 }; // Default: date descending
+        } else {
+            categorySortState[category] = { sortType: 'rating', state: 0 }; // Default: rating descending
+        }
+    }
 
-    // Update sort options based on category
-    updateSortOptions(config, savedSort);
+    // Update sort button UI based on category
+    updateSortButtons(config, categorySortState[category]);
 
     try {
         const response = await fetch(config.file);
@@ -168,8 +174,8 @@ async function loadCategory(category) {
             mainContent.style.backgroundImage = 'none';
         }
 
-        // Use saved sort state
-        sortAndRender(savedSort);
+        // Apply the current sort state
+        applySortState(categorySortState[category]);
     } catch (error) {
         console.error(`Error loading ${category}:`, error);
         document.getElementById('items-container').innerHTML =
@@ -177,8 +183,9 @@ async function loadCategory(category) {
     }
 }
 
-function updateSortOptions(config, activeSort) {
-    const dateButton = document.querySelector('.sort-btn[data-sort="date-desc"]');
+function updateSortButtons(config, sortState) {
+    const dateButton = document.getElementById('date-btn');
+    const ratingButton = document.getElementById('rating-btn');
 
     // Show/hide date button based on category
     if (config.hasDate) {
@@ -187,38 +194,66 @@ function updateSortOptions(config, activeSort) {
         dateButton.style.display = 'none';
     }
 
-    // Update active button state
-    document.querySelectorAll('.sort-btn').forEach(btn => {
-        btn.classList.remove('active');
-    });
+    // Remove active class from all buttons
+    dateButton.classList.remove('active');
+    ratingButton.classList.remove('active');
 
-    const activeButton = document.querySelector(`.sort-btn[data-sort="${activeSort}"]`);
-    if (activeButton) {
-        activeButton.classList.add('active');
+    // Update button text and active state based on current sort
+    if (sortState.sortType === 'date') {
+        dateButton.classList.add('active');
+        if (sortState.state === 0) {
+            dateButton.textContent = 'Date ↓';
+        } else if (sortState.state === 1) {
+            dateButton.textContent = 'Date ↑';
+        }
+    } else {
+        dateButton.textContent = 'Date';
+    }
+
+    if (sortState.sortType === 'rating') {
+        ratingButton.classList.add('active');
+        if (sortState.state === 0) {
+            ratingButton.textContent = 'Rating ↓';
+        } else if (sortState.state === 1) {
+            ratingButton.textContent = 'Rating ↑';
+        }
+    } else {
+        ratingButton.textContent = 'Rating';
     }
 }
 
-function sortItems(items, sortType) {
+function sortItems(items, sortState) {
     const sorted = [...items];
+    const { sortType, state } = sortState;
 
-    switch (sortType) {
-        case 'date-desc':
+    if (sortType === 'date') {
+        if (state === 0) {
+            // Date descending (newest first)
             sorted.sort((a, b) => {
                 if (!a.dateCompleted && !b.dateCompleted) return 0;
                 if (!a.dateCompleted) return 1;
                 if (!b.dateCompleted) return -1;
                 return new Date(b.dateCompleted) - new Date(a.dateCompleted);
             });
-            break;
-        case 'rating-desc':
+        } else if (state === 1) {
+            // Date ascending (oldest first)
+            sorted.sort((a, b) => {
+                if (!a.dateCompleted && !b.dateCompleted) return 0;
+                if (!a.dateCompleted) return 1;
+                if (!b.dateCompleted) return -1;
+                return new Date(a.dateCompleted) - new Date(b.dateCompleted);
+            });
+        }
+        // state === 2 means reset to default (date descending), which is same as state 0
+    } else if (sortType === 'rating') {
+        if (state === 0) {
+            // Rating descending (highest first)
             sorted.sort((a, b) => b.rating - a.rating);
-            break;
-        case 'rating-asc':
+        } else if (state === 1) {
+            // Rating ascending (lowest first)
             sorted.sort((a, b) => a.rating - b.rating);
-            break;
-        case 'alpha':
-            sorted.sort((a, b) => a.title.localeCompare(b.title));
-            break;
+        }
+        // state === 2 means reset to default
     }
 
     return sorted;
@@ -281,8 +316,8 @@ function renderItems(items) {
     }).join('');
 }
 
-function sortAndRender(sortType) {
-    const sorted = sortItems(currentData, sortType);
+function applySortState(sortState) {
+    const sorted = sortItems(currentData, sortState);
     renderItems(sorted);
 }
 
@@ -298,20 +333,57 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Sort buttons
-    document.querySelectorAll('.sort-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const sortType = btn.dataset.sort;
+    // Sort buttons - Three-state toggle behavior
+    document.getElementById('date-btn').addEventListener('click', () => {
+        const config = categoryConfig[currentCategory];
+        if (!config.hasDate) return;
 
-            // Save sort state for current category
-            categorySortState[currentCategory] = sortType;
+        const currentState = categorySortState[currentCategory];
 
-            // Remove active class from all buttons
-            document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
-            // Add active class to clicked button
-            btn.classList.add('active');
-            // Sort and render
-            sortAndRender(sortType);
-        });
+        if (currentState.sortType === 'date') {
+            // Already on date sort, cycle through states
+            currentState.state = (currentState.state + 1) % 3;
+
+            if (currentState.state === 2) {
+                // Third click: reset to default (date descending)
+                currentState.state = 0;
+            }
+        } else {
+            // Switch to date sort (state 0: descending)
+            currentState.sortType = 'date';
+            currentState.state = 0;
+        }
+
+        updateSortButtons(config, currentState);
+        applySortState(currentState);
+    });
+
+    document.getElementById('rating-btn').addEventListener('click', () => {
+        const config = categoryConfig[currentCategory];
+        const currentState = categorySortState[currentCategory];
+
+        if (currentState.sortType === 'rating') {
+            // Already on rating sort, cycle through states
+            currentState.state = (currentState.state + 1) % 3;
+
+            if (currentState.state === 2) {
+                // Third click: reset to default
+                if (config.hasDate) {
+                    // Reset to date descending
+                    currentState.sortType = 'date';
+                    currentState.state = 0;
+                } else {
+                    // Reset to rating descending
+                    currentState.state = 0;
+                }
+            }
+        } else {
+            // Switch to rating sort (state 0: descending)
+            currentState.sortType = 'rating';
+            currentState.state = 0;
+        }
+
+        updateSortButtons(config, currentState);
+        applySortState(currentState);
     });
 });

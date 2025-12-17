@@ -85,11 +85,16 @@ header h1 {
 
 /* Controls */
 .controls {
+    position: sticky;
+    top: 54px;
+    z-index: 90;
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: 30px;
+    padding: 12px 0;
+    background-color: #1a1a1a;
     justify-content: flex-end;
+    margin-bottom: 20px;
 }
 
 .sort-btn {

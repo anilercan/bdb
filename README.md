@@ -9,7 +9,7 @@ check out: [anilercan.github.io/bdb](https://anilercan.github.io/bdb)
 
 ## structure
 
-data stored in manually written json files, displayed using javascript, structured using html
+data stored in json files, structured and parsed using javascript, displayed using html
 
 ## ratings
 
