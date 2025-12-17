@@ -4,7 +4,7 @@ let categorySortState = {}; // Track active sort for each category: { sortType: 
 
 const categoryConfig = {
     games: {
-        title: 'Games',
+        title: 'Story Games',
         file: 'data/storygames.json',
         hasDate: true,
         hasDetails: true,
@@ -84,17 +84,17 @@ function formatDate(dateString) {
 
 const placeholderImage = "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 133%22><rect fill=%22%23f0f0f0%22 width=%22100%22 height=%22133%22/><text x=%2250%22 y=%2270%22 text-anchor=%22middle%22 fill=%22%23ccc%22 font-size=%2212%22>No Image</text></svg>";
 
-// About page loader
-async function loadAboutPage() {
-    currentCategory = 'about';
-    document.getElementById('page-title').textContent = 'About';
+// Home page loader
+async function loadHomePage() {
+    currentCategory = 'home';
+    document.getElementById('page-title').textContent = 'Home';
 
     // Update active nav item
     document.querySelectorAll('.nav-item').forEach(item => {
-        item.classList.toggle('active', item.dataset.category === 'about');
+        item.classList.toggle('active', item.dataset.category === 'home');
     });
 
-    // Hide sort controls for about page
+    // Hide sort controls for home page
     document.querySelector('.controls').style.display = 'none';
 
     // Clear background
@@ -102,33 +102,40 @@ async function loadAboutPage() {
     mainContent.style.backgroundImage = 'none';
 
     try {
-        const response = await fetch('data/about.json');
+        const response = await fetch('data/home.json');
         const data = await response.json();
 
         const container = document.getElementById('items-container');
-        container.className = 'about-container';
+        container.className = 'home-container';
         container.innerHTML = `
-            <div class="about-links">
-                ${data.links.map(link => `
-                    <a href="${escapeHtml(link.link)}" target="_blank" class="about-link">
-                        <img src="${escapeHtml(link.icon)}" alt="${escapeHtml(link.name)}" class="about-link-icon">
-                        <span class="about-link-name">${escapeHtml(link.name)}</span>
-                    </a>
-                `).join('')}
+            <div class="home-sidebar-left"></div>
+            <div class="home-center">
+                <div class="home-introduction">
+                    <p>${escapeHtml(data.introduction)}</p>
+                </div>
+                <div class="home-links">
+                    ${data.links.map(link => `
+                        <a href="${escapeHtml(link.link)}" target="_blank" class="home-link">
+                            <img src="${escapeHtml(link.icon)}" alt="${escapeHtml(link.name)}" class="home-link-icon">
+                            <span class="home-link-name">${escapeHtml(link.name)}</span>
+                        </a>
+                    `).join('')}
+                </div>
             </div>
+            <div class="home-sidebar-right"></div>
         `;
     } catch (error) {
-        console.error('Error loading about page:', error);
+        console.error('Error loading home page:', error);
         document.getElementById('items-container').innerHTML =
-            '<p style="color: #999;">Could not load about data.</p>';
+            '<p style="color: #999;">Could not load home data.</p>';
     }
 }
 
 // Category loader
 async function loadCategory(category) {
-    // Handle about page separately
-    if (category === 'about') {
-        loadAboutPage();
+    // Handle home page separately
+    if (category === 'home') {
+        loadHomePage();
         return;
     }
 
@@ -186,6 +193,7 @@ async function loadCategory(category) {
 function updateSortButtons(config, sortState) {
     const dateButton = document.getElementById('date-btn');
     const ratingButton = document.getElementById('rating-btn');
+    const alphaButton = document.getElementById('alpha-btn');
 
     // Show/hide date button based on category
     if (config.hasDate) {
@@ -197,6 +205,7 @@ function updateSortButtons(config, sortState) {
     // Remove active class from all buttons
     dateButton.classList.remove('active');
     ratingButton.classList.remove('active');
+    alphaButton.classList.remove('active');
 
     // Update button text and active state based on current sort
     if (sortState.sortType === 'date') {
@@ -219,6 +228,17 @@ function updateSortButtons(config, sortState) {
         }
     } else {
         ratingButton.textContent = 'Rating';
+    }
+
+    if (sortState.sortType === 'alpha') {
+        alphaButton.classList.add('active');
+        if (sortState.state === 0) {
+            alphaButton.textContent = 'A-Z ↓';
+        } else if (sortState.state === 1) {
+            alphaButton.textContent = 'Z-A ↑';
+        }
+    } else {
+        alphaButton.textContent = 'A-Z';
     }
 }
 
@@ -252,6 +272,15 @@ function sortItems(items, sortState) {
         } else if (state === 1) {
             // Rating ascending (lowest first)
             sorted.sort((a, b) => a.rating - b.rating);
+        }
+        // state === 2 means reset to default
+    } else if (sortType === 'alpha') {
+        if (state === 0) {
+            // Alphabetical A-Z
+            sorted.sort((a, b) => a.title.localeCompare(b.title));
+        } else if (state === 1) {
+            // Alphabetical Z-A
+            sorted.sort((a, b) => b.title.localeCompare(a.title));
         }
         // state === 2 means reset to default
     }
@@ -324,7 +353,7 @@ function applySortState(sortState) {
 // Event listeners
 document.addEventListener('DOMContentLoaded', () => {
     // Load default category
-    loadCategory('games');
+    loadCategory('home');
 
     // Navigation
     document.querySelectorAll('.nav-item').forEach(item => {
@@ -380,6 +409,36 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             // Switch to rating sort (state 0: descending)
             currentState.sortType = 'rating';
+            currentState.state = 0;
+        }
+
+        updateSortButtons(config, currentState);
+        applySortState(currentState);
+    });
+
+    document.getElementById('alpha-btn').addEventListener('click', () => {
+        const config = categoryConfig[currentCategory];
+        const currentState = categorySortState[currentCategory];
+
+        if (currentState.sortType === 'alpha') {
+            // Already on alpha sort, cycle through states
+            currentState.state = (currentState.state + 1) % 3;
+
+            if (currentState.state === 2) {
+                // Third click: reset to default
+                if (config.hasDate) {
+                    // Reset to date descending
+                    currentState.sortType = 'date';
+                    currentState.state = 0;
+                } else {
+                    // Reset to rating descending
+                    currentState.sortType = 'rating';
+                    currentState.state = 0;
+                }
+            }
+        } else {
+            // Switch to alpha sort (state 0: A-Z)
+            currentState.sortType = 'alpha';
             currentState.state = 0;
         }
 

@@ -65,7 +65,7 @@ body {
 
 /* Main Content */
 .main-content {
-    padding: 40px;
+    padding: 20px 40px 40px 40px;
     background-color: #1a1a1a;
     background-size: cover;
     background-position: center;
@@ -74,7 +74,7 @@ body {
 }
 
 header {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 header h1 {
@@ -91,10 +91,13 @@ header h1 {
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 12px 0;
-    background-color: #1a1a1a;
+    padding: 12px 40px 12px 0;
     justify-content: flex-end;
-    margin-bottom: 20px;
+    pointer-events: none;
+}
+
+.controls .sort-btn {
+    pointer-events: auto;
 }
 
 .sort-btn {
@@ -240,18 +243,48 @@ header h1 {
     color: #111;
 }
 
-/* About Page Styles */
-.about-container {
-    max-width: 600px;
+/* Home Page Styles */
+.home-container {
+    display: flex;
+    gap: 0;
+    width: 100%;
+    min-height: 60vh;
 }
 
-.about-links {
+.home-sidebar-left,
+.home-sidebar-right {
+    width: 30%;
+    background-color: #1a1a1a;
+    /* Space for future images/gifs */
+}
+
+.home-center {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 20px 40px;
+}
+
+.home-introduction {
+    text-align: center;
+    color: #fff;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    padding: 20px 0;
+}
+
+.home-introduction p {
+    margin: 0;
+}
+
+.home-links {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
-.about-link {
+.home-link {
     display: flex;
     align-items: center;
     gap: 16px;
@@ -264,18 +297,18 @@ header h1 {
     transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-.about-link:hover {
+.home-link:hover {
     background-color: #3e3e3e;
     transform: translateX(4px);
 }
 
-.about-link-icon {
+.home-link-icon {
     width: 32px;
     height: 32px;
     object-fit: contain;
 }
 
-.about-link-name {
+.home-link-name {
     font-size: 1.1rem;
     font-weight: 500;
 }
