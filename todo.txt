@@ -3,4 +3,4 @@
 -add 'dropped' games
 -add backlog? or todo?
 -find backgrounds
--
+-search bar
