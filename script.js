@@ -57,11 +57,13 @@ const categoryConfig = {
         fields: ['title', 'cover', 'rating', 'link']
     },
     manga: {
-        title: 'Manga',
+        title: 'Manga/Webtoon',
         file: 'data/manga.json',
         hasDate: false,
         hasDetails: false,
-        fields: ['title', 'cover', 'rating']
+        hasLink: true,
+        hasTwoStateRating: true,
+        fields: ['title', 'cover', 'rating', 'link']
     },
     books: {
         title: 'Books',
