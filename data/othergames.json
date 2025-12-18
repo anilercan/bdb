@@ -1117,7 +1117,7 @@
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co90je.jpg",
       "rating": 73,
       "link": "https://backloggd.com/games/zenless-zone-zero/",
-      "details": "1500542887",
+      "details": "UID: 1500542887",
       "status": "playing"
     },
     {
@@ -1287,6 +1287,14 @@
       "link": "https://backloggd.com/games/super-crate-box/",
       "details": "",
       "status": ""
+    },
+    {
+      "title": "League of Legends",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/coabh7.jpg",
+      "rating": 71,
+      "link": "https://backloggd.com/games/league-of-legends/",
+      "details": "",
+      "status": "sometimes"
     }
   ]
 }

@@ -1,10 +1,123 @@
 {
   "items": [
     {
+      "title": "Sherlock",
+      "cover": "https://media.themoviedb.org/t/p/w220_and_h330_face/7WTsnHkbA0FaG6R9twfFde0I9hl.jpg",
+      "rating": 83,
+      "link": "https://www.imdb.com/title/tt1475582/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_Sherlock",
+      "seasonsWatched": "4"
+    },
+    {
+      "title": "How I Met Your Mother",
+      "cover": "https://media.themoviedb.org/t/p/w220_and_h330_face/b34jPzmB0wZy7EjUZoleXOl2RRI.jpg",
+      "rating": 83,
+      "link": "https://www.imdb.com/title/tt0460649/?ref_=nv_sr_srsg_0_tt_7_nm_1_in_0_q_how%2520i%2520met%2520your",
+      "seasonsWatched": "9"
+    },
+    {
+      "title": "The Walking Dead",
+      "cover": "https://media.themoviedb.org/t/p/w220_and_h330_face/ng3cMtxYKt1OSQYqFlnKWnVsqNO.jpg",
+      "rating": 73,
+      "link": "https://www.imdb.com/title/tt1520211/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_the%2520walking%2520dead",
+      "seasonsWatched": "6"
+    },
+    {
+      "title": "Stranger Things",
+      "cover": "https://media.themoviedb.org/t/p/w220_and_h330_face/oMkVNujGNmGmfNeHwxcUF6mncQJ.jpg",
+      "rating": 73,
+      "link": "https://www.imdb.com/title/tt4574334/?ref_=nv_sr_srsg_1_tt_5_nm_2_in_0_q_stranger%2520",
+      "seasonsWatched": "2"
+    },
+    {
+      "title": "Vikings",
+      "cover": "https://media.themoviedb.org/t/p/w220_and_h330_face/u3oInkxcnNV2pZQbkFY3ovHYExR.jpg",
+      "rating": 77,
+      "link": "https://www.imdb.com/title/tt2306299/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_vikings",
+      "seasonsWatched": "5"
+    },
+    {
+      "title": "Ragnarok",
+      "cover": "https://media.themoviedb.org/t/p/w220_and_h330_face/37p95Lpe7mfVX86ZcVr7TisAHPn.jpg",
+      "rating": 73,
+      "link": "https://www.imdb.com/title/tt9251798/?ref_=nv_sr_srsg_3_tt_8_nm_0_in_0_q_ragnarok",
+      "seasonsWatched": "2"
+    },
+    {
+      "title": "La Casa de Papel",
+      "cover": "https://media.themoviedb.org/t/p/w220_and_h330_face/8ZWzKXf3qPxXuxApGJ0i4TTuWTl.jpg",
+      "rating": 75,
+      "link": "https://www.imdb.com/title/tt6468322/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_la%2520casa%2520de",
+      "seasonsWatched": "2"
+    },
+    {
       "title": "Breaking Bad",
-      "cover": "",
-      "rating": 98,
-      "seasonsWatched": 5
+      "cover": "https://media.themoviedb.org/t/p/w220_and_h330_face/ztkUQFLlC19CCMYHW9o1zWhJRNq.jpg",
+      "rating": 89,
+      "link": "https://www.imdb.com/title/tt0903747/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_breaking%2520bad",
+      "seasonsWatched": "5"
+    },
+    {
+      "title": "Peaky Blinders",
+      "cover": "https://media.themoviedb.org/t/p/w220_and_h330_face/bGZn5RVzMMXju4ev7xbl1aLdXqq.jpg",
+      "rating": 81,
+      "link": "https://www.imdb.com/title/tt2442560/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_peaky%2520blinders",
+      "seasonsWatched": "5"
+    },
+    {
+      "title": "Dark",
+      "cover": "https://media.themoviedb.org/t/p/w220_and_h330_face/ov2SEqKLm9LNox10uewAonC4hsf.jpg",
+      "rating": 77,
+      "link": "https://www.imdb.com/title/tt5753856/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_dark",
+      "seasonsWatched": "1"
+    },
+    {
+      "title": "Love, Death, Robots",
+      "cover": "https://media.themoviedb.org/t/p/w220_and_h330_face/rlrRI2b6RvM9I9xOBTKqcTaehkE.jpg",
+      "rating": 87,
+      "link": "https://www.imdb.com/title/tt9561862/?ref_=ttep_ov_bk",
+      "seasonsWatched": "3"
+    },
+    {
+      "title": "The Office",
+      "cover": "https://media.themoviedb.org/t/p/w220_and_h330_face/7DJKHzAi83BmQrWLrYYOqcoKfhR.jpg",
+      "rating": 87,
+      "link": "https://www.imdb.com/title/tt0386676/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_the%2520office",
+      "seasonsWatched": "9"
+    },
+    {
+      "title": "Arcane",
+      "cover": "https://media.themoviedb.org/t/p/w220_and_h330_face/cG91ExsDryCdvaTvp8IaMp9JyMZ.jpg",
+      "rating": 85,
+      "link": "https://www.imdb.com/title/tt11126994/?ref_=nv_sr_srsg_0_tt_7_nm_1_in_0_q_arcane",
+      "seasonsWatched": "2"
+    },
+    {
+      "title": "Better Call Saul",
+      "cover": "https://media.themoviedb.org/t/p/w220_and_h330_face/zjg4jpK1Wp2kiRvtt5ND0kznako.jpg",
+      "rating": 83,
+      "link": "https://www.imdb.com/title/tt3032476/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_better%2520call",
+      "seasonsWatched": "6"
+    },
+    {
+      "title": "The Day of the Jackal",
+      "cover": "https://media.themoviedb.org/t/p/w220_and_h330_face/tYLecM3WSEjlkKhkGiH5G68Dprm.jpg",
+      "rating": 73,
+      "link": "https://www.imdb.com/title/tt24053860/?ref_=nv_sr_srsg_1_tt_3_nm_4_in_0_q_day%2520of%2520the%2520jac",
+      "seasonsWatched": "1"
+    },
+    {
+      "title": "Severance",
+      "cover": "https://media.themoviedb.org/t/p/w220_and_h330_face/pPHpeI2X1qEd1CS1SeyrdhZ4qnT.jpg",
+      "rating": 83,
+      "link": "https://www.imdb.com/title/tt11280740/?ref_=nv_sr_srsg_1_tt_6_nm_1_in_0_q_severance",
+      "seasonsWatched": "2"
+    },
+    {
+      "title": "The Wire",
+      "cover": "https://media.themoviedb.org/t/p/w220_and_h330_face/nEquQVNqOvzgi6Ck5WfN97QdEzM.jpg",
+      "rating": 87,
+      "link": "https://www.imdb.com/title/tt0306414/?ref_=fn_t_1",
+      "seasonsWatched": "5"
     }
   ]
 }

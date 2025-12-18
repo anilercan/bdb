@@ -11,17 +11,22 @@
         <div class="nav-items">
             <button class="nav-item active" data-category="home">Home</button>
             <button class="nav-item" data-category="games">Story Games</button>
-            <button class="nav-item" data-category="vibinggames">Vibing Games</button>
+            <button class="nav-item" data-category="othergames">Other Games</button>
             <button class="nav-item" data-category="visualnovels">Visual Novels</button>
             <button class="nav-item" data-category="movies">Movies</button>
+            <button class="nav-item" data-category="tvseries">TV Series</button>
             <button class="nav-item" data-category="anime">Anime</button>
-            <!-- <button class="nav-item" data-category="tvseries">TV Series</button> -->
             <!-- <button class="nav-item" data-category="manga">Manga</button> -->
             <!-- <button class="nav-item" data-category="books">Books</button> -->
         </div>
     </nav>
 
     <main class="main-content">
+        <div class="search-drawer">
+            <div class="search-container">
+                <input type="text" id="search-input" class="search-input" placeholder="Search...">
+            </div>
+        </div>
         <div class="controls-drawer">
             <div class="controls">
                 <button class="sort-btn" data-sort="date" id="date-btn">Date</button>
@@ -31,7 +36,10 @@
         </div>
 
         <header>
-            <h1 id="page-title">Home</h1>
+            <div class="header-left">
+                <h1 id="page-title">Home</h1>
+                <span class="item-count" id="item-count" style="display: none;"></span>
+            </div>
             <div class="status-legend" id="status-legend" style="display: none;">
                 <div class="legend-item">
                     <div class="status-circle status-circle-green"></div>
@@ -46,6 +54,7 @@
                     <span>Abandoned</span>
                 </div>
             </div>
+            <div></div>
         </header>
 
         <div id="items-container" class="items-grid">

@@ -1,6 +1,7 @@
--add tv series, anime, manga, books
+-add manga, books
 -decorate
 -add 'dropped' games
 -add backlog? or todo?
 -find backgrounds
--search bar
+-add multiple seasons/games of entries with multiple pages
+-

@@ -1,6 +1,7 @@
 let currentData = [];
 let currentCategory = 'home';
 let categorySortState = {}; // Track active sort for each category: { sortType: 'date'/'rating', state: 0/1/2 }
+let categorySearchQuery = {}; // Track search query for each category
 
 const categoryConfig = {
     games: {
@@ -19,9 +20,9 @@ const categoryConfig = {
         hasLink: true,
         fields: ['title', 'cover', 'rating', 'details', 'dateCompleted', 'link']
     },
-    vibinggames: {
-        title: 'Vibing Games',
-        file: 'data/vibinggames.json',
+    othergames: {
+        title: 'Other Games',
+        file: 'data/othergames.json',
         hasDate: false,
         hasDetails: true,
         hasLink: true,
@@ -42,7 +43,9 @@ const categoryConfig = {
         hasDate: false,
         hasDetails: false,
         hasSeasons: true,
-        fields: ['title', 'cover', 'rating', 'seasonsWatched']
+        hasLink: true,
+        hasTwoStateRating: true,
+        fields: ['title', 'cover', 'rating', 'seasonsWatched', 'link']
     },
     anime: {
         title: 'Anime',
@@ -101,18 +104,31 @@ async function loadHomePage() {
     currentCategory = 'home';
     document.getElementById('page-title').textContent = 'Home';
 
+    // Clear search input for home page
+    const searchInput = document.getElementById('search-input');
+    if (searchInput) {
+        searchInput.value = '';
+    }
+
     // Update active nav item
     document.querySelectorAll('.nav-item').forEach(item => {
         item.classList.toggle('active', item.dataset.category === 'home');
     });
 
-    // Hide sort controls for home page
+    // Hide sort controls and search for home page
     document.querySelector('.controls-drawer').style.display = 'none';
+    document.querySelector('.search-drawer').style.display = 'none';
 
     // Hide status legend
     const legend = document.getElementById('status-legend');
     if (legend) {
         legend.style.display = 'none';
+    }
+
+    // Hide item count
+    const itemCount = document.getElementById('item-count');
+    if (itemCount) {
+        itemCount.style.display = 'none';
     }
 
     // Clear background
@@ -161,6 +177,13 @@ async function loadCategory(category) {
     if (!config) return;
 
     currentCategory = category;
+
+    // Restore category-specific search query
+    const searchInput = document.getElementById('search-input');
+    if (searchInput) {
+        searchInput.value = categorySearchQuery[category] || '';
+    }
+
     document.getElementById('page-title').textContent = config.title;
 
     // Update active nav item
@@ -174,8 +197,9 @@ async function loadCategory(category) {
         legend.style.display = config.hasStatus ? 'flex' : 'none';
     }
 
-    // Show sort controls
+    // Show sort controls and search drawer
     document.querySelector('.controls-drawer').style.display = 'block';
+    document.querySelector('.search-drawer').style.display = 'block';
 
     // Reset container class
     document.getElementById('items-container').className = 'items-grid';
@@ -356,8 +380,18 @@ function renderItems(items) {
     const container = document.getElementById('items-container');
     const config = categoryConfig[currentCategory];
 
+    // Update item count
+    const itemCount = document.getElementById('item-count');
+    if (itemCount) {
+        itemCount.textContent = `Showing ${items.length} items`;
+        itemCount.style.display = 'inline';
+    }
+
     if (items.length === 0) {
-        container.innerHTML = `<p style="color: #999;">No ${config.title.toLowerCase()} yet.</p>`;
+        container.innerHTML = `<p style="color: #ccc7c7ff;">No ${config.title.toLowerCase()} yet.</p>`;
+        if (itemCount) {
+            itemCount.textContent = `Showing 0 items`;
+        }
         return;
     }
 
@@ -430,8 +464,21 @@ function renderItems(items) {
     }).join('');
 }
 
+function filterItems(items, query) {
+    if (!query || query.trim() === '') {
+        return items;
+    }
+
+    const lowerQuery = query.toLowerCase();
+    return items.filter(item => {
+        return item.title.toLowerCase().includes(lowerQuery);
+    });
+}
+
 function applySortState(sortState) {
-    const sorted = sortItems(currentData, sortState);
+    const query = categorySearchQuery[currentCategory] || '';
+    let filtered = filterItems(currentData, query);
+    const sorted = sortItems(filtered, sortState);
     renderItems(sorted);
 }
 
@@ -440,17 +487,31 @@ document.addEventListener('DOMContentLoaded', () => {
     // Load default category
     loadCategory('home');
 
-    // Add scroll listener for controls drawer padding
+    // Add scroll listener for drawers padding
     window.addEventListener('scroll', () => {
-        const drawer = document.querySelector('.controls-drawer');
-        if (!drawer) return;
+        const controlsDrawer = document.querySelector('.controls-drawer');
+        const searchDrawer = document.querySelector('.search-drawer');
 
         if (window.scrollY > 10) {
-            drawer.classList.add('scrolled');
+            if (controlsDrawer) controlsDrawer.classList.add('scrolled');
+            if (searchDrawer) searchDrawer.classList.add('scrolled');
         } else {
-            drawer.classList.remove('scrolled');
+            if (controlsDrawer) controlsDrawer.classList.remove('scrolled');
+            if (searchDrawer) searchDrawer.classList.remove('scrolled');
         }
     });
+
+    // Search input
+    const searchInput = document.getElementById('search-input');
+    if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+            categorySearchQuery[currentCategory] = e.target.value;
+            const currentState = categorySortState[currentCategory];
+            if (currentState) {
+                applySortState(currentState);
+            }
+        });
+    }
 
     // Navigation
     document.querySelectorAll('.nav-item').forEach(item => {
