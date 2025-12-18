@@ -3,7 +3,7 @@
     {
       "title": "The Red Strings Club",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co27be.jpg",
-      "rating": 81,
+      "rating": 78,
       "details": "",
       "dateCompleted": "2020-04-26",
       "link": "https://backloggd.com/games/the-red-strings-club/"
@@ -11,7 +11,7 @@
     {
       "title": "Steins;Gate",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co5ff7.jpg",
-      "rating": 91,
+      "rating": 90,
       "details": "",
       "dateCompleted": "2020-06-12",
       "link": "https://backloggd.com/games/steins-gate/"
@@ -19,10 +19,18 @@
     {
       "title": "Steins;Gate 0",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co24ua.jpg",
-      "rating": 73,
+      "rating": 74,
       "details": "",
       "dateCompleted": "2020-06-18",
       "link": "https://backloggd.com/games/steins-gate-0/"
+    },
+    {
+      "title": "Steins;Gate: My Darling's Embrace",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co1usr.jpg",
+      "rating": 69,
+      "details": "",
+      "dateCompleted": "2020-06-30",
+      "link": "https://backloggd.com/games/steins-gate-my-darlings-embrace/"
     },
     {
       "title": "Neo Cab",
@@ -35,7 +43,7 @@
     {
       "title": "Va-11 Hall-A",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2z8k.jpg",
-      "rating": 81,
+      "rating": 82,
       "details": "",
       "dateCompleted": "2020-04-22",
       "link": "https://backloggd.com/games/va-11-hall-a-cyberpunk-bartender-action/"
@@ -43,7 +51,7 @@
     {
       "title": "Doki Doki Literature Club",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6p5e.jpg",
-      "rating": 61,
+      "rating": 63,
       "details": "",
       "dateCompleted": "2020-05-10",
       "link": "https://backloggd.com/games/doki-doki-literature-club/"
@@ -51,7 +59,7 @@
     {
       "title": "Danganronpa: Trigger Happy Havoc",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co1n1w.jpg",
-      "rating": 73,
+      "rating": 74,
       "details": "",
       "dateCompleted": "2020-07-09",
       "link": "https://backloggd.com/games/danganronpa-trigger-happy-havoc/"
@@ -67,18 +75,34 @@
     {
       "title": "Danganronpa V3: Killing Harmony",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co1u57.jpg",
-      "rating": 71,
+      "rating": 73,
       "details": "",
       "dateCompleted": "2020-08-06",
       "link": "https://backloggd.com/games/danganronpa-v3-killing-harmony--1/"
     },
     {
-      "title": "Phoenix Wright: Ace Attorney Trilogy",
-      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/coa7iv.jpg",
-      "rating": 93,
+      "title": "Phoenix Wright: Ace Attorney",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co5z6o.jpg",
+      "rating": 84,
+      "details": "",
+      "dateCompleted": "",
+      "link": "https://backloggd.com/games/phoenix-wright-ace-attorney--3/"
+    },
+    {
+      "title": "Phoenix Wright: Ace Attorney - Justice For All",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co5z6n.jpg",
+      "rating": 79,
+      "details": "",
+      "dateCompleted": "",
+      "link": "https://backloggd.com/games/phoenix-wright-ace-attorney-justice-for-all--1/"
+    },
+    {
+      "title": "Phoenix Wright: Ace Attorney - Trials and Tribulations",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co5z6m.jpg",
+      "rating": 90,
       "details": "",
       "dateCompleted": "2023-04-10",
-      "link": "https://backloggd.com/games/phoenix-wright-ace-attorney-trilogy/"
+      "link": "https://backloggd.com/games/phoenix-wright-ace-attorney-trials-and-tribulations--1/"
     },
     {
       "title": "Necrobarista",
@@ -91,18 +115,26 @@
     {
       "title": "CHAOS;CHILD",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co26xc.jpg",
-      "rating": 67,
+      "rating": 69,
       "details": "",
       "dateCompleted": "2020-11-01",
       "link": "https://backloggd.com/games/chaos-child/"
     },
     {
-      "title": "Umineko - When They Cry",
+      "title": "Umineko When They Cry - Question Arcs",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co78jq.jpg",
+      "rating": 98,
+      "details": "",
+      "dateCompleted": "2021-02-19",
+      "link": "https://backloggd.com/games/umineko-no-naku-koro-ni/"
+    },
+    {
+      "title": "Umineko When They Cry - Answer Arcs",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co4szy.jpg",
       "rating": 99,
       "details": "",
       "dateCompleted": "2021-02-27",
-      "link": "https://backloggd.com/games/umineko-no-naku-koro-ni/"
+      "link": "https://backloggd.com/games/umineko-no-naku-koro-ni-chiru/"
     },
     {
       "title": "The Song of Saya",
@@ -115,7 +147,7 @@
     {
       "title": "The House in Fata Morgana",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co23cn.jpg",
-      "rating": 99,
+      "rating": 97,
       "details": "",
       "dateCompleted": "2021-03-11",
       "link": "https://backloggd.com/games/the-house-in-fata-morgana/"
@@ -126,12 +158,12 @@
       "rating": 81,
       "details": "",
       "dateCompleted": "2021-03-18",
-      "link": "https://backloggd.com/games/nine-hours-nine-persons-nine-doors/series/"
+      "link": "https://backloggd.com/games/nine-hours-nine-persons-nine-doors/"
     },
     {
       "title": "Zero Escape: Virtue's Last Reward",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co260l.jpg",
-      "rating": 73,
+      "rating": 78,
       "details": "",
       "dateCompleted": "2021-03-31",
       "link": "https://backloggd.com/games/zero-escape-virtue-s-last-reward/"
@@ -139,7 +171,7 @@
     {
       "title": "Zero Escape: Zero Time Dilemma",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co86n5.jpg",
-      "rating": 63,
+      "rating": 64,
       "details": "",
       "dateCompleted": "2021-04-05",
       "link": "https://backloggd.com/games/zero-escape-zero-time-dilemma/"
@@ -147,7 +179,7 @@
     {
       "title": "AI: The Somnium Files",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob1ro.jpg",
-      "rating": 79,
+      "rating": 80,
       "details": "",
       "dateCompleted": "2021-05-11",
       "link": "https://backloggd.com/games/ai-the-somnium-files/"
@@ -163,7 +195,7 @@
     {
       "title": "Synergia",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2m7a.jpg",
-      "rating": 63,
+      "rating": 62,
       "details": "",
       "dateCompleted": "2021-06-29",
       "link": "https://backloggd.com/games/synergia/"
@@ -179,7 +211,7 @@
     {
       "title": "Marco & The Galaxy Dragon",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4xs9.jpg",
-      "rating": 61,
+      "rating": 63,
       "details": "",
       "dateCompleted": "2021-07-20",
       "link": "https://backloggd.com/games/marco-and-the-galaxy-dragon/"
@@ -187,7 +219,7 @@
     {
       "title": "Kindred Spirits on the Roof",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coavqo.jpg",
-      "rating": 63,
+      "rating": 64,
       "details": "",
       "dateCompleted": "2021-07-31",
       "link": "https://backloggd.com/games/kindred-spirits-on-the-roof/"
@@ -195,7 +227,7 @@
     {
       "title": "YOU and ME and HER: A Love Story",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co45x8.jpg",
-      "rating": 61,
+      "rating": 62,
       "details": "",
       "dateCompleted": "2021-08-02",
       "link": "https://backloggd.com/games/you-and-me-and-her-a-love-story/"
@@ -203,7 +235,7 @@
     {
       "title": "ATRI -My Dear Moments-",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co21uu.jpg",
-      "rating": 67,
+      "rating": 66,
       "details": "",
       "dateCompleted": "2021-08-07",
       "link": "https://backloggd.com/games/atri-my-dear-moments/"
@@ -211,7 +243,7 @@
     {
       "title": "If Found",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co24ye.jpg",
-      "rating": 67,
+      "rating": 69,
       "details": "",
       "dateCompleted": "2021-08-09",
       "link": "https://backloggd.com/games/if-found-dot-dot-dot/"
@@ -219,7 +251,7 @@
     {
       "title": "Perfect Gold: The Alchemy of Happiness",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2yaj.jpg",
-      "rating": 63,
+      "rating": 64,
       "details": "",
       "dateCompleted": "2021-08-19",
       "link": "https://backloggd.com/games/perfect-gold-the-alchemy-of-happiness/"
@@ -235,7 +267,7 @@
     {
       "title": "The Fruit of Grisaia",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3021.jpg",
-      "rating": 61,
+      "rating": 62,
       "details": "",
       "dateCompleted": "2021-09-22",
       "link": "https://backloggd.com/games/the-fruit-of-grisaia/"
@@ -243,7 +275,7 @@
     {
       "title": "The Labyrinth of Grisaia",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co43vt.jpg",
-      "rating": 57,
+      "rating": 58,
       "details": "",
       "dateCompleted": "2021-09-29",
       "link": "https://backloggd.com/games/the-labyrinth-of-grisaia/"
@@ -251,7 +283,7 @@
     {
       "title": "The Eden of Grisaia",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co43qt.jpg",
-      "rating": 53,
+      "rating": 51,
       "details": "",
       "dateCompleted": "2021-10-07",
       "link": "https://backloggd.com/games/the-eden-of-grisaia/"
@@ -259,7 +291,7 @@
     {
       "title": "Milk inside a bag of milk inside a bag of milk",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co66n4.jpg",
-      "rating": 55,
+      "rating": 56,
       "details": "",
       "dateCompleted": "2022-01-23",
       "link": "https://backloggd.com/games/milk-inside-a-bag-of-milk-inside-a-bag-of-milk/"
@@ -275,7 +307,7 @@
     {
       "title": "Ever17",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2q3u.jpg",
-      "rating": 71,
+      "rating": 74,
       "details": "",
       "dateCompleted": "2021-10-26",
       "link": "https://backloggd.com/games/ever17-the-out-of-infinity/"
@@ -283,7 +315,7 @@
     {
       "title": "Katawa Shoujo",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co7k1l.jpg",
-      "rating": 73,
+      "rating": 72,
       "details": "",
       "dateCompleted": "2021-11-15",
       "link": "https://backloggd.com/games/katawa-shoujo/"
@@ -299,7 +331,7 @@
     {
       "title": "Tsukihime",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co40hg.jpg",
-      "rating": 81,
+      "rating": 84,
       "details": "",
       "dateCompleted": "2022-02-03",
       "link": "https://backloggd.com/games/tsukihime/"
@@ -307,7 +339,7 @@
     {
       "title": "Summer Pockets",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co276f.jpg",
-      "rating": 67,
+      "rating": 69,
       "details": "",
       "dateCompleted": "2022-02-12",
       "link": "https://backloggd.com/games/summer-pockets/"
@@ -315,7 +347,7 @@
     {
       "title": "If My Heart Had Wings",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co43hn.jpg",
-      "rating": 63,
+      "rating": 64,
       "details": "",
       "dateCompleted": "2022-02-27",
       "link": "https://backloggd.com/games/if-my-heart-had-wings/"
@@ -323,7 +355,7 @@
     {
       "title": "Remember11",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co5rw6.jpg",
-      "rating": 87,
+      "rating": 86,
       "details": "",
       "dateCompleted": "2022-03-06",
       "link": "https://backloggd.com/games/remember11-the-age-of-infinity/"
@@ -331,7 +363,7 @@
     {
       "title": "Rewrite",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co4fga.jpg",
-      "rating": 79,
+      "rating": 80,
       "details": "",
       "dateCompleted": "2022-05-19",
       "link": "https://backloggd.com/games/rewrite/"
@@ -347,7 +379,7 @@
     {
       "title": "missed messages.",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co28l8.jpg",
-      "rating": 61,
+      "rating": 62,
       "details": "",
       "dateCompleted": "2022-03-03",
       "link": "https://backloggd.com/games/missed-messages/"
@@ -355,7 +387,7 @@
     {
       "title": "BAD END THEATER",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co44y4.jpg",
-      "rating": 81,
+      "rating": 80,
       "details": "",
       "dateCompleted": "2022-07-01",
       "link": "https://backloggd.com/games/bad-end-theater/"
@@ -363,7 +395,7 @@
     {
       "title": "Opus: Echo of Starsong",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co4zsw.jpg",
-      "rating": 71,
+      "rating": 70,
       "details": "",
       "dateCompleted": "2022-07-03",
       "link": "https://backloggd.com/games/opus-echo-of-starsong/"
@@ -371,7 +403,7 @@
     {
       "title": "Highway Blossoms",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2h7p.jpg",
-      "rating": 61,
+      "rating": 62,
       "details": "",
       "dateCompleted": "2022-07-30",
       "link": "https://backloggd.com/games/highway-blossoms/"
@@ -387,7 +419,7 @@
     {
       "title": "Coffee Talk",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co55rx.jpg",
-      "rating": 71,
+      "rating": 72,
       "details": "",
       "dateCompleted": "2022-08-10",
       "link": "https://backloggd.com/games/coffee-talk/"
@@ -417,17 +449,33 @@
       "link": "https://backloggd.com/games/muv-luv-alternative/"
     },
     {
-      "title": "Fate/Stay Night",
-      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co7p4f.jpg",
-      "rating": 75,
+      "title": "Fate/Stay Night: Réalta Nua - Fate",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co7p4a.jpg",
+      "rating": 72,
+      "details": "",
+      "dateCompleted": "",
+      "link": "https://backloggd.com/games/fate-slash-stay-night-realta-nua-fate/"
+    },
+    {
+      "title": "Fate/Stay Night: Réalta Nua - Unlimited Blade Works",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co7p4e.jpg",
+      "rating": 74,
+      "details": "",
+      "dateCompleted": "",
+      "link": "https://backloggd.com/games/fate-slash-stay-night-realta-nua-unlimited-blade-works/"
+    },
+    {
+      "title": "Fate/Stay Night: Réalta Nua - Heaven's Feel",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co7p4b.jpg",
+      "rating": 78,
       "details": "",
       "dateCompleted": "2022-11-15",
-      "link": "https://backloggd.com/games/fate-slash-stay-night-realta-nua//"
+      "link": "https://backloggd.com/games/fate-slash-stay-night-realta-nua-heavens-feel/"
     },
     {
       "title": "CHAOS;HEAD NOAH",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co3gu4.jpg",
-      "rating": 69,
+      "rating": 70,
       "details": "",
       "dateCompleted": "2023-02-20",
       "link": "https://backloggd.com/games/chaos-head-noah/"
@@ -435,7 +483,7 @@
     {
       "title": "428: Shibuya Scramble",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co28rd.jpg",
-      "rating": 85,
+      "rating": 86,
       "details": "",
       "dateCompleted": "2023-03-06",
       "link": "https://backloggd.com/games/428-shibuya-scramble/"
@@ -443,7 +491,7 @@
     {
       "title": "Coffee Talk 2: Hibiscus and Butterfly",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co4p7r.jpg",
-      "rating": 77,
+      "rating": 78,
       "details": "",
       "dateCompleted": "2023-05-22",
       "link": "https://backloggd.com/games/coffee-talk-episode-2-hibiscus-and-butterfly/"
@@ -451,23 +499,31 @@
     {
       "title": "GNOSIA",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9458.jpg",
-      "rating": 77,
+      "rating": 76,
       "details": "",
       "dateCompleted": "2023-05-12",
       "link": "https://backloggd.com/games/gnosia/"
     },
     {
-      "title": "The Great Ace Attorney Chronicles",
-      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2ylx.jpg",
-      "rating": 93,
+      "title": "The Great Ace Attorney: Adventures",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2ym2.jpg",
+      "rating": 84,
+      "details": "",
+      "dateCompleted": "",
+      "link": "https://backloggd.com/games/the-great-ace-attorney-adventures--1/"
+    },
+    {
+      "title": "The Great Ace Attorney 2: Resolve",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2ym3.jpg",
+      "rating": 90,
       "details": "",
       "dateCompleted": "2023-07-05",
-      "link": "https://backloggd.com/games/the-great-ace-attorney-chronicles/"
+      "link": "https://backloggd.com/games/the-great-ace-attorney-2-resolve/"
     },
     {
       "title": "a new life.",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2cep.jpg",
-      "rating": 67,
+      "rating": 69,
       "details": "",
       "dateCompleted": "2023-07-16",
       "link": "https://backloggd.com/games/a-new-life/"
@@ -475,7 +531,7 @@
     {
       "title": "Beacon Pines",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5d1x.jpg",
-      "rating": 67,
+      "rating": 68,
       "details": "",
       "dateCompleted": "",
       "link": "https://backloggd.com/games/beacon-pines/"
@@ -483,7 +539,7 @@
     {
       "title": "Scarlet Hollow",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9he0.jpg",
-      "rating": 69,
+      "rating": 68,
       "details": "",
       "dateCompleted": "2023-08-30",
       "link": "https://backloggd.com/games/scarlet-hollow/"
@@ -499,7 +555,7 @@
     {
       "title": "The Sekimeiya: Spun Glass",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2v1m.jpg",
-      "rating": 73,
+      "rating": 74,
       "details": "",
       "dateCompleted": "2023-09-17",
       "link": "https://backloggd.com/games/the-sekimeiya-spun-glass/"
@@ -531,7 +587,7 @@
     {
       "title": "Return to Shironagasu Island",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1wy5.jpg",
-      "rating": 63,
+      "rating": 62,
       "details": "",
       "dateCompleted": "",
       "link": "https://backloggd.com/games/return-to-shironagasu-island/"
@@ -547,7 +603,7 @@
     {
       "title": "Witch on the Holy Night",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5rw2.jpg",
-      "rating": 85,
+      "rating": 86,
       "details": "",
       "dateCompleted": "2024-01-05",
       "link": "https://backloggd.com/games/witch-on-the-holy-night/"
@@ -555,7 +611,7 @@
     {
       "title": "13 Sentinels: Aegis Rim",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2uls.jpg",
-      "rating": 79,
+      "rating": 80,
       "details": "",
       "dateCompleted": "",
       "link": "https://backloggd.com/games/13-sentinels-aegis-rim/"
@@ -563,7 +619,7 @@
     {
       "title": "Rose Guns Days",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co7aqd.jpg",
-      "rating": 81,
+      "rating": 82,
       "details": "",
       "dateCompleted": "2024-02-27",
       "link": "https://backloggd.com/games/rose-guns-days/"
@@ -571,7 +627,7 @@
     {
       "title": "The Cosmic Wheel Sisterhood",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6llx.jpg",
-      "rating": 79,
+      "rating": 80,
       "details": "",
       "dateCompleted": "2024-03-20",
       "link": "https://backloggd.com/games/the-cosmic-wheel-sisterhood/"
@@ -579,7 +635,7 @@
     {
       "title": "Murder on the Marine Express",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5228.jpg",
-      "rating": 61,
+      "rating": 62,
       "details": "",
       "dateCompleted": "2024-03-02",
       "link": "https://backloggd.com/games/murder-on-the-marine-express/"
@@ -595,7 +651,7 @@
     {
       "title": "Night Call",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1qsr.jpg",
-      "rating": 63,
+      "rating": 62,
       "details": "",
       "dateCompleted": "2024-04-15",
       "link": "https://backloggd.com/games/night-call/"
@@ -603,7 +659,7 @@
     {
       "title": "Eliza",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1uab.jpg",
-      "rating": 67,
+      "rating": 66,
       "details": "",
       "dateCompleted": "",
       "link": "https://backloggd.com/games/eliza/"
@@ -611,23 +667,79 @@
     {
       "title": "No Case Should Remain Unsolved",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co89dp.jpg",
-      "rating": 69,
+      "rating": 70,
       "details": "",
       "dateCompleted": "2024-08-07",
       "link": "https://backloggd.com/games/no-case-should-remain-unsolved/"
     },
     {
-      "title": "Higurashi - When They Cry",
-      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6yw6.jpg",
-      "rating": 87,
+      "title": "Higurashi When They Cry Hou: Ch.1 Onikakushi",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co6fyo.jpg",
+      "rating": 74,
+      "details": "",
+      "dateCompleted": "",
+      "link": "https://backloggd.com/games/higurashi-when-they-cry-hou-ch-dot-1-onikakushi/"
+    },
+    {
+      "title": "Higurashi When They Cry Hou: Ch.2 Watanagashi",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co42gv.jpg",
+      "rating": 72,
+      "details": "",
+      "dateCompleted": "",
+      "link": "https://backloggd.com/games/higurashi-when-they-cry-hou-ch-dot-2-watanagashi/"
+    },
+    {
+      "title": "Higurashi When They Cry Hou: Ch.3 Tatarigoroshi",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co42gu.jpg",
+      "rating": 77,
+      "details": "",
+      "dateCompleted": "",
+      "link": "https://backloggd.com/games/higurashi-when-they-cry-hou-ch-dot-3-tatarigoroshi/"
+    },
+    {
+      "title": "Higurashi When They Cry Hou: Ch.4 Himatsubushi",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co6fyp.jpg",
+      "rating": 71,
+      "details": "",
+      "dateCompleted": "",
+      "link": "https://backloggd.com/games/higurashi-when-they-cry-hou-ch-dot-4-himatsubushi/"
+    },
+    {
+      "title": "Higurashi When They Cry Hou: Ch.5 Meakashi",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co42gs.jpg",
+      "rating": 86,
+      "details": "",
+      "dateCompleted": "",
+      "link": "https://backloggd.com/games/higurashi-when-they-cry-hou-ch-dot-5-meakashi/"
+    },
+    {
+      "title": "Higurashi When They Cry Hou: Ch.6 Tsumihoroboshi",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co295q.jpg",
+      "rating": 85,
+      "details": "",
+      "dateCompleted": "",
+      "link": "https://backloggd.com/games/higurashi-when-they-cry-hou-ch-dot-6-tsumihoroboshi/"
+    },
+    {
+      "title": "Higurashi When They Cry Hou: Ch.7 Minagoroshi",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co47hh.jpg",
+      "rating": 74,
+      "details": "",
+      "dateCompleted": "",
+      "link": "https://backloggd.com/games/higurashi-when-they-cry-hou-ch-dot-7-minagoroshi/"
+    },
+    {
+      "title": "Higurashi When They Cry Hou: Ch.8 Matsuribayashi",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2m8s.jpg",
+      "rating": 79,
       "details": "",
       "dateCompleted": "2024-09-20",
-      "link": "https://backloggd.com/games/higurashi-when-they-cry/"
+      "link": "https://backloggd.com/games/higurashi-when-they-cry-hou-ch-dot-8-matsuribayashi/"
     },
     {
       "title": "Until Then",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co7r5n.jpg",
-      "rating": 83,
+      "rating": 84,
       "details": "",
       "dateCompleted": "2024-10-17",
       "link": "https://backloggd.com/games/until-then/"
@@ -635,7 +747,7 @@
     {
       "title": "Tead",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co722o.jpg",
-      "rating": 63,
+      "rating": 64,
       "details": "",
       "dateCompleted": "2024-10-31",
       "link": "https://backloggd.com/games/tead/"
@@ -643,7 +755,7 @@
     {
       "title": "PIGBLUE",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6rl2.jpg",
-      "rating": 49,
+      "rating": 48,
       "details": "",
       "dateCompleted": "2025-01-05",
       "link": "https://backloggd.com/games/pigblue/"
@@ -651,7 +763,7 @@
     {
       "title": "SeaBed",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9uij.jpg",
-      "rating": 87,
+      "rating": 88,
       "details": "",
       "dateCompleted": "2025-03-15",
       "link": "https://backloggd.com/games/seabed/"
@@ -667,7 +779,7 @@
     {
       "title": "of the Devil",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coaq5t.jpg",
-      "rating": 87,
+      "rating": 88,
       "details": "",
       "dateCompleted": "2025-03-24",
       "link": "https://backloggd.com/games/of-the-devil/"
@@ -675,7 +787,7 @@
     {
       "title": "Misericorde: Volume One",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3r9d.jpg",
-      "rating": 83,
+      "rating": 84,
       "details": "",
       "dateCompleted": "2025-04-04",
       "link": "https://backloggd.com/games/misericorde-volume-one/"
@@ -683,7 +795,7 @@
     {
       "title": "Misericorde Volume Two: White Wool and Snow",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co8gu5.jpg",
-      "rating": 81,
+      "rating": 82,
       "details": "",
       "dateCompleted": "2025-04-10",
       "link": "https://backloggd.com/games/misericorde-volume-two-white-wool-and-snow/"
@@ -691,7 +803,7 @@
     {
       "title": "The Hundred Line: Last Defense Academy",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9sfw.jpg",
-      "rating": 63,
+      "rating": 64,
       "details": "",
       "dateCompleted": "2025-05-11",
       "link": "https://backloggd.com/games/the-hundred-line-last-defense-academy/"
@@ -715,7 +827,7 @@
     {
       "title": "Z.A.T.O.: I Love the World and Everything In It",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/coavot.jpg",
-      "rating": 81,
+      "rating": 80,
       "details": "",
       "dateCompleted": "2025-11-12",
       "link": "https://backloggd.com/games/z-dot-a-t-dot-o-i-love-the-world-and-everything-in-it/"
