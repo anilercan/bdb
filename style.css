@@ -85,9 +85,10 @@ header {
 
 .header-left {
     display: flex;
+    /* Center children vertically so title and item count align in the middle */
     align-items: center;
     gap: 15px;
-}
+}  
 
 header h1 {
     font-size: 1.75rem;
@@ -96,13 +97,13 @@ header h1 {
 }
 
 .status-legend {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     align-items: center;
     gap: 20px;
-    position: fixed;
-    left: 50vw;
-    transform: translateX(calc(-50%));
-    top: 94px;
     z-index: 50;
 }
 
@@ -115,32 +116,37 @@ header h1 {
 }
 
 .item-count {
-    font-size: 0.8rem;
-    color: #ccc;
-    white-space: nowrap;
-}
+  font-size: 0.8rem;
+  color: #ccc;
+  white-space: nowrap;
+  margin-left: 36px;
+  /* Center vertically in header */
+  align-self: center;
+}  
 
 /* Search Drawer */
+/* Positioned fixed so the drawer overlays content (items can show underneath). */
 .search-drawer {
-    position: sticky;
+    position: fixed;
     top: 54px;
-    z-index: 90;
-    background-color: #4f2351;
+    right: 40px;
+    z-index: 96; /* above content, below navbar (100) */
+    background-color: rgba(79,35,81,0.9);
     border-left: 1px solid #fff;
     border-right: 1px solid #fff;
     border-bottom: 1px solid #fff;
     border-radius: 0 0 8px 8px;
-    margin: 0 40px -44px 0;
     width: fit-content;
-    pointer-events: none;
-    padding-top: 0;
+    pointer-events: auto;
+    /* Default unscrolled padding (slightly larger to create separation from navbar) */
+    padding-top: 8px;
     transition: padding 0.2s ease;
-    float: right;
 }
 
+/* Reduced padding when scrolled */
 .search-drawer.scrolled {
     padding-top: 4px;
-}
+}  
 
 .search-container {
     display: flex;
@@ -171,26 +177,29 @@ header h1 {
 }
 
 /* Controls Drawer */
+/* Positioned fixed so the drawer overlays content (items can show underneath).
+   Placed to the left of the search drawer with a small gap. */
 .controls-drawer {
-    position: sticky;
-    top: 54px;
-    z-index: 90;
-    background-color: #4f2351;
+    position: fixed;
+    top: 54px; /* align vertically with search drawer */
+    /* place to the left of the search drawer with ~8px gap; adjust value if search width changes */
+    right: calc(66px + 220px);
+    z-index: 95;
+    background-color: rgba(79,35,81,0.9);
     border-left: 1px solid #fff;
     border-right: 1px solid #fff;
     border-bottom: 1px solid #fff;
     border-radius: 0 0 8px 8px;
-    margin: 0 24px -44px 0;
     width: fit-content;
-    pointer-events: none;
-    padding-top: 0;
+    pointer-events: auto;
+    /* Default unscrolled padding */
+    padding-top: 8px;
     transition: padding 0.2s ease;
-    float: right;
 }
 
 .controls-drawer.scrolled {
     padding-top: 4px;
-}
+} 
 
 .controls {
     display: flex;
@@ -234,7 +243,10 @@ header h1 {
     grid-template-columns: repeat(auto-fill, minmax(168px, 1fr));
     gap: 16px;
     grid-auto-rows: 1fr;
-}
+    /* Ensure items render behind the drawers so drawers can overlay the content */
+    position: relative;
+    z-index: 1;
+} 
 
 /* Item Link Wrapper */
 .item-link {
@@ -483,5 +495,11 @@ header h1 {
 
     .item-title {
         font-size: 0.75rem;
+    }
+
+    /* Hide fixed drawers on small screens to avoid covering content */
+    .search-drawer,
+    .controls-drawer {
+        display: none;
     }
 }
