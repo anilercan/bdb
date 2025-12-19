@@ -779,9 +779,9 @@
     {
       "title": "of the Devil",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coaq5t.jpg",
-      "rating": 88,
+      "rating": 84,
       "details": "",
-      "dateCompleted": "2025-03-24",
+      "dateCompleted": "2025-03-16",
       "link": "https://backloggd.com/games/of-the-devil/"
     },
     {
@@ -831,6 +831,14 @@
       "details": "",
       "dateCompleted": "2025-11-12",
       "link": "https://backloggd.com/games/z-dot-a-t-dot-o-i-love-the-world-and-everything-in-it/"
+    },
+    {
+      "title": "of the Devil: Episode 1",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/coaq5r.jpg",
+      "rating": 88,
+      "details": "",
+      "dateCompleted": "2025-03-24",
+      "link": "https://backloggd.com/games/of-the-devil-episode-1/"
     }
   ]
 }

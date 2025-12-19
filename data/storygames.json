@@ -766,7 +766,7 @@
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co6jbl.jpg",
       "rating": 88,
       "details": "",
-      "dateCompleted": "2024-12-06",
+      "dateCompleted": "2023-11-18",
       "link": "https://backloggd.com/games/the-talos-principle-ii/"
     },
     {
@@ -1744,6 +1744,14 @@
       "details": "",
       "dateCompleted": "2022-02-05",
       "link": "https://backloggd.com/games/outer-wilds-echoes-of-the-eye/"
+    },
+    {
+      "title": "The Talos Principle II: Road to Elysium",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co970v.jpg",
+      "rating": 89,
+      "details": "",
+      "dateCompleted": "2024-12-06",
+      "link": "https://backloggd.com/games/the-talos-principle-ii-road-to-elysium/"
     }
   ]
 }
