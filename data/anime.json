@@ -165,7 +165,7 @@
     {
       "title": "Plastic Memories",
       "cover": "https://cdn.myanimelist.net/images/anime/4/72750l.jpg",
-      "rating": 83,
+      "rating": 80,
       "link": "https://myanimelist.net/anime/27775/Plastic_Memories"
     },
     {
@@ -423,7 +423,7 @@
     {
       "title": "Tsuki ga Kirei",
       "cover": "https://cdn.myanimelist.net/images/anime/2/85592l.jpg",
-      "rating": 81,
+      "rating": 79,
       "link": "https://myanimelist.net/anime/34822/Tsuki_ga_Kirei"
     },
     {
@@ -1179,7 +1179,7 @@
     {
       "title": "Brother, Dear Brother",
       "cover": "https://cdn.myanimelist.net/images/anime/12/18531l.jpg",
-      "rating": 85,
+      "rating": 82,
       "link": "https://myanimelist.net/anime/795/Oniisama_e"
     },
     {
@@ -1241,6 +1241,12 @@
       "cover": "https://cdn.myanimelist.net/images/anime/3/88816l.jpg",
       "rating": 82,
       "link": "https://myanimelist.net/anime/35330/Poputepipikku"
+    },
+    {
+      "title": "Ergo Proxy",
+      "cover": "https://cdn.myanimelist.net/images/anime/1183/136187.jpg",
+      "rating": 75,
+      "link": "https://myanimelist.net/anime/790/Ergo_Proxy"
     }
   ]
 }
