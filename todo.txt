@@ -1,4 +1,4 @@
--add manga, books
+-add books
 -decorate
 -add 'dropped' games
 -add backlog? or todo?

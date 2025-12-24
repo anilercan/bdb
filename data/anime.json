@@ -63,7 +63,7 @@
     {
       "title": "Attack on Titan S3 Part 2",
       "cover": "https://cdn.myanimelist.net/images/anime/1517/100633.jpg",
-      "rating": 82,
+      "rating": 81,
       "link": "https://myanimelist.net/anime/38524/Shingeki_no_Kyojin_Season_3_Part_2"
     },
     {
@@ -257,6 +257,12 @@
       "cover": "https://cdn.myanimelist.net/images/anime/1517/142072l.jpg",
       "rating": 75,
       "link": "https://myanimelist.net/anime/27989/Hibike_Euphonium"
+    },
+    {
+      "title": "Sound! Euphonium S2",
+      "cover": "https://cdn.myanimelist.net/images/anime/10/81155.jpg",
+      "rating": 76,
+      "link": "https://myanimelist.net/anime/31988/Hibike_Euphonium_2"
     },
     {
       "title": "Liz and the Blue Bird",
@@ -909,7 +915,7 @@
     {
       "title": "Barakamon",
       "cover": "https://cdn.myanimelist.net/images/anime/1426/111248l.jpg",
-      "rating": 83,
+      "rating": 82,
       "link": "https://myanimelist.net/anime/22789/Barakamon"
     },
     {
@@ -1149,7 +1155,7 @@
     {
       "title": "Sonny Boy",
       "cover": "https://cdn.myanimelist.net/images/anime/1509/117149l.jpg",
-      "rating": 87,
+      "rating": 85,
       "link": "https://myanimelist.net/anime/48849/Sonny_Boy"
     },
     {
@@ -1197,7 +1203,7 @@
     {
       "title": "The Disastrous Life of Saiki K. S1",
       "cover": "https://cdn.myanimelist.net/images/anime/1973/142750l.jpg",
-      "rating": 82,
+      "rating": 83,
       "link": "https://myanimelist.net/anime/33255/Saiki_Kusuo_no_Ψ-nan"
     },
     {
@@ -1247,6 +1253,60 @@
       "cover": "https://cdn.myanimelist.net/images/anime/1183/136187.jpg",
       "rating": 75,
       "link": "https://myanimelist.net/anime/790/Ergo_Proxy"
+    },
+    {
+      "title": "My Hero Academia S1",
+      "cover": "https://cdn.myanimelist.net/images/anime/10/78745.jpg",
+      "rating": 61,
+      "link": "https://myanimelist.net/anime/31964/Boku_no_Hero_Academia"
+    },
+    {
+      "title": "My Hero Academia S2",
+      "cover": "https://cdn.myanimelist.net/images/anime/12/85221.jpg",
+      "rating": 60,
+      "link": "https://myanimelist.net/anime/33486/Boku_no_Hero_Academia_2nd_Season"
+    },
+    {
+      "title": "My Hero Academia S3",
+      "cover": "https://cdn.myanimelist.net/images/anime/1319/92084.jpg",
+      "rating": 60,
+      "link": "https://myanimelist.net/anime/36456/Boku_no_Hero_Academia_3rd_Season"
+    },
+    {
+      "title": "My Hero Academia S4",
+      "cover": "https://cdn.myanimelist.net/images/anime/1412/107914.jpg",
+      "rating": 59,
+      "link": "https://myanimelist.net/anime/38408/Boku_no_Hero_Academia_4th_Season"
+    },
+    {
+      "title": "Mushishi",
+      "cover": "https://cdn.myanimelist.net/images/anime/2/73862.jpg",
+      "rating": 83,
+      "link": "https://myanimelist.net/anime/457/Mushishi"
+    },
+    {
+      "title": "Tokyo Ghoul S1",
+      "cover": "https://cdn.myanimelist.net/images/anime/1498/134443.jpg",
+      "rating": 62,
+      "link": "https://myanimelist.net/anime/22319/Tokyo_Ghoul"
+    },
+    {
+      "title": "Tokyo Ghoul S2",
+      "cover": "https://cdn.myanimelist.net/images/anime/1889/123307.jpg",
+      "rating": 51,
+      "link": "https://myanimelist.net/anime/27899/Tokyo_Ghoul_%E2%88%9AA"
+    },
+    {
+      "title": "Vivy: Flourite Eye's Song",
+      "cover": "https://cdn.myanimelist.net/images/anime/1551/128960.jpg",
+      "rating": 80,
+      "link": "https://myanimelist.net/anime/46095/Vivy__Fluorite_Eyes_Song"
+    },
+    {
+      "title": "Bocchi the Rock!",
+      "cover": "https://cdn.myanimelist.net/images/anime/1448/127956.jpg",
+      "rating": 80,
+      "link": "https://myanimelist.net/anime/47917/Bocchi_the_Rock"
     }
   ]
 }

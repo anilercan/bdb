@@ -220,7 +220,7 @@
     {
       "title": "Cloudpunk",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2jbz.jpg",
-      "rating": 74,
+      "rating": 75,
       "details": "",
       "dateCompleted": "2020-10-04",
       "link": "https://backloggd.com/games/cloudpunk/"
@@ -428,7 +428,7 @@
     {
       "title": "Strange Horticulture",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4bsb.jpg",
-      "rating": 74,
+      "rating": 75,
       "details": "",
       "dateCompleted": "2022-09-04",
       "link": "https://backloggd.com/games/strange-horticulture/"
@@ -492,7 +492,7 @@
     {
       "title": "Mutazione",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1uxn.jpg",
-      "rating": 74,
+      "rating": 75,
       "details": "",
       "dateCompleted": "2023-03-16",
       "link": "https://backloggd.com/games/mutazione/"
@@ -588,7 +588,7 @@
     {
       "title": "Alice: Madness Returns",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2n91.jpg",
-      "rating": 83,
+      "rating": 82,
       "details": "",
       "dateCompleted": "2023-05-23",
       "link": "https://backloggd.com/games/alice-madness-returns/"
@@ -596,7 +596,7 @@
     {
       "title": "The Sexy Brutale",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co23dx.jpg",
-      "rating": 73,
+      "rating": 74,
       "details": "",
       "dateCompleted": "2023-07-10",
       "link": "https://backloggd.com/games/the-sexy-brutale/"
@@ -668,7 +668,7 @@
     {
       "title": "Persona 5 Royal",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coateg.jpg",
-      "rating": 72,
+      "rating": 71,
       "details": "",
       "dateCompleted": "2023-08-26",
       "link": "https://backloggd.com/games/persona-5-royal/"
@@ -820,7 +820,7 @@
     {
       "title": "Deadly Premonition",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2saz.jpg",
-      "rating": 64,
+      "rating": 65,
       "details": "",
       "dateCompleted": "",
       "link": "https://backloggd.com/games/deadly-premonition/"
@@ -916,7 +916,7 @@
     {
       "title": "The WereCleaner",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co878y.jpg",
-      "rating": 72,
+      "rating": 71,
       "details": "",
       "dateCompleted": "2024-07-11",
       "link": "https://backloggd.com/games/the-werecleaner/"
@@ -1332,7 +1332,7 @@
     {
       "title": "Blue Prince",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9mzd.jpg",
-      "rating": 78,
+      "rating": 79,
       "details": "",
       "dateCompleted": "2025-05-03",
       "link": "https://backloggd.com/games/blue-prince/"
@@ -1348,7 +1348,7 @@
     {
       "title": "Clair Obscur: Expedition 33",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9gam.jpg",
-      "rating": 80,
+      "rating": 79,
       "details": "",
       "dateCompleted": "2025-05-28",
       "link": "https://backloggd.com/games/clair-obscur-expedition-33/"
@@ -1380,7 +1380,7 @@
     {
       "title": "Loddlenaut",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co398c.jpg",
-      "rating": 73,
+      "rating": 72,
       "details": "",
       "dateCompleted": "2025-06-07",
       "link": "https://backloggd.com/games/loddlenaut/"
@@ -1604,7 +1604,7 @@
     {
       "title": "Promise Mascot Agency",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co8u8y.jpg",
-      "rating": 73,
+      "rating": 72,
       "details": "",
       "dateCompleted": "2025-09-11",
       "link": "https://backloggd.com/games/promise-mascot-agency/"
@@ -1724,7 +1724,7 @@
     {
       "title": "Amnesia: The Dark Descent",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co1qq5.jpg",
-      "rating": 73,
+      "rating": 72,
       "details": "",
       "dateCompleted": "2018-05-24",
       "link": "https://backloggd.com/games/amnesia-the-dark-descent/"
@@ -1732,7 +1732,7 @@
     {
       "title": "Papers, Please",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co1vep.jpg",
-      "rating": 74,
+      "rating": 73,
       "details": "",
       "dateCompleted": "2018-08-30",
       "link": "https://backloggd.com/games/papers-please/"
@@ -1752,6 +1752,14 @@
       "details": "",
       "dateCompleted": "2024-12-06",
       "link": "https://backloggd.com/games/the-talos-principle-ii-road-to-elysium/"
+    },
+    {
+      "title": "Death Stranding",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co5vq8.jpg",
+      "rating": 63,
+      "details": "",
+      "dateCompleted": "2025-12-24",
+      "link": "https://backloggd.com/games/death-stranding/"
     }
   ]
 }
