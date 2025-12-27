@@ -501,25 +501,165 @@ header h1 {
     }
 
     .main-content {
-        padding: 20px 16px;
+        padding: 12px 12px 20px 12px;
+    }
+
+    /* Header: stack vertically on mobile */
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        padding-top: 10px;
+        margin-bottom: 8px;
+    }
+
+    .header-left {
+        gap: 8px;
     }
 
     header h1 {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 
+    .item-count {
+        margin-left: 0;
+        font-size: 0.7rem;
+    }
+
+    /* Status legend: not absolute, flow normally */
+    .status-legend {
+        position: static;
+        transform: none;
+        flex-wrap: wrap;
+        gap: 8px 16px;
+        justify-content: flex-start;
+    }
+
+    .legend-item {
+        font-size: 0.7rem;
+        gap: 4px;
+    }
+
+    .status-circle {
+        width: 8px;
+        height: 8px;
+    }
+
+    /* Drawers: inline, not fixed */
+    .search-drawer,
+    .controls-drawer {
+        position: static;
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    /* Combined mobile controls bar */
+    .controls-drawer {
+        order: 1;
+    }
+
+    .search-drawer {
+        order: 2;
+    }
+
+    .search-container {
+        padding: 8px 0;
+    }
+
+    .search-input {
+        width: 100%;
+        padding: 6px 12px;
+        font-size: 0.85rem;
+    }
+
+    .controls {
+        padding: 8px 0;
+        gap: 6px;
+        justify-content: flex-start;
+    }
+
+    .sort-btn {
+        padding: 6px 10px;
+        font-size: 0.75rem;
+    }
+
+    /* Grid: keep card sizes, just adjust gap */
     .items-grid {
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-        gap: 10px;
+        gap: 8px;
     }
 
     .item-title {
         font-size: 0.75rem;
     }
 
-    /* Hide fixed drawers on small screens to avoid covering content */
-    .search-drawer,
-    .controls-drawer {
+    .item-header {
+        height: 2.4em;
+        padding: 4px;
+    }
+
+    .item-cover {
+        margin: 4px 4px 0 4px;
+        width: calc(100% - 8px);
+    }
+
+    .item-info {
+        padding: 4px 6px;
+        min-height: 24px;
+    }
+
+    .item-rating {
+        font-size: 0.75rem;
+        padding: 3px 6px;
+    }
+
+    .item-details,
+    .item-author,
+    .item-seasons,
+    .item-date {
+        font-size: 0.6rem;
+    }
+
+    /* Home page mobile */
+    .home-container {
+        flex-direction: column;
+    }
+
+    .home-sidebar-left,
+    .home-sidebar-right {
         display: none;
+    }
+
+    .home-center {
+        width: 100%;
+        padding: 10px 0;
+        gap: 20px;
+    }
+
+    .home-introduction {
+        font-size: 0.95rem;
+        padding: 10px 0;
+    }
+
+    .home-link {
+        padding: 12px 16px;
+        gap: 12px;
+    }
+
+    .home-link-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .home-link-name {
+        font-size: 0.95rem;
+    }
+
+    .decoration-bottom {
+        min-height: 40px;
     }
 }
