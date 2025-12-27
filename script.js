@@ -65,6 +65,15 @@ const categoryConfig = {
         hasTwoStateRating: true,
         fields: ['title', 'cover', 'rating', 'link']
     },
+    backlog: {
+        title: 'Backlog',
+        file: 'data/backlog.json',
+        hasDate: false,
+        hasDetails: true,
+        hasLink: true,
+        hasBacklogStatus: true,
+        fields: ['title', 'cover', 'details', 'status', 'link']
+    },
     books: {
         title: 'Books',
         file: 'data/books.json',
@@ -125,6 +134,12 @@ async function loadHomePage() {
     const legend = document.getElementById('status-legend');
     if (legend) {
         legend.style.display = 'none';
+    }
+
+    // Hide backlog legend
+    const backlogLegend = document.getElementById('backlog-legend');
+    if (backlogLegend) {
+        backlogLegend.style.display = 'none';
     }
 
     // Hide item count
@@ -199,6 +214,12 @@ async function loadCategory(category) {
         legend.style.display = config.hasStatus ? 'flex' : 'none';
     }
 
+    // Show/hide backlog legend
+    const backlogLegend = document.getElementById('backlog-legend');
+    if (backlogLegend) {
+        backlogLegend.style.display = config.hasBacklogStatus ? 'flex' : 'none';
+    }
+
     // Show sort controls and search drawer
     document.querySelector('.controls-drawer').style.display = 'block';
     document.querySelector('.search-drawer').style.display = 'block';
@@ -210,6 +231,8 @@ async function loadCategory(category) {
     if (!categorySortState[category]) {
         if (config.hasStatus) {
             categorySortState[category] = { sortType: 'status', state: 0 }; // Default: status (playing first)
+        } else if (config.hasBacklogStatus) {
+            categorySortState[category] = { sortType: 'backlogStatus', state: 0 }; // Default: backlog status (current first)
         } else if (config.hasDate) {
             categorySortState[category] = { sortType: 'date', state: 0 }; // Default: date descending
         } else {
@@ -251,11 +274,21 @@ function updateSortButtons(config, sortState) {
     if (config.hasStatus) {
         dateButton.style.display = 'inline-block';
         dateButton.dataset.sort = 'status';
+    } else if (config.hasBacklogStatus) {
+        dateButton.style.display = 'inline-block';
+        dateButton.dataset.sort = 'backlogStatus';
     } else if (config.hasDate) {
         dateButton.style.display = 'inline-block';
         dateButton.dataset.sort = 'date';
     } else {
         dateButton.style.display = 'none';
+    }
+
+    // Show/hide rating button (hide for backlog since it has no ratings)
+    if (config.hasBacklogStatus) {
+        ratingButton.style.display = 'none';
+    } else {
+        ratingButton.style.display = 'inline-block';
     }
 
     // Remove active class from all buttons
@@ -271,6 +304,13 @@ function updateSortButtons(config, sortState) {
         } else if (sortState.state === 1) {
             dateButton.textContent = 'Status ↑';
         }
+    } else if (sortState.sortType === 'backlogStatus') {
+        dateButton.classList.add('active');
+        if (sortState.state === 0) {
+            dateButton.textContent = 'Status ↓';
+        } else if (sortState.state === 1) {
+            dateButton.textContent = 'Status ↑';
+        }
     } else if (sortState.sortType === 'date') {
         dateButton.classList.add('active');
         if (sortState.state === 0) {
@@ -279,7 +319,7 @@ function updateSortButtons(config, sortState) {
             dateButton.textContent = 'Date ↑';
         }
     } else {
-        dateButton.textContent = config.hasStatus ? 'Status' : 'Date';
+        dateButton.textContent = (config.hasStatus || config.hasBacklogStatus) ? 'Status' : 'Date';
     }
 
     if (sortState.sortType === 'rating') {
@@ -331,6 +371,35 @@ function sortItems(items, sortState) {
                     if (statusLower === 'playing') return 1;
                     if (statusLower === 'sometimes') return 2;
                     return 3;
+                };
+                return getStatusPriority(b.status) - getStatusPriority(a.status);
+            });
+        }
+        // state === 2 means reset to default
+    } else if (sortType === 'backlogStatus') {
+        if (state === 0) {
+            // Backlog Status: current > todo > dropped (green > yellow > red)
+            sorted.sort((a, b) => {
+                const getStatusPriority = (status) => {
+                    if (!status) return 3;
+                    const statusLower = status.toLowerCase();
+                    if (statusLower === 'current') return 1;
+                    if (statusLower === 'todo') return 2;
+                    if (statusLower === 'dropped') return 3;
+                    return 4;
+                };
+                return getStatusPriority(a.status) - getStatusPriority(b.status);
+            });
+        } else if (state === 1) {
+            // Backlog Status: dropped > todo > current (reverse)
+            sorted.sort((a, b) => {
+                const getStatusPriority = (status) => {
+                    if (!status) return 3;
+                    const statusLower = status.toLowerCase();
+                    if (statusLower === 'current') return 1;
+                    if (statusLower === 'todo') return 2;
+                    if (statusLower === 'dropped') return 3;
+                    return 4;
                 };
                 return getStatusPriority(b.status) - getStatusPriority(a.status);
             });
@@ -418,6 +487,24 @@ function renderItems(items) {
             statusCircle = `<div class="status-circle ${circleClass}"></div>`;
         }
 
+        // Handle status for backlog
+        if (config.hasBacklogStatus) {
+            const statusLower = item.status ? item.status.toLowerCase() : '';
+            let circleClass = '';
+
+            if (statusLower === 'current') {
+                circleClass = 'status-circle-green';
+            } else if (statusLower === 'todo') {
+                circleClass = 'status-circle-yellow';
+            } else if (statusLower === 'dropped') {
+                circleClass = 'status-circle-red';
+            } else {
+                circleClass = 'status-circle-red';
+            }
+
+            statusCircle = `<div class="status-circle ${circleClass}"></div>`;
+        }
+
         if (config.hasDetails && item.details) {
             extraInfo += `<div class="item-details">${escapeHtml(item.details)}</div>`;
         }
@@ -438,11 +525,13 @@ function renderItems(items) {
             }
         }
 
+        const ratingHtml = config.hasBacklogStatus ? '' : `<div class="item-rating ${getRatingClass(item.rating)}">${item.rating}</div>`;
+
         const cardContent = `
             <div class="item-card">
                 <div class="item-header">
                     <div class="item-title">${escapeHtml(item.title)}</div>
-                    <div class="item-rating ${getRatingClass(item.rating)}">${item.rating}</div>
+                    ${ratingHtml}
                 </div>
                 <img
                     class="item-cover"
@@ -525,14 +614,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // Sort buttons - Three-state toggle behavior
     document.getElementById('date-btn').addEventListener('click', () => {
         const config = categoryConfig[currentCategory];
-        if (!config.hasDate && !config.hasStatus) return;
+        if (!config.hasDate && !config.hasStatus && !config.hasBacklogStatus) return;
 
         const currentState = categorySortState[currentCategory];
-        const sortType = config.hasStatus ? 'status' : 'date';
+        const sortType = config.hasStatus ? 'status' : (config.hasBacklogStatus ? 'backlogStatus' : 'date');
 
         if (currentState.sortType === sortType) {
             // Already on this sort, cycle through states
-            if (config.hasStatus) {
+            if (config.hasStatus || config.hasBacklogStatus) {
                 // Status button only has 2 states
                 currentState.state = currentState.state === 0 ? 1 : 0;
             } else {
@@ -606,6 +695,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (config.hasStatus) {
                     // Reset to status
                     currentState.sortType = 'status';
+                    currentState.state = 0;
+                } else if (config.hasBacklogStatus) {
+                    // Reset to backlog status
+                    currentState.sortType = 'backlogStatus';
                     currentState.state = 0;
                 } else if (config.hasDate) {
                     // Reset to date descending

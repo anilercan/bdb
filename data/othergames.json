@@ -1073,14 +1073,6 @@
       "status": ""
     },
     {
-      "title": "Will You Snail",
-      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4he3.jpg",
-      "rating": 73,
-      "link": "https://backloggd.com/games/will-you-snail/",
-      "details": "",
-      "status": ""
-    },
-    {
       "title": "Zompiercer",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3l4l.jpg",
       "rating": 67,
@@ -1309,6 +1301,62 @@
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co8zzc.jpg",
       "rating": 79,
       "link": "https://backloggd.com/games/peaks-of-yore/",
+      "details": "",
+      "status": ""
+    },
+    {
+      "title": "Overwatch",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co1rcb.jpg",
+      "rating": 61,
+      "link": "https://backloggd.com/games/overwatch/",
+      "details": "",
+      "status": ""
+    },
+    {
+      "title": "Grand Theft Auto V",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2lbd.jpg",
+      "rating": 63,
+      "link": "https://backloggd.com/games/grand-theft-auto-v/",
+      "details": "",
+      "status": ""
+    },
+    {
+      "title": "Plants vs. Zombies",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co69id.jpg",
+      "rating": 77,
+      "link": "https://backloggd.com/games/plants-vs-zombies/",
+      "details": "",
+      "status": ""
+    },
+    {
+      "title": "Shroom and Gloom",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co4l0d.jpg",
+      "rating": 67,
+      "link": "https://backloggd.com/games/shroom-and-gloom-jam-version/",
+      "details": "",
+      "status": ""
+    },
+    {
+      "title": "The Farmer was Replaced",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/coai4w.jpg",
+      "rating": 65,
+      "link": "https://backloggd.com/games/the-farmer-was-replaced/",
+      "details": "",
+      "status": ""
+    },
+    {
+      "title": "Tactical Breach Wizards",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co8pzg.jpg",
+      "rating": 75,
+      "link": "https://backloggd.com/games/tactical-breach-wizards/",
+      "details": "",
+      "status": ""
+    },
+    {
+      "title": "Dissidia Final Fantasy",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co205i.jpg",
+      "rating": 71,
+      "link": "https://backloggd.com/games/dissidia-final-fantasy/",
       "details": "",
       "status": ""
     }

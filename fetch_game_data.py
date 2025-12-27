@@ -69,11 +69,11 @@ def fetch_backloggd_data(game_title):
         print(f"  ❌ Error fetching {game_title}: {str(e)}")
         return None
 
-def update_games_json():
-    """Update storygames.json with Backloggd links and cover images"""
+def update_games_json(json_file='data/storygames.json'):
+    """Update JSON file with Backloggd links and cover images"""
 
     # Read the JSON file
-    with open('data/storygames.json', 'r', encoding='utf-8') as f:
+    with open(json_file, 'r', encoding='utf-8') as f:
         data = json.load(f)
 
     items = data['items']
@@ -112,11 +112,16 @@ def update_games_json():
         time.sleep(1.5)
 
     # Write back to JSON file
-    with open('data/storygames.json', 'w', encoding='utf-8') as f:
+    with open(json_file, 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
 
     print(f"\n✅ Done! Updated {updated} games, skipped {skipped} games")
     print(f"Total processed: {total}")
 
 if __name__ == "__main__":
-    update_games_json()
+    import argparse
+    parser = argparse.ArgumentParser(description='Fetch game data from Backloggd')
+    parser.add_argument('--file', '-f', default='data/storygames.json',
+                        help='JSON file to update (default: data/storygames.json)')
+    args = parser.parse_args()
+    update_games_json(args.file)

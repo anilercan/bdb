@@ -21,6 +21,23 @@ body {
     background-color: #4f2351;
     border-bottom: 1px solid #fff;
     padding: 0 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255,255,255,0.3) transparent;
+}
+
+.navbar::-webkit-scrollbar {
+    height: 4px;
+}
+
+.navbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.navbar::-webkit-scrollbar-thumb {
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 2px;
 }
 
 .nav-items {
@@ -28,6 +45,7 @@ body {
     justify-content: center;
     gap: 8px;
     padding: 12px 0;
+    min-width: max-content;
 }
 
 .nav-item {
@@ -40,6 +58,8 @@ body {
     color: #fff;
     cursor: pointer;
     transition: background-color 0.15s ease, color 0.15s ease;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .nav-item:hover {

@@ -346,14 +346,6 @@
       "link": "https://backloggd.com/games/the-witchs-house-mv/"
     },
     {
-      "title": "Rain World",
-      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co24pm.jpg",
-      "rating": 66,
-      "details": "",
-      "dateCompleted": "2022-06-26",
-      "link": "https://backloggd.com/games/rain-world/"
-    },
-    {
       "title": "Florence",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co295l.jpg",
       "rating": 72,
@@ -560,14 +552,6 @@
       "details": "",
       "dateCompleted": "",
       "link": "https://backloggd.com/games/signalis/"
-    },
-    {
-      "title": "The Darkside Detective",
-      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co23bz.jpg",
-      "rating": 60,
-      "details": "",
-      "dateCompleted": "2023-06-01",
-      "link": "https://backloggd.com/games/the-darkside-detective/"
     },
     {
       "title": "Sea of Solitude",
@@ -1760,6 +1744,14 @@
       "details": "",
       "dateCompleted": "2025-12-24",
       "link": "https://backloggd.com/games/death-stranding/"
+    },
+    {
+      "title": "Will You Snail",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4he3.jpg",
+      "rating": 68,
+      "details": "",
+      "dateCompleted": "",
+      "link": "https://backloggd.com/games/will-you-snail/"
     }
   ]
 }
