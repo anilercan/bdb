@@ -496,6 +496,34 @@
       "link": "https://backloggd.com/games/starfield/",
       "details": "",
       "status": "dropped"
+    },
+    {
+      "title": "Pathologic",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co3qvl.jpg",
+      "link": "https://backloggd.com/games/pathologic/",
+      "details": "",
+      "status": "todo"
+    },
+    {
+      "title": "Pathologic 2",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co1ndy.jpg",
+      "link": "https://backloggd.com/games/pathologic-2/",
+      "details": "",
+      "status": "todo"
+    },
+    {
+      "title": "YIIK: A Postmodern RPG",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2z9a.jpg",
+      "link": "https://backloggd.com/games/yiik-a-postmodern-rpg/",
+      "details": "",
+      "status": "current"
+    },
+    {
+      "title": "Supraland: Six Inches Under",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co4ctz.jpg",
+      "link": "https://backloggd.com/games/supraland-six-inches-under/",
+      "details": "",
+      "status": "todo"
     }
   ]
 }
