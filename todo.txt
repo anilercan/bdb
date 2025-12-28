@@ -1,4 +1,3 @@
--add books
 -decorate
 -find backgrounds
 -

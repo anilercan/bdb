@@ -80,7 +80,8 @@ const categoryConfig = {
         hasDate: false,
         hasDetails: false,
         hasAuthor: true,
-        fields: ['title', 'author', 'cover', 'rating']
+        hasLink: true,
+        fields: ['title', 'author', 'cover', 'rating', 'link']
     }
 };
 
@@ -268,6 +269,7 @@ async function loadCategory(category) {
 function updateSortButtons(config, sortState) {
     const dateButton = document.getElementById('date-btn');
     const ratingButton = document.getElementById('rating-btn');
+    const authorButton = document.getElementById('author-btn');
     const alphaButton = document.getElementById('alpha-btn');
 
     // Show/hide date button based on category, or replace with status button for vibing games
@@ -291,9 +293,17 @@ function updateSortButtons(config, sortState) {
         ratingButton.style.display = 'inline-block';
     }
 
+    // Show/hide author button (only for books)
+    if (config.hasAuthor) {
+        authorButton.style.display = 'inline-block';
+    } else {
+        authorButton.style.display = 'none';
+    }
+
     // Remove active class from all buttons
     dateButton.classList.remove('active');
     ratingButton.classList.remove('active');
+    authorButton.classList.remove('active');
     alphaButton.classList.remove('active');
 
     // Update button text and active state based on current sort
@@ -331,6 +341,17 @@ function updateSortButtons(config, sortState) {
         }
     } else {
         ratingButton.textContent = 'Rating';
+    }
+
+    if (sortState.sortType === 'author') {
+        authorButton.classList.add('active');
+        if (sortState.state === 0) {
+            authorButton.textContent = 'Author ↓';
+        } else if (sortState.state === 1) {
+            authorButton.textContent = 'Author ↑';
+        }
+    } else {
+        authorButton.textContent = 'Author';
     }
 
     if (sortState.sortType === 'alpha') {
@@ -431,6 +452,23 @@ function sortItems(items, sortState) {
         } else if (state === 1) {
             // Rating ascending (lowest first)
             sorted.sort((a, b) => a.rating - b.rating);
+        }
+        // state === 2 means reset to default
+    } else if (sortType === 'author') {
+        if (state === 0) {
+            // Author alphabetical A-Z (by first name)
+            sorted.sort((a, b) => {
+                const authorA = a.author || '';
+                const authorB = b.author || '';
+                return authorA.localeCompare(authorB);
+            });
+        } else if (state === 1) {
+            // Author alphabetical Z-A (by first name)
+            sorted.sort((a, b) => {
+                const authorA = a.author || '';
+                const authorB = b.author || '';
+                return authorB.localeCompare(authorA);
+            });
         }
         // state === 2 means reset to default
     } else if (sortType === 'alpha') {
@@ -675,6 +713,31 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             // Switch to rating sort (state 0: descending)
             currentState.sortType = 'rating';
+            currentState.state = 0;
+        }
+
+        updateSortButtons(config, currentState);
+        applySortState(currentState);
+    });
+
+    document.getElementById('author-btn').addEventListener('click', () => {
+        const config = categoryConfig[currentCategory];
+        if (!config.hasAuthor) return;
+
+        const currentState = categorySortState[currentCategory];
+
+        if (currentState.sortType === 'author') {
+            // Already on author sort, cycle through states
+            currentState.state = (currentState.state + 1) % 3;
+
+            if (currentState.state === 2) {
+                // Third click: reset to default (rating descending for books)
+                currentState.sortType = 'rating';
+                currentState.state = 0;
+            }
+        } else {
+            // Switch to author sort (state 0: A-Z)
+            currentState.sortType = 'author';
             currentState.state = 0;
         }
 

@@ -1,10 +1,305 @@
 {
   "items": [
     {
-      "title": "1984",
-      "author": "George Orwell",
-      "cover": "",
-      "rating": 90
+      "title": "And Then There Were None",
+      "rating": 81,
+      "author": "Agatha Christie",
+      "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1638425885i/16299.jpg",
+      "link": "https://www.goodreads.com/book/show/16299.And_Then_There_Were_None"
+    },
+    {
+      "title": "Murder on the Orient Express",
+      "rating": 82,
+      "author": "Agatha Christie",
+      "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1733926500i/853510.jpg",
+      "link": "https://www.goodreads.com/book/show/853510.Murder_on_the_Orient_Express"
+    },
+    {
+      "title": "Cat Among the Pigeons",
+      "rating": 70,
+      "author": "Agatha Christie",
+      "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1275665326i/16342.jpg",
+      "link": "https://www.goodreads.com/book/show/16342.Cat_Among_the_Pigeons"
+    },
+    {
+      "title": "ABC Murders",
+      "rating": 76,
+      "author": "Agatha Christie",
+      "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1389733983i/16322.jpg",
+      "link": "https://www.goodreads.com/book/show/16322.The_A_B_C_Murders"
+    },
+    {
+      "title": "4:50 from Paddington",
+      "rating": 78,
+      "author": "Agatha Christie",
+      "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1745538452i/140278.jpg",
+      "link": "https://www.goodreads.com/book/show/140278.4"
+    },
+    {
+      "title": "Five Little Pigs",
+      "rating": 76,
+      "author": "Agatha Christie",
+      "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1429422068i/121648.jpg",
+      "link": "https://www.goodreads.com/book/show/121648.Five_Little_Pigs"
+    },
+    {
+      "title": "The Murder at the Vicarage",
+      "rating": 80,
+      "author": "Agatha Christie",
+      "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1388386575i/16331.jpg",
+      "link": "https://www.goodreads.com/book/show/16331.Murder_at_the_Vicarage"
+    },
+    {
+      "title": "The Murder of Roger Ackroyd",
+      "rating": 83,
+      "author": "Agatha Christie",
+      "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1389734015i/16328.jpg",
+      "link": "https://www.goodreads.com/book/show/16328.The_Murder_of_Roger_Ackroyd"
+    },
+    {
+      "title": "Peril at End House",
+      "rating": 77,
+      "author": "Agatha Christie",
+      "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1327938128i/16424.jpg",
+      "link": "https://www.goodreads.com/book/show/16424.Peril_at_End_House"
+    },
+    {
+      "title": "A Murder is Announced",
+      "rating": 73,
+      "author": "Agatha Christie",
+      "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1348508635i/16298.jpg",
+      "link": "https://www.goodreads.com/book/show/16298.A_Murder_Is_Announced"
+    },
+    {
+      "title": "The Body in the Library",
+      "rating": 74,
+      "author": "Agatha Christie",
+      "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1389733809i/16319.jpg",
+      "link": "https://www.goodreads.com/book/show/16319.The_Body_in_the_Library"
+    },
+    {
+      "title": "Death on the Nile",
+      "rating": 77,
+      "author": "Agatha Christie",
+      "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1486837149i/131359.jpg",
+      "link": "https://www.goodreads.com/book/show/131359.Death_on_the_Nile"
+    },
+    {
+      "title": "Appointment with Death",
+      "rating": 73,
+      "author": "Agatha Christie",
+      "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1752997872i/16363.jpg",
+      "link": "https://www.goodreads.com/book/show/16363.Appointment_with_Death"
+    },
+    {
+      "title": "Hercule Poirot's Christmas",
+      "rating": 75,
+      "author": "Agatha Christie",
+      "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1308808460i/16349.jpg",
+      "link": "https://www.goodreads.com/book/show/16349.Hercule_Poirot_s_Christmas"
+    },
+    {
+      "title": "Crooked House",
+      "rating": 79,
+      "author": "Agatha Christie",
+      "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1386923185i/16315.jpg",
+      "link": "https://www.goodreads.com/book/show/16315.Crooked_House"
+    },
+    {
+      "title": "Curtain",
+      "rating": 80,
+      "author": "Agatha Christie",
+      "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1386923108i/81903.jpg",
+      "link": "https://www.goodreads.com/book/show/81903.Curtain"
+    },
+    {
+      "title": "Elephants Can Remember",
+      "rating": 71,
+      "author": "Agatha Christie",
+      "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1309211932i/148584.jpg",
+      "link": "https://www.goodreads.com/book/show/148584.Elephants_Can_Remember"
+    },
+    {
+      "title": "Lord Edgware Dies",
+      "rating": 73,
+      "author": "Agatha Christie",
+      "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1375949065i/215492.jpg",
+      "link": "https://www.goodreads.com/book/show/215492.Lord_Edgware_Dies"
+    },
+    {
+      "title": "After the Funeral",
+      "rating": 75,
+      "author": "Agatha Christie",
+      "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1384881992i/527744.jpg",
+      "link": "https://www.goodreads.com/book/show/527744.After_the_Funeral"
+    },
+    {
+      "title": "Cards on the Table",
+      "rating": 76,
+      "author": "Agatha Christie",
+      "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1388208739i/16297.jpg",
+      "link": "https://www.goodreads.com/book/show/16297.Cards_on_the_Table"
+    },
+    {
+      "title": "The Mysterious Affair at Styles",
+      "rating": 76,
+      "author": "Agatha Christie",
+      "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1585632445i/52843028.jpg",
+      "link": "https://www.goodreads.com/book/show/52843028-the-mysterious-affair-at-styles"
+    },
+    {
+      "title": "Black Coffee",
+      "rating": 68,
+      "author": "Agatha Christie",
+      "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1391663816i/16352.jpg",
+      "link": "https://www.goodreads.com/book/show/16352.Black_Coffee"
+    },
+    {
+      "title": "A Study in Scarlet",
+      "rating": 80,
+      "author": "Arthur Conan Doyle",
+      "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1519031842i/102868.jpg",
+      "link": "https://www.goodreads.com/book/show/102868.A_Study_in_Scarlet"
+    },
+    {
+      "title": "The Sign of Four",
+      "rating": 75,
+      "author": "Arthur Conan Doyle",
+      "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1739306203i/608474.jpg",
+      "link": "https://www.goodreads.com/book/show/608474.The_Sign_of_Four"
+    },
+    {
+      "title": "The Adventures of Sherlock Holmes",
+      "rating": 84,
+      "author": "Arthur Conan Doyle",
+      "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1164045516i/3590.jpg",
+      "link": "https://www.goodreads.com/book/show/3590.The_Adventures_of_Sherlock_Holmes"
+    },
+    {
+      "title": "The Memoirs of Sherlock Holmes",
+      "rating": 81,
+      "author": "Arthur Conan Doyle",
+      "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1529973409i/194373.jpg",
+      "link": "https://www.goodreads.com/book/show/194373.The_Memoirs_of_Sherlock_Holmes"
+    },
+    {
+      "title": "The Hound of the Baskervilles",
+      "rating": 80,
+      "author": "Arthur Conan Doyle",
+      "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1355929358i/8921.jpg",
+      "link": "https://www.goodreads.com/book/show/8921.The_Hound_of_the_Baskervilles"
+    },
+    {
+      "title": "The Return of Sherlock Holmes",
+      "rating": 79,
+      "author": "Arthur Conan Doyle",
+      "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1529973503i/194366.jpg",
+      "link": "https://www.goodreads.com/book/show/194366.The_Return_of_Sherlock_Holmes"
+    },
+    {
+      "title": "The Valley of Fear",
+      "rating": 75,
+      "author": "Arthur Conan Doyle",
+      "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1390250081i/736131.jpg",
+      "link": "https://www.goodreads.com/book/show/736131.The_Valley_of_Fear"
+    },
+    {
+      "title": "His Last Bow",
+      "rating": 81,
+      "author": "Arthur Conan Doyle",
+      "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1368588782i/754713.jpg",
+      "link": "https://www.goodreads.com/book/show/754713.His_Last_Bow"
+    },
+    {
+      "title": "The Midnight Library",
+      "rating": 70,
+      "author": "Matt Haig",
+      "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1602190253i/52578297.jpg",
+      "link": "https://www.goodreads.com/book/show/52578297-the-midnight-library"
+    },
+    {
+      "title": "Catch-22",
+      "rating": 82,
+      "author": "Joseph Heller",
+      "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1463157317i/168668.jpg",
+      "link": "https://www.goodreads.com/book/show/168668.Catch_22"
+    },
+    {
+      "title": "Project Hail Mary",
+      "rating": 79,
+      "author": "Andy Weir",
+      "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1764703833i/54493401.jpg",
+      "link": "https://www.goodreads.com/book/show/54493401-project-hail-mary"
+    },
+    {
+      "title": "The Hitchhiker's Guide to the Galaxy",
+      "rating": 82,
+      "author": "Douglas Adams",
+      "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1531891848i/11.jpg",
+      "link": "https://www.goodreads.com/book/show/11.The_Hitchhiker_s_Guide_to_the_Galaxy"
+    },
+    {
+      "title": "The Restaurant at the End of the Universe",
+      "rating": 80,
+      "author": "Douglas Adams",
+      "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1521213881i/8695.jpg",
+      "link": "https://www.goodreads.com/book/show/8695.The_Restaurant_at_the_End_of_the_Universe"
+    },
+    {
+      "title": "Life, the Universe, and Everything",
+      "rating": 81,
+      "author": "Douglas Adams",
+      "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1333577589i/8694.jpg",
+      "link": "https://www.goodreads.com/book/show/8694.Life_the_Universe_and_Everything"
+    },
+    {
+      "title": "So Long, and Thanks for All the Fish",
+      "rating": 78,
+      "author": "Douglas Adams",
+      "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1327873354i/6091075.jpg",
+      "link": "https://www.goodreads.com/book/show/6091075-so-long-and-thanks-for-all-the-fish"
+    },
+    {
+      "title": "Mostly Harmless",
+      "rating": 75,
+      "author": "Douglas Adams",
+      "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1397933521i/569429.jpg",
+      "link": "https://www.goodreads.com/book/show/569429.Mostly_Harmless"
+    },
+    {
+      "title": "Mistborn: The Final Empire",
+      "rating": 81,
+      "author": "Brandon Sanderson",
+      "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1617768316i/68428.jpg",
+      "link": "https://www.goodreads.com/book/show/68428.Mistborn"
+    },
+    {
+      "title": "Mistborn: The Well of Ascension",
+      "rating": 74,
+      "author": "Brandon Sanderson",
+      "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1619538925i/68429.jpg",
+      "link": "https://www.goodreads.com/book/show/68429.The_Well_of_Ascension"
+    },
+    {
+      "title": "The Theory of Everything: The Origin and Fate of the Universe",
+      "rating": 78,
+      "author": "Stephen W. Hawking",
+      "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1415359670i/449573.jpg",
+      "link": "https://www.goodreads.com/book/show/449573.The_Theory_of_Everything"
+    },
+    {
+      "title": "A Brief History of Time",
+      "rating": 77,
+      "author": "Stephen W. Hawking",
+      "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1333578746i/3869.jpg",
+      "link": "https://www.goodreads.com/book/show/3869.A_Brief_History_of_Time"
+    },
+    {
+      "title": "The Little Prince",
+      "rating": 81,
+      "author": "Antoine de Saint-Exupéry",
+      "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1367545443i/157993.jpg",
+      "link": "https://www.goodreads.com/book/show/157993.The_Little_Prince"
     }
   ]
 }
