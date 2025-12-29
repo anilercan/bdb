@@ -483,7 +483,7 @@
     {
       "title": "428: Shibuya Scramble",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co28rd.jpg",
-      "rating": 86,
+      "rating": 85,
       "details": "",
       "dateCompleted": "2023-03-06",
       "link": "https://backloggd.com/games/428-shibuya-scramble/"
@@ -579,7 +579,7 @@
     {
       "title": "The Chrono Jotter",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6y94.jpg",
-      "rating": 87,
+      "rating": 86,
       "details": "",
       "dateCompleted": "2023-10-21",
       "link": "https://backloggd.com/games/the-chrono-jotter/"
@@ -739,7 +739,7 @@
     {
       "title": "Until Then",
       "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co7r5n.jpg",
-      "rating": 84,
+      "rating": 83,
       "details": "",
       "dateCompleted": "2024-10-17",
       "link": "https://backloggd.com/games/until-then/"
@@ -847,6 +847,14 @@
       "details": "",
       "dateCompleted": "2025-12-22",
       "link": "https://backloggd.com/games/ace-attorney-investigations-miles-edgeworth/"
+    },
+    {
+      "title": "of the Devil: Episode 2",
+      "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/cob3g9.jpg",
+      "rating": 85,
+      "details": "",
+      "dateCompleted": "2025-12-29",
+      "link": "https://backloggd.com/games/of-the-devil-episode-2/"
     }
   ]
 }
