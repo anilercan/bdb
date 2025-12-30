@@ -3,10 +3,14 @@ let currentCategory = 'home';
 let categorySortState = {}; // Track active sort for each category: { sortType: 'date'/'rating', state: 0/1/2 }
 let categorySearchQuery = {}; // Track search query for each category
 
+// Google Sheets configuration
+const SHEET_ID = '1CPN1Qn7VpobWuoCilj2XyQn7HthcKGDImSTBQxFePGc';
+const SHEET_BASE_URL = `https://opensheet.elk.sh/${SHEET_ID}`;
+
 const categoryConfig = {
     games: {
         title: 'Story Games',
-        file: 'data/storygames.json',
+        sheet: 'storygames',
         hasDate: true,
         hasDetails: true,
         hasLink: true,
@@ -14,7 +18,7 @@ const categoryConfig = {
     },
     visualnovels: {
         title: 'Visual Novels',
-        file: 'data/visualnovels.json',
+        sheet: 'visualnovels',
         hasDate: true,
         hasDetails: true,
         hasLink: true,
@@ -22,7 +26,7 @@ const categoryConfig = {
     },
     othergames: {
         title: 'Other Games',
-        file: 'data/othergames.json',
+        sheet: 'othergames',
         hasDate: false,
         hasDetails: true,
         hasLink: true,
@@ -31,7 +35,7 @@ const categoryConfig = {
     },
     movies: {
         title: 'Movies',
-        file: 'data/movies.json',
+        sheet: 'movies',
         hasDate: false,
         hasDetails: false,
         hasLink: true,
@@ -39,7 +43,7 @@ const categoryConfig = {
     },
     tvseries: {
         title: 'TV Series',
-        file: 'data/tvseries.json',
+        sheet: 'tvseries',
         hasDate: false,
         hasDetails: false,
         hasSeasons: true,
@@ -49,7 +53,7 @@ const categoryConfig = {
     },
     anime: {
         title: 'Anime',
-        file: 'data/anime.json',
+        sheet: 'anime',
         hasDate: false,
         hasDetails: false,
         hasLink: true,
@@ -58,7 +62,7 @@ const categoryConfig = {
     },
     manga: {
         title: 'Manga/Webtoon',
-        file: 'data/manga.json',
+        sheet: 'manga',
         hasDate: false,
         hasDetails: false,
         hasLink: true,
@@ -67,7 +71,7 @@ const categoryConfig = {
     },
     backlog: {
         title: 'Backlog',
-        file: 'data/backlog.json',
+        sheet: 'backlog',
         hasDate: false,
         hasDetails: true,
         hasLink: true,
@@ -76,7 +80,7 @@ const categoryConfig = {
     },
     books: {
         title: 'Books',
-        file: 'data/books.json',
+        sheet: 'books',
         hasDate: false,
         hasDetails: false,
         hasAuthor: true,
@@ -84,6 +88,20 @@ const categoryConfig = {
         fields: ['title', 'author', 'cover', 'rating', 'link']
     }
 };
+
+// Helper function to fetch data from Google Sheets
+async function fetchSheetData(sheetName) {
+    const url = `${SHEET_BASE_URL}/${sheetName}`;
+    const response = await fetch(url);
+    const data = await response.json();
+
+    // Convert rating and seasonsWatched to numbers
+    return data.map(item => ({
+        ...item,
+        rating: item.rating ? parseInt(item.rating, 10) : null,
+        seasonsWatched: item.seasonsWatched ? parseInt(item.seasonsWatched, 10) : null
+    }));
+}
 
 // Helper functions
 function escapeHtml(text) {
@@ -154,8 +172,18 @@ async function loadHomePage() {
     mainContent.style.backgroundImage = 'none';
 
     try {
-        const response = await fetch('data/home.json');
-        const data = await response.json();
+        // Fetch home data from Google Sheets
+        const homeData = await fetch(`${SHEET_BASE_URL}/home`).then(r => r.json());
+
+        // Parse home data - first row has introduction, rest have links
+        const introduction = homeData[0]?.introduction || '';
+        const links = homeData
+            .filter(row => row.link_name && row.link_url)
+            .map(row => ({
+                name: row.link_name,
+                link: row.link_url,
+                icon: row.link_icon || ''
+            }));
 
         const container = document.getElementById('items-container');
         container.className = 'home-container';
@@ -163,10 +191,10 @@ async function loadHomePage() {
             <div class="home-sidebar-left"></div>
             <div class="home-center">
                 <div class="home-introduction">
-                    <p>${escapeHtml(data.introduction).replace(/\n/g, '<br>')}</p>
+                    <p>${escapeHtml(introduction).replace(/\n/g, '<br>')}</p>
                 </div>
                 <div class="home-links">
-                    ${data.links.map(link => `
+                    ${links.map(link => `
                         <a href="${escapeHtml(link.link)}" target="_blank" class="home-link">
                             <img src="${escapeHtml(link.icon)}" alt="${escapeHtml(link.name)}" class="home-link-icon">
                             <span class="home-link-name">${escapeHtml(link.name)}</span>
@@ -245,17 +273,12 @@ async function loadCategory(category) {
     updateSortButtons(config, categorySortState[category]);
 
     try {
-        const response = await fetch(config.file);
-        const data = await response.json();
-        currentData = data.items || [];
+        // Fetch data from Google Sheets
+        currentData = await fetchSheetData(config.sheet);
 
-        // Apply background from JSON (default: black)
+        // Clear background (no background support from sheets)
         const mainContent = document.querySelector('.main-content');
-        if (data.background) {
-            mainContent.style.backgroundImage = `url('${data.background}')`;
-        } else {
-            mainContent.style.backgroundImage = 'none';
-        }
+        mainContent.style.backgroundImage = 'none';
 
         // Apply the current sort state
         applySortState(categorySortState[category]);
