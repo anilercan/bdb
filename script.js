@@ -129,6 +129,17 @@ function formatDate(dateString) {
 
 const placeholderImage = "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 133%22><rect fill=%22%23f0f0f0%22 width=%22100%22 height=%22133%22/><text x=%2250%22 y=%2270%22 text-anchor=%22middle%22 fill=%22%23ccc%22 font-size=%2212%22>No Image</text></svg>";
 
+// Loading indicator functions
+function showLoading() {
+    const container = document.getElementById('items-container');
+    container.innerHTML = `
+        <div class="loading-container">
+            <div class="loading-spinner"></div>
+            <p class="loading-text">Loading...</p>
+        </div>
+    `;
+}
+
 // Home page loader
 async function loadHomePage() {
     currentCategory = 'home';
@@ -170,6 +181,11 @@ async function loadHomePage() {
     // Clear background
     const mainContent = document.querySelector('.main-content');
     mainContent.style.backgroundImage = 'none';
+
+    // Show loading indicator
+    const container = document.getElementById('items-container');
+    container.className = 'home-container';
+    showLoading();
 
     try {
         // Fetch home data from Google Sheets
@@ -271,6 +287,9 @@ async function loadCategory(category) {
 
     // Update sort button UI based on category
     updateSortButtons(config, categorySortState[category]);
+
+    // Show loading indicator
+    showLoading();
 
     try {
         // Fetch data from Google Sheets
