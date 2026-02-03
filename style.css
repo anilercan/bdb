@@ -12,19 +12,22 @@ body {
     min-height: 100vh;
 }
 
-/* Top Navigation Bar */
+/* Top Navigation Bar - Glassmorphism */
 .navbar {
     position: sticky;
     top: 0;
     z-index: 100;
     width: 100%;
-    background-color: #4f2351;
-    border-bottom: 1px solid #fff;
+    background: linear-gradient(135deg, rgba(79,35,81,0.95) 0%, rgba(60,25,62,0.95) 100%);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255,255,255,0.4);
     padding: 0 20px;
     overflow-x: auto;
     overflow-y: hidden;
     scrollbar-width: thin;
     scrollbar-color: rgba(255,255,255,0.3) transparent;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
 
 .navbar::-webkit-scrollbar {
@@ -51,26 +54,47 @@ body {
 .nav-item {
     padding: 10px 24px;
     text-align: center;
-    background: none;
-    border: 1px solid #fff;
-    border-radius: 4px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 6px;
     font-size: 0.95rem;
     color: #fff;
     cursor: pointer;
-    transition: background-color 0.15s ease, color 0.15s ease;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     white-space: nowrap;
     flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.nav-item:hover::before {
+    left: 100%;
 }
 
 .nav-item:hover {
-    background-color: #9a4a9e;
-    color: #fff;
+    background: rgba(154,74,158,0.6);
+    border-color: rgba(255,255,255,0.5);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(139,63,143,0.4);
 }
 
 .nav-item.active {
-    background-color: #8b3f8f;
+    background: linear-gradient(135deg, #8b3f8f 0%, #6a2d6e 100%);
+    border-color: rgba(255,255,255,0.5);
     color: #fff;
     font-weight: 600;
+    box-shadow: 0 4px 15px rgba(139,63,143,0.5);
 }
 
 /* Decoration zones for future images/gifs */
@@ -78,9 +102,7 @@ body {
 .decoration-bottom {
     width: 100%;
     min-height: 60px;
-    background-color: #4f2351;
-    /* Add your decorative images/gifs here later */
-    /* Example: background-image: url('your-image.gif'); */
+    background: linear-gradient(135deg, #4f2351 0%, #3a1a3c 100%);
 }
 
 /* Main Content */
@@ -105,15 +127,15 @@ header {
 
 .header-left {
     display: flex;
-    /* Center children vertically so title and item count align in the middle */
     align-items: center;
     gap: 15px;
-}  
+}
 
 header h1 {
     font-size: 1.75rem;
     font-weight: 600;
     color: #fff;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
 .status-legend {
@@ -136,37 +158,38 @@ header h1 {
 }
 
 .item-count {
-  font-size: 0.8rem;
-  color: #ccc;
-  white-space: nowrap;
-  margin-left: 36px;
-  /* Center vertically in header */
-  align-self: center;
-}  
+    font-size: 0.8rem;
+    color: #999;
+    white-space: nowrap;
+    margin-left: 36px;
+    align-self: center;
+    background: rgba(255,255,255,0.1);
+    padding: 4px 10px;
+    border-radius: 12px;
+}
 
-/* Search Drawer */
-/* Positioned fixed so the drawer overlays content (items can show underneath). */
+/* Search Drawer - Glassmorphism */
 .search-drawer {
     position: fixed;
     top: 54px;
     right: 40px;
-    z-index: 96; /* above content, below navbar (100) */
-    background-color: rgba(79,35,81,0.9);
-    border-left: 1px solid #fff;
-    border-right: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    border-radius: 0 0 8px 8px;
+    z-index: 96;
+    background: linear-gradient(135deg, rgba(79,35,81,0.85) 0%, rgba(60,25,62,0.85) 100%);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.35);
+    border-top: none;
+    border-radius: 0 0 12px 12px;
     width: fit-content;
     pointer-events: auto;
-    /* Default unscrolled padding (slightly larger to create separation from navbar) */
     padding-top: 8px;
-    transition: padding 0.2s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
 }
 
-/* Reduced padding when scrolled */
 .search-drawer.scrolled {
     padding-top: 4px;
-}  
+}
 
 .search-container {
     display: flex;
@@ -176,50 +199,49 @@ header h1 {
 
 .search-input {
     pointer-events: auto;
-    padding: 8px 16px;
+    padding: 10px 16px;
     font-size: 0.9rem;
-    background-color: #2e2e2e;
+    background: rgba(30,30,30,0.8);
     color: #fff;
-    border: 1px solid #666;
-    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 8px;
     outline: none;
     width: 200px;
-    transition: border-color 0.2s ease, background-color 0.2s ease;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .search-input::placeholder {
-    color: #999;
+    color: #888;
 }
 
 .search-input:focus {
-    border-color: #fff;
-    background-color: #3a3a3a;
+    border-color: rgba(139,63,143,0.8);
+    background: rgba(40,40,40,0.9);
+    box-shadow: 0 0 0 3px rgba(139,63,143,0.2);
 }
 
-/* Controls Drawer */
-/* Positioned fixed so the drawer overlays content (items can show underneath).
-   Placed to the left of the search drawer with a small gap. */
+/* Controls Drawer - Glassmorphism */
 .controls-drawer {
     position: fixed;
-    top: 54px; /* align vertically with search drawer */
-    /* place to the left of the search drawer with ~8px gap; adjust value if search width changes */
+    top: 54px;
     right: calc(66px + 220px);
     z-index: 95;
-    background-color: rgba(79,35,81,0.9);
-    border-left: 1px solid #fff;
-    border-right: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    border-radius: 0 0 8px 8px;
+    background: linear-gradient(135deg, rgba(79,35,81,0.85) 0%, rgba(60,25,62,0.85) 100%);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.35);
+    border-top: none;
+    border-radius: 0 0 12px 12px;
     width: fit-content;
     pointer-events: auto;
-    /* Default unscrolled padding */
     padding-top: 8px;
-    transition: padding 0.2s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
 }
 
 .controls-drawer.scrolled {
     padding-top: 4px;
-} 
+}
 
 .controls {
     display: flex;
@@ -236,25 +258,27 @@ header h1 {
 .sort-btn {
     padding: 8px 16px;
     font-size: 0.9rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    background-color: #fff;
-    color: #555;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 6px;
+    background: rgba(255,255,255,0.1);
+    color: #fff;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     font-weight: 500;
 }
 
 .sort-btn:hover {
-    border-color: #4f2351;
-    color: #4f2351;
+    background: rgba(255,255,255,0.2);
+    border-color: rgba(255,255,255,0.5);
+    transform: translateY(-1px);
 }
 
 .sort-btn.active {
-    background-color: #8b3f8f;
-    border: 1px solid #fff;
+    background: linear-gradient(135deg, #8b3f8f 0%, #6a2d6e 100%);
+    border-color: rgba(255,255,255,0.4);
     color: #fff;
     font-weight: 500;
+    box-shadow: 0 4px 12px rgba(139,63,143,0.4);
 }
 
 /* Items Grid */
@@ -263,10 +287,9 @@ header h1 {
     grid-template-columns: repeat(auto-fill, minmax(168px, 1fr));
     gap: 16px;
     grid-auto-rows: 1fr;
-    /* Ensure items render behind the drawers so drawers can overlay the content */
     position: relative;
     z-index: 1;
-} 
+}
 
 /* Item Link Wrapper */
 .item-link {
@@ -276,32 +299,57 @@ header h1 {
     cursor: pointer;
 }
 
-/* Item Card */
+/* Item Card - Enhanced */
 .item-card {
-    background: #2e2e2e;
-    border: 2px solid #4f2351;
-    border-radius: 8px;
+    background: linear-gradient(145deg, #3a3a3a 0%, #323232 100%);
+    border: 2px solid rgba(139,63,143,0.5);
+    border-radius: 10px;
     overflow: hidden;
-    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     padding: 0;
     display: flex;
     flex-direction: column;
     height: 100%;
+    position: relative;
+}
+
+.item-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    background: linear-gradient(135deg, rgba(139,63,143,0) 0%, rgba(139,63,143,0) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 1;
 }
 
 .item-card:hover {
-    box-shadow: 0 4px 12px rgba(172, 83, 176, 0.2);
-    transform: scale(1.05);
+    border-color: rgba(139,63,143,0.8);
+    transform: translateY(-6px) scale(1.02);
+    box-shadow:
+        0 12px 40px rgba(139,63,143,0.3),
+        0 0 20px rgba(139,63,143,0.15);
+}
+
+.item-card:hover::before {
+    opacity: 1;
+    background: linear-gradient(135deg, rgba(139,63,143,0.05) 0%, rgba(139,63,143,0.1) 100%);
 }
 
 .item-header {
     display: flex;
     align-items: center;
     height: 2.8em;
-    border-bottom: 2px solid #4f2351;
+    border-bottom: 2px solid rgba(139,63,143,0.5);
     margin-bottom: 0;
     flex-shrink: 0;
     padding: 6px 6px;
+    background: rgba(0,0,0,0.15);
 }
 
 .item-title {
@@ -324,10 +372,29 @@ header h1 {
     aspect-ratio: 3 / 4;
     object-fit: cover;
     display: block;
-    background-color: #f0f0f0;
-    border-radius: 4px;
+    background: linear-gradient(135deg, #3a3a3a 0%, #2a2a2a 100%);
+    border-radius: 6px;
     flex-shrink: 0;
     margin: 6px 6px 0 6px;
+    transition: opacity 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+/* Image loading animation */
+.item-cover {
+    animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 .item-info {
@@ -339,6 +406,8 @@ header h1 {
     align-items: flex-end;
     overflow: hidden;
     min-height: 28px;
+    position: relative;
+    z-index: 2;
 }
 
 .item-info-content {
@@ -352,13 +421,19 @@ header h1 {
     font-weight: 700;
     color: #111;
     padding: 4px 8px;
-    border-radius: 4px;
+    border-radius: 6px;
     flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     aspect-ratio: 1;
     min-width: fit-content;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+}
+
+.item-card:hover .item-rating {
+    transform: scale(1.05);
 }
 
 .item-details,
@@ -382,33 +457,37 @@ header h1 {
     border-radius: 50%;
     flex-shrink: 0;
     margin-left: 8px;
+    box-shadow: 0 0 8px currentColor;
 }
 
 .status-circle-green {
     background-color: #4ade80;
+    box-shadow: 0 0 8px rgba(74,222,128,0.5);
 }
 
 .status-circle-yellow {
     background-color: #fbbf24;
+    box-shadow: 0 0 8px rgba(251,191,36,0.5);
 }
 
 .status-circle-red {
     background-color: #ef4444;
+    box-shadow: 0 0 8px rgba(239,68,68,0.5);
 }
 
-/* Rating color variations */
-.rating-high {
-    background-color: #4ade80;
+/* Rating color variations - 3-tier with glow */
+.rating-good {
+    background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
     color: #111;
 }
 
-.rating-mid {
-    background-color: #fbbf24;
+.rating-okay {
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
     color: #111;
 }
 
-.rating-low {
-    background-color: #f87171;
+.rating-bad {
+    background: linear-gradient(135deg, #f87171 0%, #ef4444 100%);
     color: #111;
 }
 
@@ -424,7 +503,6 @@ header h1 {
 .home-sidebar-right {
     width: 30%;
     background-color: #1a1a1a;
-    /* Space for future images/gifs */
 }
 
 .home-center {
@@ -458,23 +536,30 @@ header h1 {
     align-items: center;
     gap: 16px;
     padding: 16px 20px;
-    background: #2e2e2e;
-    border: 2px solid #4f2351;
-    border-radius: 8px;
+    background: linear-gradient(145deg, #3a3a3a 0%, #323232 100%);
+    border: 2px solid rgba(139,63,143,0.5);
+    border-radius: 10px;
     text-decoration: none;
     color: #fff;
-    transition: background-color 0.2s ease, transform 0.2s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .home-link:hover {
-    background-color: #3e3e3e;
-    transform: translateX(4px);
+    background: linear-gradient(145deg, #3a3a3a 0%, #303030 100%);
+    border-color: rgba(139,63,143,0.8);
+    transform: translateX(8px);
+    box-shadow: 0 8px 24px rgba(139,63,143,0.2);
 }
 
 .home-link-icon {
     width: 32px;
     height: 32px;
     object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.home-link:hover .home-link-icon {
+    transform: scale(1.1);
 }
 
 .home-link-name {
@@ -482,7 +567,7 @@ header h1 {
     font-weight: 500;
 }
 
-/* Loading Indicator */
+/* Loading Indicator - Enhanced */
 .loading-container {
     display: flex;
     flex-direction: column;
@@ -494,12 +579,13 @@ header h1 {
 }
 
 .loading-spinner {
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
     border: 3px solid rgba(255, 255, 255, 0.1);
     border-top-color: #8b3f8f;
     border-radius: 50%;
     animation: spin 0.8s linear infinite;
+    box-shadow: 0 0 20px rgba(139,63,143,0.3);
 }
 
 @keyframes spin {
@@ -512,6 +598,12 @@ header h1 {
     margin-top: 16px;
     color: #999;
     font-size: 0.9rem;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 0.6; }
+    50% { opacity: 1; }
 }
 
 /* Responsive */
@@ -530,6 +622,10 @@ header h1 {
         padding: 8px 16px;
         white-space: nowrap;
         font-size: 0.85rem;
+    }
+
+    .nav-item:hover {
+        transform: none;
     }
 
     .main-content {
@@ -582,11 +678,14 @@ header h1 {
     .search-drawer,
     .controls-drawer {
         position: static;
-        background-color: transparent;
+        background: transparent;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
         border: none;
         border-radius: 0;
         padding: 0;
         width: 100%;
+        box-shadow: none;
     }
 
     /* Combined mobile controls bar */
@@ -617,12 +716,17 @@ header h1 {
     .sort-btn {
         padding: 6px 10px;
         font-size: 0.75rem;
+        background: rgba(79,35,81,0.6);
     }
 
     /* Grid: keep card sizes, just adjust gap */
     .items-grid {
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
         gap: 8px;
+    }
+
+    .item-card:hover {
+        transform: translateY(-3px) scale(1.01);
     }
 
     .item-title {
@@ -680,6 +784,10 @@ header h1 {
     .home-link {
         padding: 12px 16px;
         gap: 12px;
+    }
+
+    .home-link:hover {
+        transform: translateX(4px);
     }
 
     .home-link-icon {

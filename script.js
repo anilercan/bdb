@@ -112,9 +112,9 @@ function escapeHtml(text) {
 }
 
 function getRatingClass(rating) {
-    if (rating >= 75) return 'rating-high';
-    if (rating >= 50) return 'rating-mid';
-    return 'rating-low';
+    if (rating >= 75) return 'rating-good';
+    if (rating >= 50) return 'rating-okay';
+    return 'rating-bad';
 }
 
 function formatDate(dateString) {
