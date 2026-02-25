@@ -669,6 +669,11 @@ header h1 {
     font-weight: 600;
     color: #fff;
     margin: 0;
+    transition: color 0.2s ease;
+}
+
+.stats-category-title[data-nav-category]:hover {
+    color: #c084cf;
 }
 
 .stats-category-meta {

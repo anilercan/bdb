@@ -202,9 +202,10 @@ async function loadHomePage() {
     showLoading();
 
     try {
-        // Fetch home data + stats data in parallel
-        const [homeData, ...categoryResults] = await Promise.all([
+        // Fetch home data + stats data + backlog in parallel
+        const [homeData, backlogData, ...categoryResults] = await Promise.all([
             fetch(`${SHEET_BASE_URL}/home`).then(r => r.json()),
+            fetchSheetData(categoryConfig.backlog.sheet),
             ...STATS_CATEGORIES.map(catKey =>
                 fetchSheetData(categoryConfig[catKey].sheet).then(data => ({
                     key: catKey,
@@ -235,6 +236,11 @@ async function loadHomePage() {
             .sort((a, b) => new Date(b.dateCompleted) - new Date(a.dateCompleted))
             .slice(0, 3);
 
+        // Currently playing/reading (from backlog with 'current' status)
+        const currentItems = backlogData.filter(item =>
+            item.status && item.status.toLowerCase() === 'current'
+        );
+
         const container = document.getElementById('items-container');
         container.className = 'home-container';
         container.innerHTML = `
@@ -255,7 +261,7 @@ async function loadHomePage() {
 
                 <div class="home-quick-stats">
                     <div class="home-stat">
-                        <span class="home-stat-value">${totalItems}</span>
+                        <span class="home-stat-value" id="home-total-items">0</span>
                         <span class="home-stat-label">Total Items</span>
                     </div>
                 </div>
@@ -268,9 +274,32 @@ async function loadHomePage() {
                     </div>
                 </div>
                 ` : ''}
+
+                ${currentItems.length > 0 ? `
+                <div class="home-recent">
+                    <h3 class="home-section-title">Currently Playing / Reading</h3>
+                    <div class="home-recent-cards">
+                        ${currentItems.map(item => renderStatsCard(item, categoryConfig.backlog)).join('')}
+                    </div>
+                </div>
+                ` : ''}
             </div>
             <div class="home-sidebar-right"></div>
         `;
+
+        // Animated count-up for total items
+        const totalEl = document.getElementById('home-total-items');
+        if (totalEl && totalItems > 0) {
+            const duration = 800;
+            const start = performance.now();
+            const step = (now) => {
+                const progress = Math.min((now - start) / duration, 1);
+                const eased = 1 - Math.pow(1 - progress, 3);
+                totalEl.textContent = Math.round(eased * totalItems);
+                if (progress < 1) requestAnimationFrame(step);
+            };
+            requestAnimationFrame(step);
+        }
     } catch (error) {
         console.error('Error loading home page:', error);
         document.getElementById('items-container').innerHTML =
@@ -327,6 +356,13 @@ async function loadStatsPage() {
 
         const results = await Promise.all(fetchPromises);
         container.innerHTML = renderStatsPage(results);
+
+        // Make category titles clickable
+        container.querySelectorAll('.stats-category-title[data-nav-category]').forEach(title => {
+            title.addEventListener('click', () => {
+                transitionContent(() => loadCategory(title.dataset.navCategory));
+            });
+        });
     } catch (error) {
         console.error('Error loading stats:', error);
         container.innerHTML = '<p style="color: #999;">Could not load stats data.</p>';
@@ -436,7 +472,7 @@ function renderCategoryStats({ key, config, data }) {
     let html = `
         <div class="stats-category-section">
             <div class="stats-category-header">
-                <h2 class="stats-category-title">${escapeHtml(config.title)}</h2>
+                <h2 class="stats-category-title" data-nav-category="${key}" style="cursor: pointer;">${escapeHtml(config.title)}</h2>
                 <div class="stats-category-meta">
                     <span class="stats-count">${data.length} items</span>
                     <span class="stats-avg-rating ${getRatingClass(avgRating)}">${avgRating} avg</span>
