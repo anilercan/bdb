@@ -89,6 +89,9 @@ const categoryConfig = {
     }
 };
 
+// Categories included in Stats page (excludes home and backlog)
+const STATS_CATEGORIES = ['games', 'othergames', 'visualnovels', 'movies', 'tvseries', 'anime', 'manga', 'books'];
+
 // Helper function to fetch data from Google Sheets
 async function fetchSheetData(sheetName) {
     const url = `${SHEET_BASE_URL}/${sheetName}`;
@@ -227,11 +230,240 @@ async function loadHomePage() {
     }
 }
 
+// Stats page loader
+async function loadStatsPage() {
+    currentCategory = 'stats';
+    document.getElementById('page-title').textContent = 'Stats';
+
+    // Clear search input
+    const searchInput = document.getElementById('search-input');
+    if (searchInput) searchInput.value = '';
+
+    // Update active nav item
+    document.querySelectorAll('.nav-item').forEach(item => {
+        item.classList.toggle('active', item.dataset.category === 'stats');
+    });
+
+    // Hide sort controls and search for stats page
+    document.querySelector('.controls-drawer').style.display = 'none';
+    document.querySelector('.search-drawer').style.display = 'none';
+
+    // Hide legends
+    const legend = document.getElementById('status-legend');
+    if (legend) legend.style.display = 'none';
+    const backlogLegend = document.getElementById('backlog-legend');
+    if (backlogLegend) backlogLegend.style.display = 'none';
+
+    // Hide item count
+    const itemCount = document.getElementById('item-count');
+    if (itemCount) itemCount.style.display = 'none';
+
+    // Clear background
+    document.querySelector('.main-content').style.backgroundImage = 'none';
+
+    // Set container class and show loading
+    const container = document.getElementById('items-container');
+    container.className = 'stats-container';
+    showLoading();
+
+    try {
+        // Fetch all category sheets in parallel
+        const fetchPromises = STATS_CATEGORIES.map(catKey => {
+            const config = categoryConfig[catKey];
+            return fetchSheetData(config.sheet).then(data => ({
+                key: catKey,
+                config: config,
+                data: data
+            }));
+        });
+
+        const results = await Promise.all(fetchPromises);
+        container.innerHTML = renderStatsPage(results);
+    } catch (error) {
+        console.error('Error loading stats:', error);
+        container.innerHTML = '<p style="color: #999;">Could not load stats data.</p>';
+    }
+}
+
+function renderStatsPage(results) {
+    const totalItems = results.reduce((sum, r) => sum + r.data.length, 0);
+    const allRatings = results.flatMap(r => r.data.filter(item => item.rating != null).map(item => item.rating));
+    const overallAvg = allRatings.length > 0
+        ? Math.round(allRatings.reduce((a, b) => a + b, 0) / allRatings.length)
+        : 0;
+
+    let html = `
+        <div class="stats-summary">
+            <div class="stats-summary-card">
+                <div class="stats-summary-value">${totalItems}</div>
+                <div class="stats-summary-label">Total Items</div>
+            </div>
+            <div class="stats-summary-card">
+                <div class="stats-summary-value">${results.length}</div>
+                <div class="stats-summary-label">Categories</div>
+            </div>
+            <div class="stats-summary-card">
+                <div class="stats-summary-value">${overallAvg}</div>
+                <div class="stats-summary-label">Average Rating</div>
+            </div>
+        </div>
+    `;
+
+    for (const result of results) {
+        html += renderCategoryStats(result);
+    }
+
+    return html;
+}
+
+function renderStatsCard(item, config) {
+    const ratingHtml = item.rating != null
+        ? `<div class="item-rating ${getRatingClass(item.rating)}">${item.rating}</div>`
+        : '';
+
+    let extraInfo = '';
+    if (config.hasAuthor && item.author) {
+        extraInfo += `<div class="item-author">by ${escapeHtml(item.author)}</div>`;
+    }
+    if (config.hasDate && item.dateCompleted) {
+        extraInfo += `<div class="item-date">Completed: ${formatDate(item.dateCompleted)}</div>`;
+    }
+
+    const cardContent = `
+        <div class="item-card">
+            <div class="item-header">
+                <div class="item-title">${escapeHtml(item.title)}</div>
+                ${ratingHtml}
+            </div>
+            <img
+                class="item-cover"
+                src="${item.cover ? escapeHtml(item.cover) : placeholderImage}"
+                alt="${escapeHtml(item.title)} cover"
+                onerror="this.src='${placeholderImage}'"
+            >
+            <div class="item-info">
+                <div class="item-info-content">
+                    ${extraInfo}
+                </div>
+            </div>
+        </div>
+    `;
+
+    if (config.hasLink && item.link) {
+        return `<a href="${escapeHtml(item.link)}" target="_blank" class="item-link">${cardContent}</a>`;
+    }
+    return cardContent;
+}
+
+function renderCategoryStats({ key, config, data }) {
+    const ratedItems = data.filter(item => item.rating != null);
+    const avgRating = ratedItems.length > 0
+        ? Math.round(ratedItems.reduce((sum, item) => sum + item.rating, 0) / ratedItems.length)
+        : 0;
+
+    // Rating distribution: 6 buckets
+    const buckets = [
+        { label: '90-100', min: 90, max: 100, count: 0, tier: 'good' },
+        { label: '80-89',  min: 80, max: 89,  count: 0, tier: 'good' },
+        { label: '70-79',  min: 70, max: 79,  count: 0, tier: 'okay' },
+        { label: '60-69',  min: 60, max: 69,  count: 0, tier: 'okay' },
+        { label: '50-59',  min: 50, max: 59,  count: 0, tier: 'okay' },
+        { label: '< 50',   min: 0,  max: 49,  count: 0, tier: 'bad' }
+    ];
+
+    for (const item of ratedItems) {
+        for (const bucket of buckets) {
+            if (item.rating >= bucket.min && item.rating <= bucket.max) {
+                bucket.count++;
+                break;
+            }
+        }
+    }
+
+    const maxCount = Math.max(...buckets.map(b => b.count), 1);
+
+    // Top 5 highest rated
+    const top5 = [...ratedItems]
+        .sort((a, b) => b.rating - a.rating)
+        .slice(0, 5);
+
+    // Recent 5 (only for categories with dates)
+    let recent5 = [];
+    if (config.hasDate) {
+        recent5 = [...data]
+            .filter(item => item.dateCompleted)
+            .sort((a, b) => new Date(b.dateCompleted) - new Date(a.dateCompleted))
+            .slice(0, 5);
+    }
+
+    let html = `
+        <div class="stats-category-section">
+            <div class="stats-category-header">
+                <h2 class="stats-category-title">${escapeHtml(config.title)}</h2>
+                <div class="stats-category-meta">
+                    <span class="stats-count">${data.length} items</span>
+                    <span class="stats-avg-rating ${getRatingClass(avgRating)}">${avgRating} avg</span>
+                </div>
+            </div>
+            <div class="stats-category-body">
+                <div class="stats-chart-section">
+                    <h3 class="stats-section-subtitle">Rating Distribution</h3>
+                    <div class="stats-bar-chart">
+    `;
+
+    for (const bucket of buckets) {
+        const widthPercent = Math.round((bucket.count / maxCount) * 100);
+        html += `
+            <div class="stats-bar-row">
+                <span class="stats-bar-label">${bucket.label}</span>
+                <div class="stats-bar-track">
+                    <div class="stats-bar-fill stats-bar-${bucket.tier}" style="width: ${widthPercent}%"></div>
+                </div>
+                <span class="stats-bar-value">${bucket.count}</span>
+            </div>
+        `;
+    }
+
+    html += `
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-cards-section">
+                <h3 class="stats-section-subtitle">Top 5 Highest Rated</h3>
+                <div class="stats-cards-row">
+                    ${top5.map(item => renderStatsCard(item, config)).join('')}
+                </div>
+            </div>
+    `;
+
+    if (config.hasDate && recent5.length > 0) {
+        html += `
+            <div class="stats-cards-section">
+                <h3 class="stats-section-subtitle">Most Recent Additions</h3>
+                <div class="stats-cards-row">
+                    ${recent5.map(item => renderStatsCard(item, config)).join('')}
+                </div>
+            </div>
+        `;
+    }
+
+    html += `</div>`;
+
+    return html;
+}
+
 // Category loader
 async function loadCategory(category) {
     // Handle home page separately
     if (category === 'home') {
         loadHomePage();
+        return;
+    }
+
+    // Handle stats page separately
+    if (category === 'stats') {
+        loadStatsPage();
         return;
     }
 
