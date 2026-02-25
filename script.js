@@ -234,7 +234,7 @@ async function loadHomePage() {
             .flatMap(r => r.data.map(item => ({ ...item, _config: r.config })))
             .filter(item => item.dateCompleted)
             .sort((a, b) => new Date(b.dateCompleted) - new Date(a.dateCompleted))
-            .slice(0, 3);
+            .slice(0, 5);
 
         // Currently playing/reading (from backlog with 'current' status)
         const currentItems = backlogData.filter(item =>
@@ -436,14 +436,14 @@ function renderCategoryStats({ key, config, data }) {
             .slice(0, 5);
     }
 
-    // 6-bin rating distribution
+    // 6-bin rating distribution (highest first)
     const bins = [
-        { label: '≤50',       min: 0,    max: 50,     tier: 'bin-1' },
-        { label: '51-60',     min: 51,   max: 60,     tier: 'bin-2' },
-        { label: '61-70',     min: 61,   max: 70,     tier: 'bin-3' },
-        { label: '71-80',     min: 71,   max: 80,     tier: 'bin-4' },
+        { label: '91-100',    min: 91,   max: 100,    tier: 'bin-6' },
         { label: '81-90',     min: 81,   max: 90,     tier: 'bin-5' },
-        { label: '91-100',    min: 91,   max: 100,    tier: 'bin-6' }
+        { label: '71-80',     min: 71,   max: 80,     tier: 'bin-4' },
+        { label: '61-70',     min: 61,   max: 70,     tier: 'bin-3' },
+        { label: '51-60',     min: 51,   max: 60,     tier: 'bin-2' },
+        { label: '≤50',       min: 0,    max: 50,     tier: 'bin-1' }
     ];
     for (const item of ratedItems) {
         for (const bin of bins) {
@@ -471,12 +471,14 @@ function renderCategoryStats({ key, config, data }) {
                             const maxCount = Math.max(...bins.map(b => b.count || 0), 1);
                             return bins.map(bin => {
                                 const count = bin.count || 0;
-                                const heightPct = Math.max((count / maxCount) * 100, 8);
+                                const widthPct = Math.max((count / maxCount) * 100, 3);
                                 return `
-                                <div class="stats-bar-col">
+                                <div class="stats-bar-row">
+                                    <span class="stats-bar-label">${bin.label}</span>
+                                    <div class="stats-bar-track">
+                                        <div class="stats-bar-fill stats-bar-${bin.tier}" style="width: ${widthPct}%;"></div>
+                                    </div>
                                     <span class="stats-bar-count">${count}</span>
-                                    <div class="stats-bar-fill stats-bar-${bin.tier}" style="height: ${heightPct}%;"></div>
-                                    <span class="stats-bin-label">${bin.label}</span>
                                 </div>`;
                             }).join('');
                         })()}
