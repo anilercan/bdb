@@ -157,7 +157,7 @@ function showLoading() {
 // Home page loader
 async function loadHomePage() {
     currentCategory = 'home';
-    document.getElementById('page-title').textContent = 'Home';
+    document.querySelector('header').style.display = 'none';
 
     // Clear search input for home page
     const searchInput = document.getElementById('search-input');
@@ -225,9 +225,6 @@ async function loadHomePage() {
                 icon: row.link_icon || ''
             }));
 
-        // Quick stats
-        const totalItems = categoryResults.reduce((sum, r) => sum + r.data.length, 0);
-
         // Recently added (from categories with dates: games + visualnovels)
         const recentItems = categoryResults
             .filter(r => r.config.hasDate)
@@ -246,26 +243,6 @@ async function loadHomePage() {
         container.innerHTML = `
             <div class="home-sidebar-left"></div>
             <div class="home-center">
-                <div class="home-introduction">
-                    <p>${escapeHtml(introduction).replace(/\n/g, '<br>')}</p>
-                </div>
-
-                <div class="home-links">
-                    ${links.map(link => `
-                        <a href="${escapeHtml(link.link)}" target="_blank" class="home-link">
-                            <img src="${escapeHtml(link.icon)}" alt="${escapeHtml(link.name)}" class="home-link-icon" loading="lazy">
-                            <span class="home-link-name">${escapeHtml(link.name)}</span>
-                        </a>
-                    `).join('')}
-                </div>
-
-                <div class="home-quick-stats">
-                    <div class="home-stat">
-                        <span class="home-stat-value">${totalItems}</span>
-                        <span class="home-stat-label">Total Items</span>
-                    </div>
-                </div>
-
                 ${recentItems.length > 0 ? `
                 <div class="home-recent">
                     <h3 class="home-section-title">Recently Added</h3>
@@ -283,6 +260,19 @@ async function loadHomePage() {
                     </div>
                 </div>
                 ` : ''}
+
+                <div class="home-introduction">
+                    <p>${escapeHtml(introduction).replace(/\n/g, '<br>')}</p>
+                </div>
+
+                <div class="home-links">
+                    ${links.map(link => `
+                        <a href="${escapeHtml(link.link)}" target="_blank" class="home-link">
+                            <img src="${escapeHtml(link.icon)}" alt="${escapeHtml(link.name)}" class="home-link-icon" loading="lazy">
+                            <span class="home-link-name">${escapeHtml(link.name)}</span>
+                        </a>
+                    `).join('')}
+                </div>
             </div>
             <div class="home-sidebar-right"></div>
         `;
@@ -297,6 +287,7 @@ async function loadHomePage() {
 // Stats page loader
 async function loadStatsPage() {
     currentCategory = 'stats';
+    document.querySelector('header').style.display = '';
     document.getElementById('page-title').textContent = 'Stats';
 
     // Clear search input
@@ -535,6 +526,7 @@ async function loadCategory(category) {
         searchInput.value = categorySearchQuery[category] || '';
     }
 
+    document.querySelector('header').style.display = '';
     document.getElementById('page-title').textContent = config.title;
 
     // Update active nav item
