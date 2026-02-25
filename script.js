@@ -132,6 +132,17 @@ function formatDate(dateString) {
 
 const placeholderImage = "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 133%22><rect fill=%22%23f0f0f0%22 width=%22100%22 height=%22133%22/><text x=%2250%22 y=%2270%22 text-anchor=%22middle%22 fill=%22%23ccc%22 font-size=%2212%22>No Image</text></svg>";
 
+// Page transition helper
+async function transitionContent(callback) {
+    const container = document.getElementById('items-container');
+    container.classList.add('page-fade-out');
+    await new Promise(r => setTimeout(r, 150));
+    await callback();
+    container.classList.remove('page-fade-out');
+    container.classList.add('page-fade-in');
+    setTimeout(() => container.classList.remove('page-fade-in'), 300);
+}
+
 // Loading indicator functions
 function showLoading() {
     const container = document.getElementById('items-container');
@@ -191,8 +202,17 @@ async function loadHomePage() {
     showLoading();
 
     try {
-        // Fetch home data from Google Sheets
-        const homeData = await fetch(`${SHEET_BASE_URL}/home`).then(r => r.json());
+        // Fetch home data + stats data in parallel
+        const [homeData, ...categoryResults] = await Promise.all([
+            fetch(`${SHEET_BASE_URL}/home`).then(r => r.json()),
+            ...STATS_CATEGORIES.map(catKey =>
+                fetchSheetData(categoryConfig[catKey].sheet).then(data => ({
+                    key: catKey,
+                    config: categoryConfig[catKey],
+                    data: data
+                }))
+            )
+        ]);
 
         // Parse home data - first row has introduction, rest have links
         const introduction = homeData[0]?.introduction || '';
@@ -204,6 +224,17 @@ async function loadHomePage() {
                 icon: row.link_icon || ''
             }));
 
+        // Quick stats
+        const totalItems = categoryResults.reduce((sum, r) => sum + r.data.length, 0);
+
+        // Recently added (from categories with dates: games + visualnovels)
+        const recentItems = categoryResults
+            .filter(r => r.config.hasDate)
+            .flatMap(r => r.data.map(item => ({ ...item, _config: r.config })))
+            .filter(item => item.dateCompleted)
+            .sort((a, b) => new Date(b.dateCompleted) - new Date(a.dateCompleted))
+            .slice(0, 3);
+
         const container = document.getElementById('items-container');
         container.className = 'home-container';
         container.innerHTML = `
@@ -212,14 +243,31 @@ async function loadHomePage() {
                 <div class="home-introduction">
                     <p>${escapeHtml(introduction).replace(/\n/g, '<br>')}</p>
                 </div>
+
                 <div class="home-links">
                     ${links.map(link => `
                         <a href="${escapeHtml(link.link)}" target="_blank" class="home-link">
-                            <img src="${escapeHtml(link.icon)}" alt="${escapeHtml(link.name)}" class="home-link-icon">
+                            <img src="${escapeHtml(link.icon)}" alt="${escapeHtml(link.name)}" class="home-link-icon" loading="lazy">
                             <span class="home-link-name">${escapeHtml(link.name)}</span>
                         </a>
                     `).join('')}
                 </div>
+
+                <div class="home-quick-stats">
+                    <div class="home-stat">
+                        <span class="home-stat-value">${totalItems}</span>
+                        <span class="home-stat-label">Total Items</span>
+                    </div>
+                </div>
+
+                ${recentItems.length > 0 ? `
+                <div class="home-recent">
+                    <h3 class="home-section-title">Recently Added</h3>
+                    <div class="home-recent-cards">
+                        ${recentItems.map(item => renderStatsCard(item, item._config)).join('')}
+                    </div>
+                </div>
+                ` : ''}
             </div>
             <div class="home-sidebar-right"></div>
         `;
@@ -287,24 +335,12 @@ async function loadStatsPage() {
 
 function renderStatsPage(results) {
     const totalItems = results.reduce((sum, r) => sum + r.data.length, 0);
-    const allRatings = results.flatMap(r => r.data.filter(item => item.rating != null).map(item => item.rating));
-    const overallAvg = allRatings.length > 0
-        ? Math.round(allRatings.reduce((a, b) => a + b, 0) / allRatings.length)
-        : 0;
 
     let html = `
         <div class="stats-summary">
             <div class="stats-summary-card">
                 <div class="stats-summary-value">${totalItems}</div>
                 <div class="stats-summary-label">Total Items</div>
-            </div>
-            <div class="stats-summary-card">
-                <div class="stats-summary-value">${results.length}</div>
-                <div class="stats-summary-label">Categories</div>
-            </div>
-            <div class="stats-summary-card">
-                <div class="stats-summary-value">${overallAvg}</div>
-                <div class="stats-summary-label">Average Rating</div>
             </div>
         </div>
     `;
@@ -339,6 +375,7 @@ function renderStatsCard(item, config) {
                 class="item-cover"
                 src="${item.cover ? escapeHtml(item.cover) : placeholderImage}"
                 alt="${escapeHtml(item.title)} cover"
+                loading="lazy"
                 onerror="this.src='${placeholderImage}'"
             >
             <div class="item-info">
@@ -500,6 +537,12 @@ async function loadCategory(category) {
     // Show sort controls and search drawer
     document.querySelector('.controls-drawer').style.display = 'block';
     document.querySelector('.search-drawer').style.display = 'block';
+
+    // Show/hide random pick button (only for backlog)
+    const randomBtn = document.getElementById('random-btn');
+    if (randomBtn) {
+        randomBtn.style.display = config.hasBacklogStatus ? 'inline-block' : 'none';
+    }
 
     // Reset container class
     document.getElementById('items-container').className = 'items-grid';
@@ -849,6 +892,7 @@ function renderItems(items) {
                     class="item-cover"
                     src="${item.cover ? escapeHtml(item.cover) : placeholderImage}"
                     alt="${escapeHtml(item.title)} cover"
+                    loading="lazy"
                     onerror="this.src='${placeholderImage}'"
                 >
                 <div class="item-info">
@@ -890,7 +934,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Load default category
     loadCategory('home');
 
-    // Add scroll listener for drawers padding
+    // Scroll-to-top button
+    const scrollTopBtn = document.getElementById('scroll-to-top');
     window.addEventListener('scroll', () => {
         const controlsDrawer = document.querySelector('.controls-drawer');
         const searchDrawer = document.querySelector('.search-drawer');
@@ -902,7 +947,48 @@ document.addEventListener('DOMContentLoaded', () => {
             if (controlsDrawer) controlsDrawer.classList.remove('scrolled');
             if (searchDrawer) searchDrawer.classList.remove('scrolled');
         }
+
+        // Show/hide scroll-to-top button
+        if (scrollTopBtn) {
+            scrollTopBtn.classList.toggle('visible', window.scrollY > 50);
+        }
     });
+
+    if (scrollTopBtn) {
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+
+    // Random pick button (backlog only)
+    const randomBtn = document.getElementById('random-btn');
+    if (randomBtn) {
+        randomBtn.addEventListener('click', () => {
+            if (currentCategory !== 'backlog') return;
+            const todoItems = currentData.filter(item =>
+                item.status && item.status.toLowerCase() === 'todo'
+            );
+            if (todoItems.length === 0) return;
+
+            const pick = todoItems[Math.floor(Math.random() * todoItems.length)];
+
+            // Remove previous highlight
+            document.querySelectorAll('.item-card.random-highlight').forEach(el => {
+                el.classList.remove('random-highlight');
+            });
+
+            // Find and highlight the picked card
+            const cards = document.querySelectorAll('.item-card');
+            for (const card of cards) {
+                const title = card.querySelector('.item-title');
+                if (title && title.textContent === pick.title) {
+                    card.classList.add('random-highlight');
+                    card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    break;
+                }
+            }
+        });
+    }
 
     // Search input
     const searchInput = document.getElementById('search-input');
@@ -916,10 +1002,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Navigation
+    // Navigation with smooth transitions
     document.querySelectorAll('.nav-item').forEach(item => {
         item.addEventListener('click', () => {
-            loadCategory(item.dataset.category);
+            transitionContent(() => loadCategory(item.dataset.category));
         });
     });
 
