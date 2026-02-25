@@ -261,7 +261,7 @@ async function loadHomePage() {
 
                 <div class="home-quick-stats">
                     <div class="home-stat">
-                        <span class="home-stat-value" id="home-total-items">0</span>
+                        <span class="home-stat-value">${totalItems}</span>
                         <span class="home-stat-label">Total Items</span>
                     </div>
                 </div>
@@ -287,19 +287,6 @@ async function loadHomePage() {
             <div class="home-sidebar-right"></div>
         `;
 
-        // Animated count-up for total items
-        const totalEl = document.getElementById('home-total-items');
-        if (totalEl && totalItems > 0) {
-            const duration = 800;
-            const start = performance.now();
-            const step = (now) => {
-                const progress = Math.min((now - start) / duration, 1);
-                const eased = 1 - Math.pow(1 - progress, 3);
-                totalEl.textContent = Math.round(eased * totalItems);
-                if (progress < 1) requestAnimationFrame(step);
-            };
-            requestAnimationFrame(step);
-        }
     } catch (error) {
         console.error('Error loading home page:', error);
         document.getElementById('items-container').innerHTML =
@@ -412,6 +399,7 @@ function renderStatsCard(item, config) {
                 src="${item.cover ? escapeHtml(item.cover) : placeholderImage}"
                 alt="${escapeHtml(item.title)} cover"
                 loading="lazy"
+                onload="this.classList.add('loaded')"
                 onerror="this.src='${placeholderImage}'"
             >
             <div class="item-info">
@@ -434,27 +422,6 @@ function renderCategoryStats({ key, config, data }) {
         ? Math.round(ratedItems.reduce((sum, item) => sum + item.rating, 0) / ratedItems.length)
         : 0;
 
-    // Rating distribution: 6 buckets
-    const buckets = [
-        { label: '90-100', min: 90, max: 100, count: 0, tier: 'good' },
-        { label: '80-89',  min: 80, max: 89,  count: 0, tier: 'good' },
-        { label: '70-79',  min: 70, max: 79,  count: 0, tier: 'okay' },
-        { label: '60-69',  min: 60, max: 69,  count: 0, tier: 'okay' },
-        { label: '50-59',  min: 50, max: 59,  count: 0, tier: 'okay' },
-        { label: '< 50',   min: 0,  max: 49,  count: 0, tier: 'bad' }
-    ];
-
-    for (const item of ratedItems) {
-        for (const bucket of buckets) {
-            if (item.rating >= bucket.min && item.rating <= bucket.max) {
-                bucket.count++;
-                break;
-            }
-        }
-    }
-
-    const maxCount = Math.max(...buckets.map(b => b.count), 1);
-
     // Top 5 highest rated
     const top5 = [...ratedItems]
         .sort((a, b) => b.rating - a.rating)
@@ -469,6 +436,25 @@ function renderCategoryStats({ key, config, data }) {
             .slice(0, 5);
     }
 
+    // 6-bin rating distribution
+    const bins = [
+        { label: '≤50',       min: 0,    max: 50,     tier: 'bin-1' },
+        { label: '51-60',     min: 51,   max: 60,     tier: 'bin-2' },
+        { label: '61-70',     min: 61,   max: 70,     tier: 'bin-3' },
+        { label: '71-80',     min: 71,   max: 80,     tier: 'bin-4' },
+        { label: '81-90',     min: 81,   max: 90,     tier: 'bin-5' },
+        { label: '91-100',    min: 91,   max: 100,    tier: 'bin-6' }
+    ];
+    for (const item of ratedItems) {
+        for (const bin of bins) {
+            if (!bin.count) bin.count = 0;
+            if (item.rating >= bin.min && item.rating <= bin.max) {
+                bin.count++;
+                break;
+            }
+        }
+    }
+
     let html = `
         <div class="stats-category-section">
             <div class="stats-category-header">
@@ -480,24 +466,20 @@ function renderCategoryStats({ key, config, data }) {
             </div>
             <div class="stats-category-body">
                 <div class="stats-chart-section">
-                    <h3 class="stats-section-subtitle">Rating Distribution</h3>
-                    <div class="stats-bar-chart">
-    `;
-
-    for (const bucket of buckets) {
-        const widthPercent = Math.round((bucket.count / maxCount) * 100);
-        html += `
-            <div class="stats-bar-row">
-                <span class="stats-bar-label">${bucket.label}</span>
-                <div class="stats-bar-track">
-                    <div class="stats-bar-fill stats-bar-${bucket.tier}" style="width: ${widthPercent}%"></div>
-                </div>
-                <span class="stats-bar-value">${bucket.count}</span>
-            </div>
-        `;
-    }
-
-    html += `
+                    <div class="stats-bins">
+                        ${(() => {
+                            const maxCount = Math.max(...bins.map(b => b.count || 0), 1);
+                            return bins.map(bin => {
+                                const count = bin.count || 0;
+                                const heightPct = Math.max((count / maxCount) * 100, 8);
+                                return `
+                                <div class="stats-bar-col">
+                                    <span class="stats-bar-count">${count}</span>
+                                    <div class="stats-bar-fill stats-bar-${bin.tier}" style="height: ${heightPct}%;"></div>
+                                    <span class="stats-bin-label">${bin.label}</span>
+                                </div>`;
+                            }).join('');
+                        })()}
                     </div>
                 </div>
             </div>
@@ -929,6 +911,7 @@ function renderItems(items) {
                     src="${item.cover ? escapeHtml(item.cover) : placeholderImage}"
                     alt="${escapeHtml(item.title)} cover"
                     loading="lazy"
+                    onload="this.classList.add('loaded')"
                     onerror="this.src='${placeholderImage}'"
                 >
                 <div class="item-info">
