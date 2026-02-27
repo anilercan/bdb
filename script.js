@@ -144,14 +144,25 @@ async function transitionContent(callback) {
 }
 
 // Loading indicator functions
-function showLoading() {
+function showLoading(mode) {
     const container = document.getElementById('items-container');
-    container.innerHTML = `
-        <div class="loading-container">
-            <div class="loading-spinner"></div>
-            <p class="loading-text">Loading...</p>
-        </div>
-    `;
+    if (mode === 'simple') {
+        container.innerHTML = `
+            <div class="loading-simple">
+                <div class="loading-bar"></div>
+            </div>
+        `;
+    } else {
+        const skeletons = Array(12).fill(`
+            <div class="skeleton-card">
+                <div class="skeleton-header"></div>
+                <div class="skeleton-cover"></div>
+                <div class="skeleton-info"></div>
+            </div>
+        `).join('');
+        container.className = 'items-grid';
+        container.innerHTML = `<div class="skeleton-loading-bar"></div>` + skeletons;
+    }
 }
 
 // Home page loader
@@ -199,7 +210,7 @@ async function loadHomePage() {
     // Show loading indicator
     const container = document.getElementById('items-container');
     container.className = 'home-container';
-    showLoading();
+    showLoading('simple');
 
     try {
         // Fetch home data + stats data + backlog in parallel
@@ -319,7 +330,7 @@ async function loadStatsPage() {
     // Set container class and show loading
     const container = document.getElementById('items-container');
     container.className = 'stats-container';
-    showLoading();
+    showLoading('simple');
 
     try {
         // Fetch all category sheets in parallel
@@ -350,11 +361,66 @@ async function loadStatsPage() {
 function renderStatsPage(results) {
     const totalItems = results.reduce((sum, r) => sum + r.data.length, 0);
 
+    // Games Played Per Year chart
+    const gameItems = results
+        .filter(r => r.key === 'games' || r.key === 'visualnovels')
+        .flatMap(r => r.data);
+
+    const yearLabels = ['2026', '2025', '2024', '2023', '2022', '2021', '2020', '≤2019', 'Unknown'];
+    const yearCounts = {};
+    yearLabels.forEach(y => yearCounts[y] = 0);
+
+    for (const item of gameItems) {
+        if (!item.dateCompleted) {
+            yearCounts['Unknown']++;
+            continue;
+        }
+        const year = new Date(item.dateCompleted).getFullYear();
+        if (isNaN(year)) {
+            yearCounts['Unknown']++;
+        } else if (year <= 2019) {
+            yearCounts['≤2019']++;
+        } else if (yearCounts[String(year)] !== undefined) {
+            yearCounts[String(year)]++;
+        } else {
+            yearCounts['Unknown']++;
+        }
+    }
+
+    const maxYearCount = Math.max(...Object.values(yearCounts), 1);
+
     let html = `
         <div class="stats-summary">
             <div class="stats-summary-card">
                 <div class="stats-summary-value">${totalItems}</div>
                 <div class="stats-summary-label">Total Items</div>
+            </div>
+        </div>
+
+        <div class="stats-category-section">
+            <div class="stats-category-header">
+                <h2 class="stats-category-title">Story Games + Visual Novels Per Year</h2>
+                <div class="stats-category-meta">
+                    <span class="stats-count">${gameItems.length} items</span>
+                </div>
+            </div>
+            <div class="stats-category-body">
+                <div class="stats-chart-section">
+                    <div class="stats-bins">
+                        ${yearLabels.map((label) => {
+                            const count = yearCounts[label];
+                            const widthPct = Math.max((count / maxYearCount) * 100, 3);
+                            return `
+                            <div class="stats-bar-row">
+                                <span class="stats-bar-label">${label}</span>
+                                <div class="stats-bar-track">
+                                    <div class="stats-bar-fill stats-bar-purple" style="width: ${widthPct}%;"></div>
+                                </div>
+                                <span class="stats-bar-count">${count}</span>
+                            </div>`;
+                        }).join('')}
+                    </div>
+                </div>
             </div>
         </div>
     `;
@@ -380,7 +446,7 @@ function renderStatsCard(item, config) {
     }
 
     const cardContent = `
-        <div class="item-card">
+        <div class="item-card" title="${escapeHtml(item.title)}">
             <div class="item-header">
                 <div class="item-title">${escapeHtml(item.title)}</div>
                 ${ratingHtml}
@@ -895,7 +961,7 @@ function renderItems(items) {
         const ratingHtml = config.hasBacklogStatus ? '' : `<div class="item-rating ${getRatingClass(item.rating)}">${item.rating}</div>`;
 
         const cardContent = `
-            <div class="item-card">
+            <div class="item-card" title="${escapeHtml(item.title)}">
                 <div class="item-header">
                     <div class="item-title">${escapeHtml(item.title)}</div>
                     ${ratingHtml}
