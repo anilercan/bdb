@@ -49,20 +49,22 @@ body {
     gap: 8px;
     padding: 12px 0;
     min-width: max-content;
+    position: relative;
 }
 
 .nav-brand {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
     font-size: 0.95rem;
     font-weight: 700;
     color: #fff;
     letter-spacing: 2px;
-    padding: 0 12px 0 4px;
-    flex-shrink: 0;
+    padding-right: 12px;
     text-transform: lowercase;
     opacity: 0.85;
     border-right: 1px solid rgba(255,255,255,0.15);
-    margin-right: 4px;
-    align-self: center;
 }
 
 .nav-item {
@@ -680,6 +682,24 @@ header h1 {
     justify-content: center;
 }
 
+.stats-sheets-btn {
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.5);
+    text-decoration: none;
+    padding: 6px 14px;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 20px;
+    transition: all 0.2s;
+    justify-self: end;
+    align-self: center;
+}
+
+.stats-sheets-btn:hover {
+    color: #fff;
+    border-color: rgba(139, 63, 143, 0.6);
+    background: rgba(139, 63, 143, 0.2);
+}
+
 .stats-summary-card {
     display: flex;
     align-items: center;
@@ -1009,6 +1029,10 @@ header h1 {
         gap: 4px;
         overflow-x: auto;
         justify-content: flex-start;
+    }
+
+    .nav-brand {
+        display: none;
     }
 
     .nav-item {

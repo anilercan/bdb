@@ -169,6 +169,8 @@ function showLoading(mode) {
 async function loadHomePage() {
     currentCategory = 'home';
     document.querySelector('header').style.display = 'none';
+    const sheetsBtn = document.getElementById('sheets-btn');
+    if (sheetsBtn) sheetsBtn.remove();
 
     // Clear search input for home page
     const searchInput = document.getElementById('search-input');
@@ -300,6 +302,20 @@ async function loadStatsPage() {
     currentCategory = 'stats';
     document.querySelector('header').style.display = '';
     document.getElementById('page-title').textContent = 'Stats';
+
+    // Add Google Sheets link to header
+    const headerLeft = document.querySelector('.header-left');
+    let sheetsBtn = document.getElementById('sheets-btn');
+    if (!sheetsBtn) {
+        sheetsBtn = document.createElement('a');
+        sheetsBtn.id = 'sheets-btn';
+        sheetsBtn.href = `https://docs.google.com/spreadsheets/d/${SHEET_ID}`;
+        sheetsBtn.target = '_blank';
+        sheetsBtn.rel = 'noopener noreferrer';
+        sheetsBtn.className = 'stats-sheets-btn';
+        sheetsBtn.textContent = 'Open in Google Sheets';
+    }
+    headerLeft.parentElement.appendChild(sheetsBtn);
 
     // Clear search input
     const searchInput = document.getElementById('search-input');
@@ -594,6 +610,8 @@ async function loadCategory(category) {
 
     document.querySelector('header').style.display = '';
     document.getElementById('page-title').textContent = config.title;
+    const sheetsBtn = document.getElementById('sheets-btn');
+    if (sheetsBtn) sheetsBtn.remove();
 
     // Update active nav item
     document.querySelectorAll('.nav-item').forEach(item => {
