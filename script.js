@@ -90,7 +90,7 @@ const categoryConfig = {
 };
 
 // Categories included in Stats page (excludes home and backlog)
-const STATS_CATEGORIES = ['games', 'othergames', 'visualnovels', 'movies', 'tvseries', 'anime', 'manga', 'books'];
+const STATS_CATEGORIES = ['games', 'visualnovels', 'othergames', 'movies', 'tvseries', 'anime', 'manga', 'books'];
 
 // Helper function to fetch data from Google Sheets
 async function fetchSheetData(sheetName) {
