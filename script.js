@@ -101,7 +101,7 @@ async function fetchSheetData(sheetName) {
     // Convert rating and seasonsWatched to numbers
     return data.map(item => ({
         ...item,
-        rating: item.rating ? parseInt(item.rating, 10) : null,
+        rating: item.rating && parseInt(item.rating, 10) !== 0 ? parseInt(item.rating, 10) : null,
         seasonsWatched: item.seasonsWatched ? parseInt(item.seasonsWatched, 10) : null
     }));
 }
@@ -451,7 +451,7 @@ function renderStatsPage(results) {
 function renderStatsCard(item, config) {
     const ratingHtml = item.rating != null
         ? `<div class="item-rating ${getRatingClass(item.rating)}">${item.rating}</div>`
-        : '';
+        : `<div class="item-rating rating-tbd">TBD</div>`;
 
     let extraInfo = '';
     if (config.hasAuthor && item.author) {
@@ -976,7 +976,9 @@ function renderItems(items) {
             }
         }
 
-        const ratingHtml = config.hasBacklogStatus ? '' : `<div class="item-rating ${getRatingClass(item.rating)}">${item.rating}</div>`;
+        const ratingHtml = config.hasBacklogStatus ? '' : item.rating != null
+            ? `<div class="item-rating ${getRatingClass(item.rating)}">${item.rating}</div>`
+            : `<div class="item-rating rating-tbd">TBD</div>`;
 
         const cardContent = `
             <div class="item-card" title="${escapeHtml(item.title)}">

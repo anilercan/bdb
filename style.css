@@ -503,6 +503,12 @@ header h1 {
     color: #111;
 }
 
+.rating-tbd {
+    background: rgba(255,255,255,0.1);
+    color: rgba(255,255,255,0.4);
+    font-size: 0.65rem;
+}
+
 /* Home Page Styles */
 .home-container {
     display: flex;
