@@ -215,16 +215,16 @@ async function loadHomePage() {
     showLoading('simple');
 
     try {
-        // Fetch home data + stats data + backlog in parallel
+        // Fetch home data + stats data + backlog in parallel (catch individually so one failure doesn't break all)
         const [homeData, backlogData, ...categoryResults] = await Promise.all([
-            fetch(`${SHEET_BASE_URL}/home`).then(r => r.json()),
-            fetchSheetData(categoryConfig.backlog.sheet),
+            fetch(`${SHEET_BASE_URL}/home`).then(r => r.json()).catch(() => []),
+            fetchSheetData(categoryConfig.backlog.sheet).catch(() => []),
             ...STATS_CATEGORIES.map(catKey =>
                 fetchSheetData(categoryConfig[catKey].sheet).then(data => ({
                     key: catKey,
                     config: categoryConfig[catKey],
                     data: data
-                }))
+                })).catch(() => ({ key: catKey, config: categoryConfig[catKey], data: [] }))
             )
         ]);
 

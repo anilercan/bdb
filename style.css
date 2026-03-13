@@ -623,11 +623,14 @@ header h1 {
 /* Loading bar on skeleton grid */
 .skeleton-loading-bar {
     grid-column: 1 / -1;
-    height: 3px;
-    background: rgba(255,255,255,0.05);
-    border-radius: 2px;
+    width: 260px;
+    height: 4px;
+    margin: 20px auto;
+    background: rgba(139, 63, 143, 0.15);
+    border-radius: 4px;
     overflow: hidden;
     position: relative;
+    box-shadow: 0 0 12px rgba(139, 63, 143, 0.1);
 }
 
 .skeleton-loading-bar::after {
@@ -637,24 +640,35 @@ header h1 {
     left: 0;
     height: 100%;
     width: 40%;
-    background: linear-gradient(90deg, transparent, #8b3f8f, transparent);
+    background: linear-gradient(90deg, transparent, #a855f7, #8b3f8f, transparent);
+    border-radius: 4px;
     animation: loadingSlide 1.2s ease-in-out infinite;
 }
 
 /* Simple loading bar for stats/home */
 .loading-simple {
-    padding: 40px 0;
+    padding: 80px 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.loading-simple::after {
+    content: 'Loading...';
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.25);
+    letter-spacing: 1px;
 }
 
 .loading-bar {
-    width: 200px;
-    height: 3px;
-    background: rgba(255,255,255,0.05);
-    border-radius: 2px;
+    width: 260px;
+    height: 4px;
+    background: rgba(139, 63, 143, 0.15);
+    border-radius: 4px;
     overflow: hidden;
     position: relative;
+    box-shadow: 0 0 12px rgba(139, 63, 143, 0.1);
 }
 
 .loading-bar::after {
@@ -664,7 +678,8 @@ header h1 {
     left: 0;
     height: 100%;
     width: 40%;
-    background: linear-gradient(90deg, transparent, #8b3f8f, transparent);
+    background: linear-gradient(90deg, transparent, #a855f7, #8b3f8f, transparent);
+    border-radius: 4px;
     animation: loadingSlide 1.2s ease-in-out infinite;
 }
 
