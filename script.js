@@ -161,7 +161,11 @@ function showLoading(mode) {
             </div>
         `).join('');
         container.className = 'items-grid';
-        container.innerHTML = `<div class="skeleton-loading-bar"></div>` + skeletons;
+        container.innerHTML = `
+            <div class="loading-simple loading-grid-overlay">
+                <div class="loading-bar"></div>
+            </div>
+        ` + skeletons;
     }
 }
 
