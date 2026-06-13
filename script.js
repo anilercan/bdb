@@ -262,7 +262,7 @@ async function loadHomePage() {
             <div class="home-center">
                 ${recentItems.length > 0 ? `
                 <div class="home-recent">
-                    <h3 class="home-section-title">Recently Added</h3>
+                    <h3 class="home-section-title">Recently Completed</h3>
                     <div class="home-recent-cards">
                         ${recentItems.map(item => renderStatsCard(item, item._config)).join('')}
                     </div>
